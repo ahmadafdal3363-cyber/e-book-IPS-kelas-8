@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 12: Keberagaman & Integrasi Nasional | IPS Kelas 8 MTsN 10 Agam</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        luxury: {
+                            dark: '#0B1120',
+                            card: '#151E32',
+                            gold: '#D4AF37',
+                            goldLight: '#F3E5AB',
+                            accent: '#C5A028'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                        arabic: ['"Amiri"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .text-gold-gradient {
+            background: linear-gradient(135deg, #D4AF37 0%, #F3E5AB 50%, #C5A028 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .glass-card {
+            background: rgba(21, 30, 50, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .hover-lift {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .hover-lift:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px -10px rgba(212, 175, 55, 0.15);
+            border-color: rgba(212, 175, 55, 0.5);
+        }
+        .quran-verse {
+            font-family: 'Amiri', serif;
+            font-size: 1.6rem;
+            line-height: 2.2;
+            text-align: right;
+            direction: rtl;
+        }
+        .custom-radio:checked + div {
+            background-color: rgba(212, 175, 55, 0.15);
+            border-color: #D4AF37;
+            color: #F3E5AB;
+        }
+        .custom-radio:checked + div .radio-dot {
+            background-color: #D4AF37;
+            border-color: #D4AF37;
+        }
+    </style>
+</head>
+<body class="bg-luxury-dark text-gray-200 font-sans antialiased selection:bg-luxury-gold selection:text-luxury-dark">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-card border-b border-luxury-gold/20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-people-group text-luxury-gold text-xl"></i>
+                    <span class="font-serif text-lg font-bold text-white tracking-wide">IPS Kelas 8</span>
+                </div>
+                <div class="flex gap-4">
+                    <a href="index.html" class="text-sm text-gray-300 hover:text-luxury-gold transition-colors flex items-center gap-2">
+                        <i class="fa-solid fa-arrow-left"></i> Daftar Pertemuan
+                    </a>
+                    <a href="11.html" class="text-sm text-gray-400 hover:text-luxury-gold transition-colors flex items-center gap-2">
+                        <i class="fa-solid fa-chevron-left"></i> Pertemuan 11
+                    </a>
+                    <a href="13.html" class="text-sm text-luxury-gold hover:text-luxury-goldLight transition-colors flex items-center gap-2 font-medium">
+                        Pertemuan 13 <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-24 pb-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+
+        <!-- Header Section -->
+        <div class="text-center space-y-4">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-luxury-gold/30 bg-luxury-gold/10 text-luxury-gold text-xs font-semibold tracking-widest uppercase">
+                <i class="fa-solid fa-hands-holding-circle"></i> Pertemuan Dua Belas
+            </div>
+            <h1 class="font-serif text-4xl md:text-5xl font-bold text-white">Keberagaman & Integrasi Nasional</h1>
+            <p class="text-luxury-gold font-medium text-lg">Masyarakat Indonesia yang Bhinneka Tunggal Ika</p>
+            <p class="text-gray-400 max-w-3xl mx-auto leading-relaxed">
+                Memahami hakikat keberagaman masyarakat Indonesia dalam suku, agama, ras, antargolongan (SARA), serta budaya; konsep integrasi nasional sebagai proses penyatuan bangsa; faktor pembentuk, tantangan di era globalisasi, dan peran generasi muda dalam menjaga persatuan di tengah keberagaman.
+            </p>
+            <div class="flex items-center justify-center gap-3 pt-2">
+                <div class="w-10 h-10 rounded-full bg-luxury-gold/20 flex items-center justify-center text-luxury-gold font-bold font-serif">A</div>
+                <div class="text-left">
+                    <p class="text-white font-medium">Drs. Ahmad Afdal</p>
+                    <p class="text-luxury-gold text-sm">MTsN 10 Agam</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Materi Sections -->
+        <div class="space-y-8" id="materi-content">
+            
+            <!-- A. Pengertian Keberagaman -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">A</span>
+                    Pengertian Keberagaman Masyarakat Indonesia
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    <strong class="text-white">Keberagaman</strong> adalah kondisi di dalam masyarakat yang memiliki banyak perbedaan dalam berbagai bidang, baik dari suku, ras, agama, bahasa, nilai, budaya, maupun kepercayaan. Indonesia merupakan negara yang sangat majemuk dengan lebih dari <strong class="text-luxury-gold">1.300 suku bangsa</strong> dan <strong class="text-luxury-gold">700 bahasa daerah</strong>.
+                </p>
+                <p class="text-gray-300 leading-relaxed mb-6">
+                    Keberagaman ini merupakan anugerah dari Tuhan Yang Maha Esa yang harus disyukuri dan dijaga. Semboyan <strong class="text-luxury-gold">"Bhinneka Tunggal Ika"</strong> yang diambil dari Kitab Sutasoma karya <strong class="text-white">Mpu Tantular</strong> menjadi pedoman bangsa Indonesia untuk tetap bersatu meskipun berbeda-beda.
+                </p>
+                <div class="bg-luxury-gold/10 border-l-4 border-luxury-gold p-4 rounded-r-lg">
+                    <p class="text-luxury-gold font-bold text-sm uppercase tracking-wider mb-1">📌 DEFINISI</p>
+                    <p class="text-white font-medium">Keberagaman Masyarakat Indonesia adalah kondisi sosial masyarakat Indonesia yang terdiri dari berbagai perbedaan suku, agama, ras, etnis, budaya, dan bahasa yang hidup berdampingan dalam satu kesatuan bangsa dan negara.</p>
+                </div>
+            </section>
+
+            <!-- B. Faktor Penyebab Keberagaman -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">B</span>
+                    Faktor Penyebab Keberagaman
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    Keberagaman masyarakat Indonesia disebabkan oleh beberapa faktor utama yang saling berkaitan.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="bg-luxury-dark/50 p-4 rounded-xl border border-luxury-gold/10">
+                        <p class="text-luxury-gold font-semibold mb-2">🌍 Faktor Geografis</p>
+                        <p class="text-gray-300 text-sm">Indonesia sebagai negara kepulauan terbesar di dunia (±17.000 pulau) menyebabkan setiap daerah berkembang secara terpisah dengan budaya dan adat istiadat yang berbeda.</p>
+                    </div>
+                    <div class="bg-luxury-dark/50 p-4 rounded-xl border border-luxury-gold/10">
+                        <p class="text-luxury-gold font-semibold mb-2">🌊 Faktor Letak Strategis</p>
+                        <p class="text-gray-300 text-sm">Posisi silang antara dua benua dan dua samudra membuat Indonesia menjadi jalur perdagangan internasional, sehingga terjadi percampuran budaya dari India, Arab, Tiongkok, dan Eropa.</p>
+                    </div>
+                    <div class="bg-luxury-dark/50 p-4 rounded-xl border border-luxury-gold/10">
+                        <p class="text-luxury-gold font-semibold mb-2">🏔️ Faktor Kondisi Alam</p>
+                        <p class="text-gray-300 text-sm">Perbedaan kondisi alam (pesisir, pegunungan, dataran rendah) membuat masyarakat mengembangkan mata pencaharian dan budaya yang berbeda-beda.</p>
+                    </div>
+                    <div class="bg-luxury-dark/50 p-4 rounded-xl border border-luxury-gold/10">
+                        <p class="text-luxury-gold font-semibold mb-2">👥 Faktor Sejarah & Migrasi</p>
+                        <p class="text-gray-300 text-sm">Perjalanan sejarah (kerajaan Hindu-Buddha, Islam, kolonial) dan migrasi penduduk (transmigrasi, urbanisasi) menambah keragaman etnis dan budaya.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- C. Bentuk-Bentuk Keberagaman -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">C</span>
+                    Bentuk-Bentuk Keberagaman Indonesia
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    Keberagaman masyarakat Indonesia dapat dilihat dari berbagai aspek, yang dikenal dengan istilah <strong class="text-white">SARA</strong> (Suku, Agama, Ras, dan Antargolongan).
+                </p>
+
+                <div class="space-y-4">
+                    <div class="bg-luxury-dark/50 p-4 rounded-xl border border-luxury-gold/10">
+                        <p class="text-luxury-gold font-semibold mb-2">🏞️ Keberagaman Suku Bangsa</p>
+                        <p class="text-gray-300 text-sm mb-2">Indonesia memiliki lebih dari 1.300 suku bangsa yang tersebar di seluruh kepulauan.</p>
+                        <div class="grid md:grid-cols-3 gap-2 text-xs">
+                            <p class="text-gray-400">• <strong class="text-white">Sumatera:</strong> Batak, Minang, Melayu, Aceh</p>
+                            <p class="text-gray-400">• <strong class="text-white">Jawa:</strong> Jawa, Sunda, Betawi, Madura</p>
+                            <p class="text-gray-400">• <strong class="text-white">Kalimantan:</strong> Dayak, Banjar, Kutai</p>
+                            <p class="text-gray-400">• <strong class="text-white">Sulawesi:</strong> Bugis, Makassar, Toraja, Minahasa</p>
+                            <p class="text-gray-400">• <strong class="text-white">Bali & NTT:</strong> Bali, Sasak, Timor</p>
+                            <p class="text-gray-400">• <strong class="text-white">Papua & Maluku:</strong> Papua, Ambon, Ternate</p>
+                        </div>
+                    </div>
+                    <div class="bg-luxury-dark/50 p-4 rounded-xl border border-luxury-gold/10">
+                        <p class="text-luxury-gold font-semibold mb-2">🕌 Keberagaman Agama</p>
+                        <p class="text-gray-300 text-sm mb-2">Indonesia mengakui 6 agama resmi, plus berbagai kepercayaan lokal.</p>
+                        <div class="grid md:grid-cols-3 gap-2 text-xs">
+                            <p class="text-gray-400">• <strong class="text-white">Islam</strong> (mayoritas ±87%)</p>
+                            <p class="text-gray-400">• <strong class="text-white">Kristen Protestan</strong></p>
+                            <p class="text-gray-400">• <strong class="text-white">Katolik</strong></p>
+                            <p class="text-gray-400">• <strong class="text-white">Hindu</strong> (Bali)</p>
+                            <p class="text-gray-400">• <strong class="text-white">Buddha</strong></p>
+                            <p class="text-gray-400">• <strong class="text-white">Konghucu</strong></p>
+                        </div>
+                    </div>
+                    <div class="bg-luxury-dark/50 p-4 rounded-xl border border-luxury-gold/10">
+                        <p class="text-luxury-gold font-semibold mb-2">👤 Keberagaman Ras</p>
+                        <p class="text-gray-300 text-sm">Menurut <strong class="text-white">B.M. Dadi</strong>, Indonesia memiliki beberapa ras utama:</p>
+                        <ul class="text-gray-400 text-xs space-y-1 mt-2">
+                            <li>• <strong class="text-white">Ras Malayo-Mongoloid:</strong> Umum di Indonesia bagian barat & tengah</li>
+                            <li>• <strong class="text-white">Ras Melanesoid:</strong> Indonesia bagian timur (Papua, Maluku)</li>
+                            <li>• <strong class="text-white">Ras Kaukasoid:</strong> Keturunan Eropa, Arab, India</li>
+                            <li>• <strong class="text-white">Ras Mongoloid:</strong> Keturunan Tionghoa, Jepang, Korea</li>
+                        </ul>
+                    </div>
+                    <div class="bg-luxury-dark/50 p-4 rounded-xl border border-luxury-gold/10">
+                        <p class="text-luxury-gold font-semibold mb-2">🎭 Keberagaman Budaya</p>
+                        <div class="grid md:grid-cols-2 gap-3 text-xs">
+                            <div>
+                                <p class="text-white font-medium mb-1">Bahasa Daerah:</p>
+                                <p class="text-gray-400">±700 bahasa daerah (Jawa, Sunda, Batak, Minang, dll.)</p>
+                            </div>
+                            <div>
+                                <p class="text-white font-medium mb-1">Rumah Adat:</p>
+                                <p class="text-gray-400">Gadang, Joglo, Honai, Tongkonan, dll.</p>
+                            </div>
+                            <div>
+                                <p class="text-white font-medium mb-1">Tarian Tradisional:</p>
+                                <p class="text-gray-400">Saman, Pendet, Reog, Jaipong, dll.</p>
+                            </div>
+                            <div>
+                                <p class="text-white font-medium mb-1">Senjata & Pakaian Adat:</p>
+                                <p class="text-gray-400">Rendang, Ulos, Kebaya, Batik, dll.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- D. Pengertian Integrasi Nasional -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">D</span>
+                    Pengertian Integrasi Nasional
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    <strong class="text-white">Integrasi nasional</strong> adalah proses penyatuan berbagai kelompok budaya dan sosial ke dalam kesatuan wilayah dan pembentukan identitas nasional. Menurut <strong class="text-white">Soerjono Soekanto</strong>, integrasi nasional terjadi apabila masyarakat menyadari adanya kepentingan bersama.
+                </p>
+
+                <div class="bg-luxury-gold/10 border-l-4 border-luxury-gold p-4 rounded-r-lg mb-4">
+                    <p class="text-luxury-gold font-bold text-sm uppercase tracking-wider mb-2">📌 Pengertian Menurut Para Ahli</p>
+                    <ul class="text-white space-y-1 font-medium text-sm">
+                        <li>• <strong>Myron Weiner:</strong> Integrasi adalah proses penyatuan berbagai kelompok sosial dan budaya ke dalam satu kesatuan wilayah.</li>
+                        <li>• <strong>Saafroedin Bahar:</strong> Integrasi nasional adalah upaya menyatukan seluruh wilayah negara sehingga tercipta keselarasan dan keseimbangan.</li>
+                        <li>• <strong>Dr. Nazaruddin Sjamsuddin:</strong> Integrasi nasional sebagai proses penyatuan bangsa yang berbeda-beda menjadi satu kesatuan yang utuh.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-luxury-dark/50 p-4 rounded-xl border border-luxury-gold/10">
+                    <p class="text-luxury-gold font-semibold mb-2">🎯 Tujuan Integrasi Nasional</p>
+                    <ul class="text-gray-300 text-sm space-y-1">
+                        <li>• Menciptakan persatuan dan kesatuan bangsa</li>
+                        <li>• Menghindari konflik antar kelompok</li>
+                        <li>• Memperkuat identitas nasional</li>
+                        <li>• Mewujudkan kesejahteraan bersama</li>
+                        <li>• Menjaga keutuhan NKRI</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- E. Syarat & Faktor Pembentuk -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">E</span>
+                    Syarat & Faktor Pembentuk Integrasi Nasional
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    Integrasi nasional tidak terjadi dengan sendirinya, tetapi memerlukan syarat dan faktor pembentuk tertentu.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="bg-luxury-dark/50 p-4 rounded-xl border border-green-500/20">
+                        <p class="text-green-400 font-semibold mb-2">✅ Syarat Integrasi</p>
+                        <ul class="text-gray-300 text-sm space-y-1">
+                            <li>• Anggota masyarakat merasa saling mengisi kebutuhan</li>
+                            <li>• Terciptanya konsensus (kesepakatan) nilai dan norma</li>
+                            <li>• Norma-norma berlaku cukup lama dan tidak mudah berubah</li>
+                            <li>• Adanya tujuan bersama yang ingin dicapai</li>
+                        </ul>
+                    </div>
+                    <div class="bg-luxury-dark/50 p-4 rounded-xl border border-blue-500/20">
+                        <p class="text-blue-400 font-semibold mb-2">🔗 Faktor Pembentuk</p>
+                        <ul class="text-gray-300 text-sm space-y-1">
+                            <li>• <strong>Sejarah:</strong> Persamaan nasib akibat penjajahan</li>
+                            <li>• <strong>Keinginan bersatu:</strong> Semboyan Sumpah Pemuda</li>
+                            <li>• <strong>Kebudayaan:</strong> Nilai kebersamaan & gotong royong</li>
+                            <li>• <strong>Bahasa:</strong> Bahasa Indonesia sebagai bahasa persatuan</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- F. Tantangan Keberagaman -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">F</span>
+                    Tantangan Keberagaman di Era Globalisasi
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    Di era globalisasi, keberagaman Indonesia menghadapi berbagai tantangan yang dapat mengancam persatuan dan kesatuan bangsa.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="p-4 rounded-xl bg-luxury-dark/50 border border-red-500/20">
+                        <h4 class="font-bold text-red-400 mb-2">⚠️ Tantangan Internal</h4>
+                        <ul class="text-gray-300 text-sm space-y-1">
+                            <li>• <strong>Etnosentrisme:</strong> Menganggap budayanya paling baik</li>
+                            <li>• <strong>Primordialisme:</strong> Fanatisme berlebihan terhadap kelompok</li>
+                            <li>• <strong>Sektarianisme:</strong> Fanatisme sempit atas nama agama</li>
+                            <li>• <strong>Kesenjangan ekonomi</strong> antar daerah</li>
+                            <li>• <strong>Konflik SARA</strong> yang dipicu politik</li>
+                            <li>• <strong>Separatisme:</strong> Gerakan memisahkan diri</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 rounded-xl bg-luxury-dark/50 border border-yellow-500/20">
+                        <h4 class="font-bold text-yellow-400 mb-2">🌐 Tantangan Eksternal</h4>
+                        <ul class="text-gray-300 text-sm space-y-1">
+                            <li>• <strong>Globalisasi budaya:</strong> Masuknya budaya asing</li>
+                            <li>• <strong>Individualisme:</strong> Mengikis gotong royong</li>
+                            <li>• <strong>Westernisasi:</strong> Gaya hidup kebarat-baratan</li>
+                            <li>• <strong>Konsumerisme:</strong> Gaya hidup boros</li>
+                            <li>• <strong>Hoaks & ujaran kebencian</strong> di media sosial</li>
+                            <li>• <strong>Radikalisme & terorisme</strong> transnasional</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- G. Peran Pemuda -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">G</span>
+                    Peran Pemuda dalam Menjaga Keberagaman
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    Generasi muda memiliki peran strategis dalam menjaga keberagaman dan memperkuat integrasi nasional.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="p-4 rounded-xl bg-luxury-dark/50 border border-luxury-gold/10">
+                        <p class="text-luxury-gold font-semibold mb-2">🎯 Peran Generasi Muda</p>
+                        <ul class="text-gray-300 text-sm space-y-1">
+                            <li>• Menjadi <strong>agen toleransi</strong> di lingkungan</li>
+                            <li>• Melestarikan budaya daerah dan nasional</li>
+                            <li>• Menolak hoaks dan ujaran kebencian</li>
+                            <li>• Menghormati perbedaan agama dan suku</li>
+                            <li>• Berprestasi untuk mengharumkan nama bangsa</li>
+                            <li>• Mengamalkan nilai-nilai Pancasila</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 rounded-xl bg-luxury-dark/50 border border-luxury-gold/10">
+                        <p class="text-luxury-gold font-semibold mb-2">💡 Implementasi Nyata</p>
+                        <ul class="text-gray-300 text-sm space-y-1">
+                            <li>• Berteman tanpa membedakan SARA</li>
+                            <li>• Mengikuti upacara bendera dengan khidmat</li>
+                            <li>• Mempelajari tarian & bahasa daerah lain</li>
+                            <li>• Menggunakan produk dalam negeri</li>
+                            <li>• Aktif di organisasi kepemudaan (OSIS, Pramuka)</li>
+                            <li>• Bijak bermedia sosial</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- H. Bhinneka Tunggal Ika -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">H</span>
+                    Implementasi Bhinneka Tunggal Ika
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    <strong class="text-white">"Bhinneka Tunggal Ika"</strong> berarti "Berbeda-beda tetapi tetap satu". Semboyan ini menjadi dasar kehidupan berbangsa dan bernegara di Indonesia, yang tertuang dalam <strong class="text-luxury-gold">Lambang Negara Garuda Pancasila</strong>.
+                </p>
+
+                <div class="bg-luxury-gold/10 border-l-4 border-luxury-gold p-4 rounded-r-lg mb-4">
+                    <p class="text-luxury-gold font-bold text-sm uppercase tracking-wider mb-2">📌 Makna Semboyan</p>
+                    <ul class="text-white space-y-1 font-medium text-sm">
+                        <li>• <strong>Bhinneka:</strong> Beraneka ragam (berbeda-beda)</li>
+                        <li>• <strong>Tunggal:</strong> Satu</li>
+                        <li>• <strong>Ika:</strong> Itu</li>
+                        <li>• <strong>Makna keseluruhan:</strong> Meskipun berbeda-beda, tetapi tetap satu kesatuan bangsa, tanah air, dan negara Indonesia.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-luxury-dark/50 p-4 rounded-xl border border-luxury-gold/10">
+                    <p class="text-luxury-gold font-semibold mb-2">🏛️ Nilai yang Terkandung</p>
+                    <ul class="text-gray-300 text-sm space-y-1">
+                        <li>• <strong>Persatuan:</strong> Mengutamakan kepentingan bangsa di atas pribadi</li>
+                        <li>• <strong>Toleransi:</strong> Saling menghormati perbedaan</li>
+                        <li>• <strong>Keadilan:</strong> Memberikan hak sesuai porsinya</li>
+                        <li>• <strong>Kesetaraan:</strong> Semua warga negara memiliki kedudukan yang sama</li>
+                        <li>• <strong>Kerjasama:</strong> Gotong royong dalam membangun bangsa</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Kata Kunci & Quranic Verse -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 text-center">
+                <h3 class="font-serif text-xl font-bold text-luxury-gold mb-4">◆ Kata Kunci Pertemuan Ini</h3>
+                <div class="flex flex-wrap justify-center gap-2 mb-8">
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Keberagaman</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Integrasi Nasional</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Bhinneka Tunggal Ika</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">SARA</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Mpu Tantular</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Sutasoma</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Toleransi</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Etnosentrisme</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Primordialisme</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Globalisasi</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">NKRI</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Pancasila</span>
+                </div>
+                
+                <div class="border-t border-luxury-gold/20 pt-6">
+                    <p class="quran-verse text-luxury-goldLight mb-4">
+                        وَمِنْ آيَاتِهِ خَلْقُ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ وَٱخْتِلَٰفُ أَلْسِنَتِكُمْ وَأَلْوَٰنِكُمْ ۚ إِنَّ فِى ذَٰلِكَ لَءَايَٰتٍ لِّلْعَٰلِمِينَ
+                    </p>
+                    <p class="text-gray-300 italic mb-2">"Dan di antara tanda-tanda (kebesaran)-Nya ialah penciptaan langit dan bumi, perbedaan bahasa-bahasmu dan warna-warna kulitmu. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda bagi orang-orang yang mengetahui."</p>
+                    <p class="text-luxury-gold font-serif font-bold">— QS. Ar-Rum [30]: 22</p>
+                    <p class="text-gray-400 text-sm mt-3 italic">Ayat ini menegaskan bahwa keberagaman suku, bahasa, dan warna kulit adalah tanda kebesaran Allah yang harus disyukuri dan dijaga, bukan menjadi sumber perpecahan.</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- UJI FORMATIF SECTION -->
+        <div id="uji-formatif" class="mt-16 pt-10 border-t-2 border-luxury-gold/30">
+            <div class="text-center mb-8">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-white mb-2">📝 Uji Formatif Pertemuan 12</h2>
+                <p class="text-luxury-gold font-medium">Keberagaman & Integrasi Nasional</p>
+                <p class="text-gray-400 text-sm mt-2 max-w-2xl mx-auto">
+                    📋 Bagian A: Pilihan Ganda (10 soal, skor 10/soal) &nbsp;|&nbsp; ✍️ Bagian B: Essay (5 soal, skor 20/soal)<br>
+                    <span class="text-luxury-goldLight">Materi: Pengertian keberagaman, faktor penyebab, bentuk-bentuk keberagaman (SARA), integrasi nasional, syarat & faktor pembentuk, tantangan globalisasi, peran pemuda, dan Bhinneka Tunggal Ika.</span>
+                </p>
+            </div>
+
+            <form id="quizForm" class="space-y-8">
+                <!-- Identitas -->
+                <div class="glass-card rounded-2xl p-6 md:p-8">
+                    <h3 class="font-serif text-xl font-bold text-luxury-gold mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-id-card"></i> Identitas Siswa
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Nama Lengkap <span class="text-red-400">*</span></label>
+                            <input type="text" id="nama" required class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors" placeholder="Masukkan nama lengkap">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">No. Absen / NIS <span class="text-red-400">*</span></label>
+                            <input type="text" id="nis" required class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors" placeholder="Masukkan NIS">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">📅 Tanggal Ujian</label>
+                            <input type="date" id="tanggal" class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Kelas</label>
+                            <select id="kelas" class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors">
+                                <option value="VIII-A">VIII-A</option>
+                                <option value="VIII-B">VIII-B</option>
+                                <option value="VIII-C">VIII-C</option>
+                                <option value="VIII-D">VIII-D</option>
+                            </select>
+                        </div>
+                        <div class="md:col-span-2">
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Semester</label>
+                            <select id="semester" class="w-full md:w-1/2 bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors">
+                                <option value="2 (Genap)">2 (Genap)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian A: Pilihan Ganda -->
+                <div class="glass-card rounded-2xl p-6 md:p-8">
+                    <h3 class="font-serif text-xl font-bold text-luxury-gold mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-list-check"></i> Bagian A: Pilihan Ganda
+                    </h3>
+                    <div class="space-y-6" id="pg-questions">
+                        
+                        <!-- Soal 1 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 1 (10 POIN):</span> Semboyan "Bhinneka Tunggal Ika" diambil dari Kitab...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q1" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">A. Negarakertagama</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q1" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">B. Sutasoma</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q1" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">C. Arjunawiwaha</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q1" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">D. Pararaton</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 2 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 2 (10 POIN):</span> Pengarang Kitab Sutasoma yang memuat semboyan Bhinneka Tunggal Ika adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q2" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">A. Mpu Prapanca</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q2" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">B. Mpu Tantular</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q2" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">C. Mpu Gandring</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q2" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">D. Mpu Sendok</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 3 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 3 (10 POIN):</span> Proses penyatuan berbagai kelompok budaya dan sosial ke dalam satu kesatuan wilayah dan identitas nasional disebut...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q3" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">A. Asimilasi</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q3" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">B. Akulturasi</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q3" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">C. Integrasi nasional</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q3" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">D. Akomodasi</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 4 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 4 (10 POIN):</span> Sikap menganggap budaya sendiri lebih baik daripada budaya orang lain disebut...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q4" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">A. Etnosentrisme</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q4" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">B. Primordialisme</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q4" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">C. Toleransi</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q4" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">D. Empati</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 5 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 5 (10 POIN):</span> Berikut yang termasuk faktor penyebab keberagaman masyarakat Indonesia adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q5" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">A. Kondisi negara kepulauan</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q5" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">B. Letak strategis Indonesia</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q5" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">C. Perbedaan kondisi alam</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q5" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">D. Semua jawaban benar</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 6 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 6 (10 POIN):</span> Suku Minangkabau berasal dari daerah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q6" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">A. Jawa Tengah</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q6" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">B. Sumatera Barat</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q6" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">C. Sulawesi Selatan</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q6" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">D. Bali</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 7 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 7 (10 POIN):</span> Agama yang paling banyak dianut masyarakat Indonesia adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q7" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">A. Kristen</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q7" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">B. Hindu</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q7" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">C. Islam</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q7" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">D. Buddha</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 8 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 8 (10 POIN):</span> Berikut yang merupakan tantangan keberagaman di era globalisasi adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q8" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">A. Masuknya budaya asing yang tidak sesuai</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q8" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">B. Penyebaran hoaks dan ujaran kebencian</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q8" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">C. Lunturnya nilai gotong royong</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q8" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">D. Semua jawaban benar</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 9 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 9 (10 POIN):</span> Sikap yang harus dikembangkan dalam menghadapi keberagaman masyarakat adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q9" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">A. Etnosentrisme</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q9" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">B. Primordialisme</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q9" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">C. Toleransi</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q9" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">D. Sektarianisme</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 10 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 10 (10 POIN):</span> Salah satu contoh peran generasi muda dalam menjaga keberagaman adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q10" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">A. Berteman hanya dengan suku sendiri</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q10" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">B. Menghina budaya daerah lain</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q10" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">C. Melestarikan budaya daerah dan menghormati perbedaan</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q10" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">D. Menyebarkan hoaks di media sosial</span></div></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian B: Essay -->
+                <div class="glass-card rounded-2xl p-6 md:p-8">
+                    <h3 class="font-serif text-xl font-bold text-luxury-gold mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-pen-to-square"></i> Bagian B: Essay
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Essay 1 (20 POIN):</span> Jelaskan pengertian keberagaman masyarakat Indonesia! Sebutkan 4 faktor penyebab keberagaman masyarakat Indonesia beserta penjelasannya!</p>
+                            <textarea id="essay1" rows="4" class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors" placeholder="Tulis jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Essay 2 (20 POIN):</span> Jelaskan pengertian integrasi nasional! Sebutkan 3 syarat dan 3 faktor pembentuk integrasi nasional di Indonesia!</p>
+                            <textarea id="essay2" rows="4" class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors" placeholder="Tulis jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Essay 3 (20 POIN):</span> Jelaskan makna semboyan "Bhinneka Tunggal Ika"! Sebutkan asal kitab dan pengarangnya, serta jelaskan pentingnya semboyan ini bagi kehidupan berbangsa dan bernegara di Indonesia!</p>
+                            <textarea id="essay3" rows="4" class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors" placeholder="Tulis jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Essay 4 (20 POIN):</span> Sebutkan dan jelaskan 4 bentuk keberagaman masyarakat Indonesia (SARA)! Berikan masing-masing satu contoh yang ada di lingkungan sekitar!</p>
+                            <textarea id="essay4" rows="4" class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors" placeholder="Tulis jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Essay 5 (20 POIN):</span> Jelaskan 3 tantangan keberagaman di era globalisasi! Sebutkan 5 peran generasi muda dalam menjaga keberagaman dan integrasi nasional di Indonesia!</p>
+                            <textarea id="essay5" rows="4" class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors" placeholder="Tulis jawaban Anda di sini..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hasil & Actions -->
+                <div class="glass-card rounded-2xl p-6 md:p-8 border-luxury-gold/40 bg-luxury-gold/5">
+                    <h3 class="font-serif text-xl font-bold text-luxury-gold mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-chart-pie"></i> Hasil Uji Formatif
+                    </h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 text-center">
+                        <div class="p-4 rounded-xl bg-luxury-dark border border-luxury-gold/20">
+                            <p class="text-gray-400 text-sm mb-1">📋 Pilihan Ganda</p>
+                            <p class="text-3xl font-bold text-white" id="score-pg">0</p>
+                            <p class="text-luxury-gold text-xs">/ 100</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-luxury-dark border border-luxury-gold/20">
+                            <p class="text-gray-400 text-sm mb-1">✍️ Essay (Estimasi)</p>
+                            <p class="text-3xl font-bold text-white" id="score-essay">0</p>
+                            <p class="text-luxury-gold text-xs">/ 100</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-luxury-gold/10 border border-luxury-gold">
+                            <p class="text-luxury-gold text-sm mb-1 font-bold">Skor Akhir (Rata-rata)</p>
+                            <p class="text-4xl font-bold text-gold-gradient" id="score-total">0</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-500 text-center mb-6 italic">
+                        *Catatan: Skor Essay dihitung secara otomatis berdasarkan deteksi kata kunci sederhana sebagai estimasi awal. Penilaian detail dan akhir tetap dilakukan oleh Guru.
+                    </p>
+
+                    <div class="flex flex-col md:flex-row gap-4 justify-center">
+                        <button type="button" onclick="hitungSkor()" class="px-6 py-3 bg-gold-gradient text-luxury-dark font-bold rounded-lg shadow-lg shadow-luxury-gold/20 hover:shadow-luxury-gold/40 transition-all duration-300 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-paper-plane"></i> KIRIM JAWABAN & LIHAT HASIL
+                        </button>
+                        <button type="button" onclick="unduhPDF()" class="px-6 py-3 border border-luxury-gold text-luxury-gold font-medium rounded-lg hover:bg-luxury-gold hover:text-luxury-dark transition-all duration-300 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-file-pdf"></i> UNDUH PDF LENGKAP
+                        </button>
+                        <button type="button" onclick="unduhTXT()" class="px-6 py-3 border border-gray-600 text-gray-300 font-medium rounded-lg hover:border-luxury-gold hover:text-luxury-gold transition-all duration-300 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-file-lines"></i> UNDUH SKOR (TXT)
+                        </button>
+                        <button type="button" onclick="mulaiUlang()" class="px-6 py-3 border border-gray-600 text-gray-300 font-medium rounded-lg hover:border-red-400 hover:text-red-400 transition-all duration-300 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-rotate-right"></i> MULAI ULANG
+                        </button>
+                    </div>
+                    
+                    <div class="mt-6 text-center">
+                        <a href="mailto:ahmadafdal2323@gmail.com" id="email-link" class="inline-flex items-center gap-2 text-luxury-gold hover:text-luxury-goldLight transition-colors text-sm font-medium">
+                            <i class="fa-solid fa-envelope"></i> Kirim ke Email Guru (ahmadafdal2323@gmail.com)
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-luxury-dark border-t border-luxury-gold/10 py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <span class="font-serif text-lg font-bold text-white tracking-wide">IPS Kelas 8 MTsN 10 Agam</span>
+                <p class="text-gray-500 text-sm mt-1">© 2026 Drs. Ahmad Afdal — MTsN 10 Agam. Hak Cipta Dilindungi Undang-Undang</p>
+                <p class="text-gray-600 text-xs mt-1">Email: <a href="mailto:ahmadafdal2323@gmail.com" class="text-luxury-gold hover:underline">ahmadafdal2323@gmail.com</a></p>
+            </div>
+            <div class="flex gap-6">
+                <a href="11.html" class="text-gray-400 hover:text-luxury-gold transition-colors flex items-center gap-2 text-sm">
+                    <i class="fa-solid fa-chevron-left"></i> Pertemuan 11
+                </a>
+                <a href="index.html" class="text-gray-400 hover:text-luxury-gold transition-colors flex items-center gap-2 text-sm">
+                    <i class="fa-solid fa-book-open"></i> Daftar Pertemuan
+                </a>
+                <a href="13.html" class="text-gray-400 hover:text-luxury-gold transition-colors flex items-center gap-2 text-sm">
+                    Pertemuan 13 <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Logic -->
+    <script>
+        const correctAnswers = {
+            q1: 'B', q2: 'B', q3: 'C', q4: 'A', q5: 'D',
+            q6: 'B', q7: 'C', q8: 'D', q9: 'C', q10: 'C'
+        };
+
+        const essayKeywords = {
+            essay1: ['keberagaman', 'perbedaan', 'suku', 'agama', 'ras', 'budaya', 'geografis', 'kepulauan', 'letak strategis', 'kondisi alam', 'sejarah', 'migrasi'],
+            essay2: ['integrasi nasional', 'penyatuan', 'identitas nasional', 'syarat', 'faktor', 'sejarah', 'keinginan bersatu', 'kebudayaan', 'bahasa indonesia', 'konsensus'],
+            essay3: ['bhinneka tunggal ika', 'berbeda-beda', 'tetap satu', 'sutasoma', 'mpu tantular', 'persatuan', 'kesatuan', 'toleransi', 'nasional', 'penting'],
+            essay4: ['suku', 'agama', 'ras', 'budaya', 'sara', 'jawa', 'sunda', 'batak', 'minang', 'islam', 'kristen', 'hindu', 'bahasa', 'tarian', 'rumah adat'],
+            essay5: ['globalisasi', 'tantangan', 'budaya asing', 'hoaks', 'individualisme', 'generasi muda', 'peran', 'melestarikan', 'toleransi', 'menghormati', 'berprestasi', 'pancasila']
+        };
+
+        function gradeEssay(text, keywords) {
+            if (!text) return 0;
+            let lowerText = text.toLowerCase();
+            let matched = 0;
+            keywords.forEach(kw => {
+                if (lowerText.includes(kw.toLowerCase())) matched++;
+            });
+            return Math.min(20, Math.round((matched / keywords.length) * 20));
+        }
+
+        function hitungSkor() {
+            const nama = document.getElementById('nama').value;
+            const nis = document.getElementById('nis').value;
+            if (!nama || !nis) { alert('Harap isi Nama Lengkap dan NIS terlebih dahulu!'); return; }
+
+            let pgScore = 0;
+            for (let i = 1; i <= 10; i++) {
+                const sel = document.querySelector(`input[name="q${i}"]:checked`);
+                if (sel && sel.value === correctAnswers[`q${i}`]) pgScore += 10;
+            }
+
+            let essayScore = 0;
+            for (let i = 1; i <= 5; i++) {
+                essayScore += gradeEssay(document.getElementById(`essay${i}`).value, essayKeywords[`essay${i}`]);
+            }
+
+            const totalScore = Math.round((pgScore + essayScore) / 2);
+
+            document.getElementById('score-pg').innerText = pgScore;
+            document.getElementById('score-essay').innerText = essayScore;
+            document.getElementById('score-total').innerText = totalScore;
+            document.getElementById('score-total').scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            const subject = `Hasil Uji Formatif Pertemuan 12 - Keberagaman & Integrasi Nasional - ${nama} (${nis})`;
+            const body = `Yth. Bapak Drs. Ahmad Afdal,\n\nBerikut hasil uji formatif saya:\nNama: ${nama}\nNIS: ${nis}\nKelas: ${document.getElementById('kelas').value}\nPertemuan: 12 (Keberagaman & Integrasi Nasional)\n\n- Skor PG: ${pgScore}/100\n- Skor Essay: ${essayScore}/100\n- Skor Akhir: ${totalScore}/100\n\nTerima kasih.`;
+            document.getElementById('email-link').href = `mailto:ahmadafdal2323@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            alert('Jawaban berhasil dikirim! Skor telah dihitung.');
+        }
+
+        function unduhPDF() {
+            const el = document.getElementById('quizForm');
+            const nama = document.getElementById('nama').value || 'Siswa';
+            html2pdf().set({ margin: 10, filename: `Uji_Pertemuan12_IPS_${nama.replace(/\s+/g,'_')}.pdf`, image: { type: 'jpeg', quality: 0.98 }, html2canvas: { scale: 2 }, jsPDF: { unit: 'mm', format: 'a4' } }).from(el).save();
+        }
+
+        function unduhTXT() {
+            const nama = document.getElementById('nama').value || 'Siswa';
+            let t = `HASIL UJI FORMATIF - PERTEMUAN 12: KEBERAGAMAN & INTEGRASI NASIONAL\n`;
+            t += `=====================================================================\n`;
+            t += `Guru: Drs. Ahmad Afdal | MTsN 10 Agam\n`;
+            t += `Nama: ${nama} | NIS: ${document.getElementById('nis').value}\n`;
+            t += `Kelas: ${document.getElementById('kelas').value} | Tanggal: ${document.getElementById('tanggal').value}\n`;
+            t += `=====================================================================\n`;
+            t += `PG: ${document.getElementById('score-pg').innerText}/100\nEssay: ${document.getElementById('score-essay').innerText}/100\nAkhir: ${document.getElementById('score-total').innerText}/100\n\n`;
+            for (let i = 1; i <= 5; i++) t += `Essay ${i}: ${document.getElementById(`essay${i}`).value || '-'}\n\n`;
+            const blob = new Blob([t], { type: 'text/plain' });
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = `Uji_Pertemuan12_${nama.replace(/\s+/g,'_')}.txt`;
+            a.click();
+        }
+
+        function mulaiUlang() {
+            if (confirm('Yakin ingin mengosongkan semua jawaban?')) {
+                document.getElementById('quizForm').reset();
+                document.getElementById('score-pg').innerText = '0';
+                document.getElementById('score-essay').innerText = '0';
+                document.getElementById('score-total').innerText = '0';
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+
+        document.getElementById('tanggal').valueAsDate = new Date();
+    </script>
+</body>
+</html>

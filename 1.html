@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 1: Interaksi Keruangan ASEAN | IPS Kelas 8 MTsN 10 Agam</title>
+    
+    <!-- Google Fonts: Playfair Display (Luxury), Inter (Modern), Amiri (Arabic) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- html2pdf.js untuk fitur Unduh PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        luxury: {
+                            dark: '#0B1120',
+                            card: '#151E32',
+                            gold: '#D4AF37',
+                            goldLight: '#F3E5AB',
+                            accent: '#C5A028'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                        arabic: ['"Amiri"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .text-gold-gradient {
+            background: linear-gradient(135deg, #D4AF37 0%, #F3E5AB 50%, #C5A028 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .glass-card {
+            background: rgba(21, 30, 50, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .hover-lift {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .hover-lift:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px -10px rgba(212, 175, 55, 0.15);
+            border-color: rgba(212, 175, 55, 0.5);
+        }
+        .quran-verse {
+            font-family: 'Amiri', serif;
+            font-size: 1.6rem;
+            line-height: 2.2;
+            text-align: right;
+            direction: rtl;
+        }
+        /* Custom Radio Button Styling */
+        .custom-radio:checked + div {
+            background-color: rgba(212, 175, 55, 0.15);
+            border-color: #D4AF37;
+            color: #F3E5AB;
+        }
+        .custom-radio:checked + div .radio-dot {
+            background-color: #D4AF37;
+            border-color: #D4AF37;
+        }
+    </style>
+</head>
+<body class="bg-luxury-dark text-gray-200 font-sans antialiased selection:bg-luxury-gold selection:text-luxury-dark">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-card border-b border-luxury-gold/20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-earth-asia text-luxury-gold text-xl"></i>
+                    <span class="font-serif text-lg font-bold text-white tracking-wide">IPS Kelas 8</span>
+                </div>
+                <div class="flex gap-4">
+                    <a href="index.html" class="text-sm text-gray-300 hover:text-luxury-gold transition-colors flex items-center gap-2">
+                        <i class="fa-solid fa-arrow-left"></i> Daftar Pertemuan
+                    </a>
+                    <a href="2.html" class="text-sm text-luxury-gold hover:text-luxury-goldLight transition-colors flex items-center gap-2 font-medium">
+                        Pertemuan 2 <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-24 pb-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+
+        <!-- Header Section -->
+        <div class="text-center space-y-4">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-luxury-gold/30 bg-luxury-gold/10 text-luxury-gold text-xs font-semibold tracking-widest uppercase">
+                <i class="fa-solid fa-globe-asia"></i> Pertemuan Satu
+            </div>
+            <h1 class="font-serif text-4xl md:text-5xl font-bold text-white">Interaksi Keruangan ASEAN</h1>
+            <p class="text-luxury-gold font-medium text-lg">Letak dan Kondisi Geografis Negara-Negara ASEAN</p>
+            <p class="text-gray-400 max-w-3xl mx-auto leading-relaxed">
+                Memahami posisi strategis kawasan Asia Tenggara, kondisi geografis, karakteristik fisik, serta potensi sumber daya alam negara-negara ASEAN. Pertemuan ini menjadi fondasi penting untuk memahami dinamika interaksi antarnegara di kawasan regional.
+            </p>
+            <div class="flex items-center justify-center gap-3 pt-2">
+                <div class="w-10 h-10 rounded-full bg-luxury-gold/20 flex items-center justify-center text-luxury-gold font-bold font-serif">A</div>
+                <div class="text-left">
+                    <p class="text-white font-medium">Drs. Ahmad Afdal</p>
+                    <p class="text-luxury-gold text-sm">MTsN 10 Agam</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Materi Sections -->
+        <div class="space-y-8" id="materi-content">
+            
+            <!-- A. Pengertian Interaksi Keruangan -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">A</span>
+                    Pengertian Interaksi Keruangan
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    Interaksi keruangan adalah hubungan timbal balik antara suatu tempat dengan tempat lainnya yang saling mempengaruhi, baik dari segi alam, manusia, maupun aktivitas ekonominya. Konsep ini menjadi landasan utama dalam kajian geografi untuk memahami bagaimana suatu wilayah terhubung dengan wilayah lain.
+                </p>
+                <p class="text-gray-300 leading-relaxed mb-6">
+                    Dalam konteks ASEAN, interaksi keruangan mencakup hubungan geografis, sosial, ekonomi, dan budaya antarnegara di kawasan Asia Tenggara. Pemahaman ini penting agar siswa mampu menganalisis potensi dan tantangan yang dihadapi kawasan regional.
+                </p>
+                <div class="bg-luxury-gold/10 border-l-4 border-luxury-gold p-4 rounded-r-lg">
+                    <p class="text-luxury-gold font-bold text-sm uppercase tracking-wider mb-1">📌 DEFINISI</p>
+                    <p class="text-white font-medium">Interaksi Keruangan adalah hubungan timbal balik antarruang (wilayah) yang menghasilkan proses pembangunan, baik berupa perpindahan manusia, informasi, barang, maupun jasa.</p>
+                </div>
+            </section>
+
+            <!-- Konsep Utama -->
+            <section class="glass-card rounded-2xl p-6 md:p-8">
+                <h3 class="font-serif text-xl font-bold text-white mb-6">Konsep Utama dalam Interaksi Keruangan</h3>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="flex gap-4 items-start p-4 rounded-xl bg-luxury-dark/50 border border-luxury-gold/10">
+                        <div class="text-2xl">📍</div>
+                        <div>
+                            <h4 class="font-bold text-luxury-gold">Lokasi (Location)</h4>
+                            <p class="text-sm text-gray-400">Posisi suatu wilayah di permukaan bumi, baik secara absolut maupun relatif.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start p-4 rounded-xl bg-luxury-dark/50 border border-luxury-gold/10">
+                        <div class="text-2xl">🌐</div>
+                        <div>
+                            <h4 class="font-bold text-luxury-gold">Jarak (Distance)</h4>
+                            <p class="text-sm text-gray-400">Rentang ruang antara dua tempat, baik jarak absolut maupun relatif.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start p-4 rounded-xl bg-luxury-dark/50 border border-luxury-gold/10">
+                        <div class="text-2xl">🛣️</div>
+                        <div>
+                            <h4 class="font-bold text-luxury-gold">Konektivitas (Connectivity)</h4>
+                            <p class="text-sm text-gray-400">Kemudahan hubungan antartempat melalui sarana transportasi dan komunikasi.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start p-4 rounded-xl bg-luxury-dark/50 border border-luxury-gold/10">
+                        <div class="text-2xl">⚡</div>
+                        <div>
+                            <h4 class="font-bold text-luxury-gold">Aksesibilitas (Accessibility)</h4>
+                            <p class="text-sm text-gray-400">Tingkat kemudahan mencapai suatu lokasi dari lokasi lainnya.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- B. Letak Geografis ASEAN -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">B</span>
+                    Letak Geografis ASEAN
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    ASEAN (Association of Southeast Asian Nations) adalah organisasi regional yang beranggotakan 10 negara di kawasan Asia Tenggara. Kawasan ini terletak di posisi yang sangat strategis, berada di antara dua benua (Asia dan Australia) serta dua samudra (Hindia dan Pasifik).
+                </p>
+                <div class="bg-luxury-gold/10 border-l-4 border-luxury-gold p-4 rounded-r-lg mb-4">
+                    <p class="text-luxury-gold font-bold text-sm uppercase tracking-wider mb-2">📌 KONSEP KUNCI</p>
+                    <ul class="text-white space-y-1 font-medium">
+                        <li>Posisi Silang Dunia (Cross Position of the World)</li>
+                        <li>Terletak di 2 Benua: Asia & Australia</li>
+                        <li>Terletak di 2 Samudra: Hindia & Pasifik</li>
+                    </ul>
+                </div>
+                <div class="bg-luxury-dark/50 p-4 rounded-xl border border-luxury-gold/10">
+                    <p class="text-luxury-gold font-semibold mb-2">💡 Fakta Penting</p>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Posisi strategis ASEAN menjadikannya jalur perdagangan internasional yang ramai sejak zaman dahulu. Selat Malaka, misalnya, merupakan salah satu jalur pelayaran tersibuk di dunia yang menghubungkan Timur Tengah, India, dan Tiongkok dengan Asia Timur.
+                    </p>
+                </div>
+            </section>
+
+            <!-- C. Letak Astronomis ASEAN -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">C</span>
+                    Letak Astronomis ASEAN
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    Letak astronomis adalah posisi suatu wilayah berdasarkan garis lintang dan garis bujur. Kawasan ASEAN terletak pada:
+                </p>
+                <div class="bg-luxury-gold/10 border-l-4 border-luxury-gold p-4 rounded-r-lg mb-4">
+                    <p class="text-luxury-gold font-bold text-sm uppercase tracking-wider mb-2">📌 Koordinat ASEAN</p>
+                    <ul class="text-white space-y-1 font-medium">
+                        <li>Garis Lintang: 28° LU – 11° LS</li>
+                        <li>Garis Bujur: 93° BT – 141° BT</li>
+                    </ul>
+                </div>
+                <div class="bg-luxury-dark/50 p-4 rounded-xl border border-luxury-gold/10">
+                    <p class="text-luxury-gold font-semibold mb-2">🌤️ Dampak Letak Astronomis</p>
+                    <ul class="text-gray-300 text-sm space-y-2">
+                        <li>• Sebagian besar wilayah ASEAN beriklim tropis</li>
+                        <li>• Mendapat sinar matahari sepanjang tahun</li>
+                        <li>• Curah hujan tinggi, mendukung pertanian</li>
+                        <li>• Memiliki dua musim: hujan dan kemarau</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- D. Kondisi Geografis Negara ASEAN -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">D</span>
+                    Kondisi Geografis Negara-Negara ASEAN
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    ASEAN terdiri dari 10 negara anggota dengan karakteristik geografis yang beragam, mulai dari negara daratan (mainland) hingga negara kepulauan (maritime).
+                </p>
+
+                <!-- Tabel Negara ASEAN -->
+                <div class="overflow-x-auto mb-6">
+                    <table class="w-full text-sm text-left text-gray-300 border border-luxury-gold/20 rounded-lg overflow-hidden">
+                        <thead class="text-xs text-luxury-gold uppercase bg-luxury-gold/10">
+                            <tr>
+                                <th class="px-4 py-3">Negara</th>
+                                <th class="px-4 py-3">Ibu Kota</th>
+                                <th class="px-4 py-3">Karakteristik</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-luxury-gold/10">
+                            <tr class="bg-luxury-dark/30">
+                                <td class="px-4 py-3 font-medium text-white">🇮🇩 Indonesia</td>
+                                <td class="px-4 py-3">Jakarta / Nusantara</td>
+                                <td class="px-4 py-3">Negara kepulauan terbesar</td>
+                            </tr>
+                            <tr class="bg-luxury-card/30">
+                                <td class="px-4 py-3 font-medium text-white">🇲🇾 Malaysia</td>
+                                <td class="px-4 py-3">Kuala Lumpur</td>
+                                <td class="px-4 py-3">Daratan & Kepulauan</td>
+                            </tr>
+                            <tr class="bg-luxury-dark/30">
+                                <td class="px-4 py-3 font-medium text-white">🇸🇬 Singapura</td>
+                                <td class="px-4 py-3">Singapura</td>
+                                <td class="px-4 py-3">Negara kota (city state)</td>
+                            </tr>
+                            <tr class="bg-luxury-card/30">
+                                <td class="px-4 py-3 font-medium text-white">🇹🇭 Thailand</td>
+                                <td class="px-4 py-3">Bangkok</td>
+                                <td class="px-4 py-3">Negara daratan (mainland)</td>
+                            </tr>
+                            <tr class="bg-luxury-dark/30">
+                                <td class="px-4 py-3 font-medium text-white">🇻🇳 Vietnam</td>
+                                <td class="px-4 py-3">Hanoi</td>
+                                <td class="px-4 py-3">Negara daratan</td>
+                            </tr>
+                            <tr class="bg-luxury-card/30">
+                                <td class="px-4 py-3 font-medium text-white">🇵🇭 Filipina</td>
+                                <td class="px-4 py-3">Manila</td>
+                                <td class="px-4 py-3">Negara kepulauan</td>
+                            </tr>
+                            <tr class="bg-luxury-dark/30">
+                                <td class="px-4 py-3 font-medium text-white">🇲🇲 Myanmar</td>
+                                <td class="px-4 py-3">Naypyidaw</td>
+                                <td class="px-4 py-3">Negara daratan</td>
+                            </tr>
+                            <tr class="bg-luxury-card/30">
+                                <td class="px-4 py-3 font-medium text-white">🇱🇦 Laos</td>
+                                <td class="px-4 py-3">Vientiane</td>
+                                <td class="px-4 py-3">Satu-satunya negara terkunci daratan</td>
+                            </tr>
+                            <tr class="bg-luxury-dark/30">
+                                <td class="px-4 py-3 font-medium text-white">🇰🇭 Kamboja</td>
+                                <td class="px-4 py-3">Phnom Penh</td>
+                                <td class="px-4 py-3">Negara daratan</td>
+                            </tr>
+                            <tr class="bg-luxury-card/30">
+                                <td class="px-4 py-3 font-medium text-white">🇧🇳 Brunei Darussalam</td>
+                                <td class="px-4 py-3">Bandar Seri Begawan</td>
+                                <td class="px-4 py-3">Negara kepulauan kecil</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- E. Karakteristik Fisik -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">E</span>
+                    Karakteristik Fisik Kawasan ASEAN
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    Kawasan ASEAN memiliki karakteristik fisik yang sangat beragam, meliputi pegunungan, dataran rendah, sungai-sungai besar, serta lautan luas.
+                </p>
+                <ul class="list-disc list-inside text-gray-300 space-y-2 mb-4 ml-2">
+                    <li><strong class="text-white">Pegunungan:</strong> Pegunungan Annam (Vietnam-Laos), Pegunungan Arakan (Myanmar)</li>
+                    <li><strong class="text-white">Sungai Besar:</strong> Sungai Mekong, Sungai Irrawaddy, Sungai Chao Phraya</li>
+                    <li><strong class="text-white">Dataran Rendah:</strong> Delta Mekong (Vietnam), Delta Chao Phraya (Thailand)</li>
+                    <li><strong class="text-white">Lautan & Selat:</strong> Laut Cina Selatan, Selat Malaka, Laut Jawa</li>
+                </ul>
+                <div class="bg-luxury-gold/10 border-l-4 border-luxury-gold p-4 rounded-r-lg mb-4">
+                    <p class="text-luxury-gold font-bold text-sm uppercase tracking-wider mb-2">📌 Sungai Mekong</p>
+                    <p class="text-white font-medium">Sungai terpanjang di Asia Tenggara (±4.350 km), mengalir melalui 6 negara: Tiongkok, Myanmar, Laos, Thailand, Kamboja, dan Vietnam.</p>
+                </div>
+            </section>
+
+            <!-- F. Iklim ASEAN -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">F</span>
+                    Pengaruh Letak terhadap Iklim dan Kehidupan
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    Letak astronomis ASEAN yang berada di sekitar garis khatulistiwa menyebabkan kawasan ini memiliki iklim tropis dengan ciri-ciri: suhu tinggi sepanjang tahun, curah hujan tinggi, dan kelembapan udara yang besar.
+                </p>
+                <div class="bg-luxury-gold/10 border-l-4 border-luxury-gold p-4 rounded-r-lg mb-4">
+                    <p class="text-luxury-gold font-bold text-sm uppercase tracking-wider mb-2">📌 Jenis Iklim di ASEAN</p>
+                    <ul class="text-white space-y-1 font-medium text-sm">
+                        <li>• Iklim Tropis (mayoritas wilayah)</li>
+                        <li>• Iklim Muson (Indonesia, Thailand, Vietnam)</li>
+                        <li>• Iklim Hutan Hujan Tropis (Kalimantan, Sumatera)</li>
+                    </ul>
+                </div>
+                <div class="bg-luxury-dark/50 p-4 rounded-xl border border-luxury-gold/10">
+                    <p class="text-luxury-gold font-semibold mb-2">🌱 Dampak terhadap Kehidupan</p>
+                    <ul class="text-gray-300 text-sm space-y-1">
+                        <li>✓ Pertanian subur sepanjang tahun</li>
+                        <li>✓ Keanekaragaman hayati tinggi</li>
+                        <li>✓ Hutan hujan tropis yang luas</li>
+                        <li>✓ Potensi bencana alam (banjir, longsor)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- G. Potensi SDA -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">G</span>
+                    Potensi Sumber Daya Alam ASEAN
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    ASEAN kaya akan sumber daya alam, baik hayati maupun non-hayati. Kekayaan ini menjadi modal penting bagi pembangunan ekonomi kawasan.
+                </p>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="bg-luxury-dark/50 p-4 rounded-xl border border-luxury-gold/10">
+                        <p class="text-luxury-gold font-semibold mb-2">🌾 SDA Hayati</p>
+                        <ul class="text-gray-300 text-sm space-y-1">
+                            <li>• Padi (Thailand, Vietnam — lumbung padi)</li>
+                            <li>• Kelapa Sawit (Indonesia, Malaysia)</li>
+                            <li>• Karet alam (Thailand, Indonesia)</li>
+                            <li>• Hasil hutan (kayu, rotan)</li>
+                        </ul>
+                    </div>
+                    <div class="bg-luxury-dark/50 p-4 rounded-xl border border-luxury-gold/10">
+                        <p class="text-luxury-gold font-semibold mb-2">⛏️ SDA Non-Hayati</p>
+                        <ul class="text-gray-300 text-sm space-y-1">
+                            <li>• Minyak bumi (Brunei, Indonesia, Malaysia)</li>
+                            <li>• Gas alam (Indonesia, Malaysia)</li>
+                            <li>• Timah (Indonesia, Malaysia)</li>
+                            <li>• Batu bara (Indonesia)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- H. Peta & Simbol -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">H</span>
+                    Peta dan Simbol Geografis
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    Peta adalah gambaran permukaan bumi pada bidang datar dengan skala tertentu. Dalam mempelajari ASEAN, siswa harus memahami simbol-simbol geografis yang umum digunakan.
+                </p>
+                <div class="bg-luxury-gold/10 border-l-4 border-luxury-gold p-4 rounded-r-lg mb-4">
+                    <p class="text-luxury-gold font-bold text-sm uppercase tracking-wider mb-2">📌 Simbol pada Peta</p>
+                    <ul class="text-white space-y-1 font-medium text-sm">
+                        <li>• <strong>Warna Biru:</strong> Perairan (laut, sungai, danau)</li>
+                        <li>• <strong>Warna Hijau:</strong> Dataran rendah</li>
+                        <li>• <strong>Warna Kuning:</strong> Dataran tinggi</li>
+                        <li>• <strong>Warna Coklat:</strong> Pegunungan</li>
+                        <li>• <strong>Warna Putih:</strong> Puncak bersalju</li>
+                    </ul>
+                </div>
+                <div class="bg-luxury-dark/50 p-4 rounded-xl border border-luxury-gold/10">
+                    <p class="text-luxury-gold font-semibold mb-2">🧭 Komponen Peta</p>
+                    <ul class="text-gray-300 text-sm space-y-1">
+                        <li>• Judul peta, skala peta, orientasi (mata angin)</li>
+                        <li>• Legenda, garis astronomis, inset</li>
+                        <li>• Sumber dan tahun pembuatan peta</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Kata Kunci & Relevansi -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 text-center">
+                <h3 class="font-serif text-xl font-bold text-luxury-gold mb-4">◆ Kata Kunci Pertemuan Ini</h3>
+                <div class="flex flex-wrap justify-center gap-2 mb-8">
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">ASEAN</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Interaksi Keruangan</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Letak Geografis</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Letak Astronomis</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Iklim Tropis</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Asia Tenggara</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Posisi Silang</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">SDA</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Peta</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Sungai Mekong</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Selat Malaka</span>
+                </div>
+                
+                <div class="border-t border-luxury-gold/20 pt-6">
+                    <p class="quran-verse text-luxury-goldLight mb-4">
+                        يَا أَيُّهَا ٱلنَّاسُ إِنَّا خَلَقْنَاكُم مِّن ذَكَرٍ وَأُنثَىٰ وَجَعَلْنَاكُمْ شُعُوبًا وَقَبَائِلَ لِتَعَارَفُوا
+                    </p>
+                    <p class="text-gray-300 italic mb-2">"Wahai manusia, sesungguhnya Kami telah menciptakan kamu dari seorang laki-laki dan seorang perempuan, dan Kami telah menjadikan kamu berbangsa-bangsa dan bersuku-suku agar kamu saling mengenal."</p>
+                    <p class="text-luxury-gold font-serif font-bold">— QS. Al-Hujurat [49]: 13</p>
+                    <p class="text-gray-400 text-sm mt-3 italic">Ayat ini menjadi landasan pentingnya memahami keberagaman geografis dan budaya di kawasan ASEAN.</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- UJI FORMATIF SECTION -->
+        <div id="uji-formatif" class="mt-16 pt-10 border-t-2 border-luxury-gold/30">
+            <div class="text-center mb-8">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-white mb-2">📝 Uji Formatif Pertemuan 1</h2>
+                <p class="text-luxury-gold font-medium">Interaksi Keruangan ASEAN</p>
+                <p class="text-gray-400 text-sm mt-2 max-w-2xl mx-auto">
+                    📋 Bagian A: Pilihan Ganda (10 soal, skor 10/soal) &nbsp;|&nbsp; ✍️ Bagian B: Essay (5 soal, skor 20/soal)<br>
+                    <span class="text-luxury-goldLight">Materi: Interaksi keruangan, letak geografis & astronomis ASEAN, karakteristik fisik negara, iklim, SDA, serta peta dan simbol geografis.</span>
+                </p>
+            </div>
+
+            <form id="quizForm" class="space-y-8">
+                <!-- Identitas -->
+                <div class="glass-card rounded-2xl p-6 md:p-8">
+                    <h3 class="font-serif text-xl font-bold text-luxury-gold mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-id-card"></i> Identitas Siswa
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Nama Lengkap <span class="text-red-400">*</span></label>
+                            <input type="text" id="nama" required class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors" placeholder="Masukkan nama lengkap">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">No. Absen / NIS <span class="text-red-400">*</span></label>
+                            <input type="text" id="nis" required class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors" placeholder="Masukkan NIS">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">📅 Tanggal Ujian</label>
+                            <input type="date" id="tanggal" class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Kelas</label>
+                            <select id="kelas" class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors">
+                                <option value="VIII-A">VIII-A</option>
+                                <option value="VIII-B">VIII-B</option>
+                                <option value="VIII-C">VIII-C</option>
+                                <option value="VIII-D">VIII-D</option>
+                            </select>
+                        </div>
+                        <div class="md:col-span-2">
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Semester</label>
+                            <select id="semester" class="w-full md:w-1/2 bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors">
+                                <option value="1 (Ganjil)">1 (Ganjil)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian A: Pilihan Ganda -->
+                <div class="glass-card rounded-2xl p-6 md:p-8">
+                    <h3 class="font-serif text-xl font-bold text-luxury-gold mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-list-check"></i> Bagian A: Pilihan Ganda
+                    </h3>
+                    <div class="space-y-6" id="pg-questions">
+                        <!-- Soal 1 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 1 (10 POIN):</span> ASEAN merupakan singkatan dari organisasi regional negara-negara di kawasan...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q1" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">A. Asia Timur</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q1" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">B. Asia Tenggara</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q1" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">C. Asia Selatan</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q1" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">D. Asia Barat</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 2 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 2 (10 POIN):</span> Kawasan ASEAN terletak di posisi silang dunia, yaitu di antara dua benua dan dua samudra. Dua benua tersebut adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q2" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">A. Asia dan Eropa</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q2" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">B. Asia dan Australia</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q2" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">C. Asia dan Afrika</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q2" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">D. Australia dan Amerika</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 3 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 3 (10 POIN):</span> Letak astronomis kawasan ASEAN adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q3" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">A. 28° LU – 11° LS dan 93° BT – 141° BT</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q3" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">B. 23° LU – 11° LS dan 95° BT – 141° BT</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q3" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">C. 6° LU – 11° LS dan 95° BT – 141° BT</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q3" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">D. 28° LU – 11° LS dan 95° BT – 145° BT</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 4 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 4 (10 POIN):</span> Negara ASEAN yang tidak memiliki wilayah laut (landlocked country) adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q4" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">A. Kamboja</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q4" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">B. Myanmar</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q4" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">C. Laos</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q4" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">D. Vietnam</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 5 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 5 (10 POIN):</span> Sungai terpanjang di Asia Tenggara yang mengalir melalui 6 negara adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q5" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">A. Sungai Chao Phraya</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q5" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">B. Sungai Mekong</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q5" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">C. Sungai Irrawaddy</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q5" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">D. Sungai Merah</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 6 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 6 (10 POIN):</span> Selat yang menjadi jalur pelayaran tersibuk di Asia Tenggara, menghubungkan Samudra Hindia dan Laut Cina Selatan, adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q6" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">A. Selat Sunda</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q6" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">B. Selat Malaka</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q6" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">C. Selat Lombok</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q6" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">D. Selat Makassar</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 7 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 7 (10 POIN):</span> Negara ASEAN yang dijuluki sebagai "lumbung padi" dunia adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q7" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">A. Indonesia dan Malaysia</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q7" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">B. Thailand dan Vietnam</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q7" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">C. Filipina dan Myanmar</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q7" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">D. Kamboja dan Laos</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 8 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 8 (10 POIN):</span> Pada peta, warna biru biasanya digunakan untuk menunjukkan...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q8" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">A. Dataran rendah</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q8" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">B. Perairan (laut, sungai, danau)</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q8" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">C. Pegunungan</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q8" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">D. Dataran tinggi</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 9 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 9 (10 POIN):</span> Ibu kota negara Thailand adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q9" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">A. Hanoi</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q9" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">B. Bangkok</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q9" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">C. Manila</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q9" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">D. Kuala Lumpur</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 10 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 10 (10 POIN):</span> Letak astronomis yang berada di sekitar garis khatulistiwa menyebabkan kawasan ASEAN memiliki iklim...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q10" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">A. Subtropis</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q10" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">B. Sedang</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q10" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">C. Tropis</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q10" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">D. Dingin</span></div></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian B: Essay -->
+                <div class="glass-card rounded-2xl p-6 md:p-8">
+                    <h3 class="font-serif text-xl font-bold text-luxury-gold mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-pen-to-square"></i> Bagian B: Essay
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Essay 1 (20 POIN):</span> Jelaskan apa yang dimaksud dengan interaksi keruangan! Berikan contoh interaksi keruangan yang terjadi di kawasan ASEAN!</p>
+                            <textarea id="essay1" rows="4" class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors" placeholder="Tulis jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Essay 2 (20 POIN):</span> Sebutkan dan jelaskan letak geografis kawasan ASEAN! Mengapa posisi ini disebut sebagai posisi silang dunia?</p>
+                            <textarea id="essay2" rows="4" class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors" placeholder="Tulis jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Essay 3 (20 POIN):</span> Tuliskan letak astronomis ASEAN beserta dampaknya terhadap iklim dan kehidupan masyarakat di kawasan tersebut!</p>
+                            <textarea id="essay3" rows="4" class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors" placeholder="Tulis jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Essay 4 (20 POIN):</span> Sebutkan 5 negara ASEAN beserta ibu kotanya! Jelaskan karakteristik geografis masing-masing negara (daratan/kepulauan)! </p>
+                            <textarea id="essay4" rows="4" class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors" placeholder="Tulis jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Essay 5 (20 POIN):</span> Jelaskan potensi sumber daya alam (SDA) yang dimiliki kawasan ASEAN! Berikan minimal 3 contoh SDA hayati dan 3 contoh SDA non-hayati beserta negara penghasilnya!</p>
+                            <textarea id="essay5" rows="4" class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors" placeholder="Tulis jawaban Anda di sini..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hasil & Actions -->
+                <div class="glass-card rounded-2xl p-6 md:p-8 border-luxury-gold/40 bg-luxury-gold/5">
+                    <h3 class="font-serif text-xl font-bold text-luxury-gold mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-chart-pie"></i> Hasil Uji Formatif
+                    </h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 text-center">
+                        <div class="p-4 rounded-xl bg-luxury-dark border border-luxury-gold/20">
+                            <p class="text-gray-400 text-sm mb-1">📋 Pilihan Ganda</p>
+                            <p class="text-3xl font-bold text-white" id="score-pg">0</p>
+                            <p class="text-luxury-gold text-xs">/ 100</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-luxury-dark border border-luxury-gold/20">
+                            <p class="text-gray-400 text-sm mb-1">✍️ Essay (Estimasi)</p>
+                            <p class="text-3xl font-bold text-white" id="score-essay">0</p>
+                            <p class="text-luxury-gold text-xs">/ 100</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-luxury-gold/10 border border-luxury-gold">
+                            <p class="text-luxury-gold text-sm mb-1 font-bold">Skor Akhir (Rata-rata)</p>
+                            <p class="text-4xl font-bold text-gold-gradient" id="score-total">0</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-500 text-center mb-6 italic">
+                        *Catatan: Skor Essay dihitung secara otomatis berdasarkan deteksi kata kunci sederhana sebagai estimasi awal. Penilaian detail dan akhir tetap dilakukan oleh Guru.
+                    </p>
+
+                    <div class="flex flex-col md:flex-row gap-4 justify-center">
+                        <button type="button" onclick="hitungSkor()" class="px-6 py-3 bg-gold-gradient text-luxury-dark font-bold rounded-lg shadow-lg shadow-luxury-gold/20 hover:shadow-luxury-gold/40 transition-all duration-300 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-paper-plane"></i> KIRIM JAWABAN & LIHAT HASIL
+                        </button>
+                        <button type="button" onclick="unduhPDF()" class="px-6 py-3 border border-luxury-gold text-luxury-gold font-medium rounded-lg hover:bg-luxury-gold hover:text-luxury-dark transition-all duration-300 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-file-pdf"></i> UNDUH PDF LENGKAP
+                        </button>
+                        <button type="button" onclick="unduhTXT()" class="px-6 py-3 border border-gray-600 text-gray-300 font-medium rounded-lg hover:border-luxury-gold hover:text-luxury-gold transition-all duration-300 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-file-lines"></i> UNDUH SKOR (TXT)
+                        </button>
+                        <button type="button" onclick="mulaiUlang()" class="px-6 py-3 border border-gray-600 text-gray-300 font-medium rounded-lg hover:border-red-400 hover:text-red-400 transition-all duration-300 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-rotate-right"></i> MULAI ULANG
+                        </button>
+                    </div>
+                    
+                    <div class="mt-6 text-center">
+                        <a href="mailto:ahmadafdal2323@gmail.com" id="email-link" class="inline-flex items-center gap-2 text-luxury-gold hover:text-luxury-goldLight transition-colors text-sm font-medium">
+                            <i class="fa-solid fa-envelope"></i> Kirim ke Email Guru (ahmadafdal2323@gmail.com)
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-luxury-dark border-t border-luxury-gold/10 py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <span class="font-serif text-lg font-bold text-white tracking-wide">IPS Kelas 8 MTsN 10 Agam</span>
+                <p class="text-gray-500 text-sm mt-1">© 2026 Drs. Ahmad Afdal — MTsN 10 Agam. Hak Cipta Dilindungi Undang-Undang</p>
+                <p class="text-gray-600 text-xs mt-1">Email: <a href="mailto:ahmadafdal2323@gmail.com" class="text-luxury-gold hover:underline">ahmadafdal2323@gmail.com</a></p>
+            </div>
+            <div class="flex gap-6">
+                <a href="index.html" class="text-gray-400 hover:text-luxury-gold transition-colors flex items-center gap-2 text-sm">
+                    <i class="fa-solid fa-book-open"></i> Daftar Pertemuan
+                </a>
+                <a href="2.html" class="text-gray-400 hover:text-luxury-gold transition-colors flex items-center gap-2 text-sm">
+                    Pertemuan 2 <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Kunci Jawaban Pilihan Ganda
+        const correctAnswers = {
+            q1: 'B', q2: 'B', q3: 'A', q4: 'C', q5: 'B',
+            q6: 'B', q7: 'B', q8: 'B', q9: 'B', q10: 'C'
+        };
+
+        // Kata Kunci untuk Estimasi Skor Essay (Maksimal 20 poin per soal)
+        const essayKeywords = {
+            essay1: ['interaksi keruangan', 'hubungan timbal balik', 'wilayah', 'asean', 'contoh'],
+            essay2: ['geografis', 'asia', 'australia', 'hindia', 'pasifik', 'silang'],
+            essay3: ['28° lu', '11° ls', '93° bt', '141° bt', 'tropis', 'khatulistiwa'],
+            essay4: ['indonesia', 'thailand', 'vietnam', 'filipina', 'malaysia', 'jakarta', 'bangkok', 'hanoi', 'manila', 'kuala lumpur'],
+            essay5: ['sda', 'hayati', 'non-hayati', 'padi', 'sawit', 'karet', 'minyak', 'timah', 'indonesia', 'thailand', 'malaysia']
+        };
+
+        function gradeEssay(text, keywords) {
+            if (!text) return 0;
+            let score = 0;
+            let lowerText = text.toLowerCase();
+            let matched = 0;
+            keywords.forEach(kw => {
+                if (lowerText.includes(kw.toLowerCase())) {
+                    matched++;
+                }
+            });
+            score = Math.min(20, Math.round((matched / keywords.length) * 20));
+            return score;
+        }
+
+        function hitungSkor() {
+            // Validasi Identitas
+            const nama = document.getElementById('nama').value;
+            const nis = document.getElementById('nis').value;
+            if (!nama || !nis) {
+                alert('Harap isi Nama Lengkap dan NIS terlebih dahulu!');
+                return;
+            }
+
+            // Hitung PG
+            let pgScore = 0;
+            for (let i = 1; i <= 10; i++) {
+                const selected = document.querySelector(`input[name="q${i}"]:checked`);
+                if (selected && selected.value === correctAnswers[`q${i}`]) {
+                    pgScore += 10;
+                }
+            }
+
+            // Hitung Essay
+            let essayScore = 0;
+            for (let i = 1; i <= 5; i++) {
+                const text = document.getElementById(`essay${i}`).value;
+                essayScore += gradeEssay(text, essayKeywords[`essay${i}`]);
+            }
+
+            // Hitung Total (Rata-rata dari PG dan Essay, skala 100)
+            const totalScore = Math.round((pgScore + essayScore) / 2);
+
+            // Tampilkan Hasil
+            document.getElementById('score-pg').innerText = pgScore;
+            document.getElementById('score-essay').innerText = essayScore;
+            document.getElementById('score-total').innerText = totalScore;
+
+            // Scroll ke hasil
+            document.getElementById('score-total').scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            // Update Email Link
+            const subject = `Hasil Uji Formatif Pertemuan 1 - Interaksi Keruangan ASEAN - ${nama} (${nis})`;
+            const body = `Yth. Bapak Drs. Ahmad Afdal,\n\nBerikut adalah hasil uji formatif saya:\nNama: ${nama}\nNIS: ${nis}\nKelas: ${document.getElementById('kelas').value}\nMata Pelajaran: IPS Kelas 8\nPertemuan: 1 (Interaksi Keruangan ASEAN)\n\n- Skor Pilihan Ganda: ${pgScore}/100\n- Skor Essay (Estimasi): ${essayScore}/100\n- Skor Akhir: ${totalScore}/100\n\nMohon bimbingannya.\nTerima kasih.`;
+            document.getElementById('email-link').href = `mailto:ahmadafdal2323@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            
+            alert('Jawaban berhasil dikirim! Skor telah dihitung. Silakan unduh PDF atau TXT untuk dokumentasi.');
+        }
+
+        function unduhPDF() {
+            const element = document.getElementById('quizForm');
+            const nama = document.getElementById('nama').value || 'Siswa';
+            const opt = {
+                margin: 10,
+                filename: `Hasil_Uji_Pertemuan1_IPS_${nama.replace(/\s+/g, '_')}.pdf`,
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2, useCORS: true },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            };
+            html2pdf().set(opt).from(element).save();
+        }
+
+        function unduhTXT() {
+            const nama = document.getElementById('nama').value || 'Siswa';
+            const nis = document.getElementById('nis').value || '-';
+            const pg = document.getElementById('score-pg').innerText;
+            const essay = document.getElementById('score-essay').innerText;
+            const total = document.getElementById('score-total').innerText;
+            
+            let text = `HASIL UJI FORMATIF - PERTEMUAN 1: INTERAKSI KERUANGAN ASEAN\n`;
+            text += `===========================================================\n`;
+            text += `Mata Pelajaran: IPS Kelas 8 MTsN 10 Agam\n`;
+            text += `Guru: Drs. Ahmad Afdal\n`;
+            text += `===========================================================\n`;
+            text += `Nama: ${nama}\nNIS: ${nis}\nKelas: ${document.getElementById('kelas').value}\n`;
+            text += `Tanggal: ${document.getElementById('tanggal').value || '-'}\n`;
+            text += `===========================================================\n`;
+            text += `Skor Pilihan Ganda: ${pg} / 100\n`;
+            text += `Skor Essay (Estimasi): ${essay} / 100\n`;
+            text += `Skor Akhir (Rata-rata): ${total} / 100\n\n`;
+            text += `JAWABAN ESSAY:\n`;
+            text += `-----------------------------------------------------------\n`;
+            text += `1. ${document.getElementById('essay1').value || 'Tidak dijawab'}\n\n`;
+            text += `2. ${document.getElementById('essay2').value || 'Tidak dijawab'}\n\n`;
+            text += `3. ${document.getElementById('essay3').value || 'Tidak dijawab'}\n\n`;
+            text += `4. ${document.getElementById('essay4').value || 'Tidak dijawab'}\n\n`;
+            text += `5. ${document.getElementById('essay5').value || 'Tidak dijawab'}\n`;
+
+            const blob = new Blob([text], { type: 'text/plain' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `Hasil_Uji_Pertemuan1_${nama.replace(/\s+/g, '_')}.txt`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);
+        }
+
+        function mulaiUlang() {
+            if (confirm('Apakah Anda yakin ingin mengosongkan semua jawaban dan memulai ulang?')) {
+                document.getElementById('quizForm').reset();
+                document.getElementById('score-pg').innerText = '0';
+                document.getElementById('score-essay').innerText = '0';
+                document.getElementById('score-total').innerText = '0';
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+
+        // Set tanggal hari ini secara otomatis
+        document.getElementById('tanggal').valueAsDate = new Date();
+    </script>
+</body>
+</html>

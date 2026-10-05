@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 14: Perekonomian & Kerja Sama Internasional | IPS Kelas 8 MTsN 10 Agam</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        luxury: {
+                            dark: '#0B1120',
+                            card: '#151E32',
+                            gold: '#D4AF37',
+                            goldLight: '#F3E5AB',
+                            accent: '#C5A028'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                        arabic: ['"Amiri"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .text-gold-gradient {
+            background: linear-gradient(135deg, #D4AF37 0%, #F3E5AB 50%, #C5A028 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .glass-card {
+            background: rgba(21, 30, 50, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .hover-lift {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .hover-lift:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px -10px rgba(212, 175, 55, 0.15);
+            border-color: rgba(212, 175, 55, 0.5);
+        }
+        .quran-verse {
+            font-family: 'Amiri', serif;
+            font-size: 1.6rem;
+            line-height: 2.2;
+            text-align: right;
+            direction: rtl;
+        }
+        .custom-radio:checked + div {
+            background-color: rgba(212, 175, 55, 0.15);
+            border-color: #D4AF37;
+            color: #F3E5AB;
+        }
+        .custom-radio:checked + div .radio-dot {
+            background-color: #D4AF37;
+            border-color: #D4AF37;
+        }
+    </style>
+</head>
+<body class="bg-luxury-dark text-gray-200 font-sans antialiased selection:bg-luxury-gold selection:text-luxury-dark">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-card border-b border-luxury-gold/20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-globe text-luxury-gold text-xl"></i>
+                    <span class="font-serif text-lg font-bold text-white tracking-wide">IPS Kelas 8</span>
+                </div>
+                <div class="flex gap-4">
+                    <a href="index.html" class="text-sm text-gray-300 hover:text-luxury-gold transition-colors flex items-center gap-2">
+                        <i class="fa-solid fa-arrow-left"></i> Daftar Pertemuan
+                    </a>
+                    <a href="13.html" class="text-sm text-gray-400 hover:text-luxury-gold transition-colors flex items-center gap-2">
+                        <i class="fa-solid fa-chevron-left"></i> Pertemuan 13
+                    </a>
+                    <a href="15.html" class="text-sm text-luxury-gold hover:text-luxury-goldLight transition-colors flex items-center gap-2 font-medium">
+                        Pertemuan 15 <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-24 pb-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+
+        <!-- Header Section -->
+        <div class="text-center space-y-4">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-luxury-gold/30 bg-luxury-gold/10 text-luxury-gold text-xs font-semibold tracking-widest uppercase">
+                <i class="fa-solid fa-handshake"></i> Pertemuan Empat Belas
+            </div>
+            <h1 class="font-serif text-4xl md:text-5xl font-bold text-white">Perekonomian & Kerja Sama Internasional</h1>
+            <p class="text-luxury-gold font-medium text-lg">Sistem Ekonomi dan Perdagangan Global</p>
+            <p class="text-gray-400 max-w-3xl mx-auto leading-relaxed">
+                Memahami sistem perekonomian Indonesia, jenis-jenis sistem ekonomi dunia, perdagangan internasional (ekspor-impor), neraca perdagangan, kerja sama ekonomi internasional (ASEAN, APEC, WTO, IMF, World Bank), serta manfaat dan dampak perdagangan global bagi perekonomian nasional.
+            </p>
+            <div class="flex items-center justify-center gap-3 pt-2">
+                <div class="w-10 h-10 rounded-full bg-luxury-gold/20 flex items-center justify-center text-luxury-gold font-bold font-serif">A</div>
+                <div class="text-left">
+                    <p class="text-white font-medium">Drs. Ahmad Afdal</p>
+                    <p class="text-luxury-gold text-sm">MTsN 10 Agam</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Materi Sections -->
+        <div class="space-y-8" id="materi-content">
+            
+            <!-- A. Pengertian Sistem Ekonomi -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">A</span>
+                    Pengertian Sistem Ekonomi
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    <strong class="text-white">Sistem ekonomi</strong> adalah cara suatu negara mengatur kehidupan perekonomiannya, termasuk bagaimana sumber daya dialokasikan, barang dan jasa diproduksi, serta bagaimana distribusi hasilnya kepada masyarakat.
+                </p>
+                <p class="text-gray-300 leading-relaxed mb-6">
+                    Setiap negara memiliki sistem ekonomi yang berbeda, disesuaikan dengan kondisi sosial, budaya, politik, dan ideologi negara tersebut. Sistem ekonomi menentukan siapa yang berhak mengambil keputusan ekonomi dan bagaimana keputusan itu dilaksanakan.
+                </p>
+                <div class="bg-luxury-gold/10 border-l-4 border-luxury-gold p-4 rounded-r-lg">
+                    <p class="text-luxury-gold font-bold text-sm uppercase tracking-wider mb-1">📌 DEFINISI</p>
+                    <p class="text-white font-medium">Sistem Ekonomi adalah tatanan ekonomi yang disusun secara sistematis untuk mengatur dan mengoordinasikan kegiatan ekonomi masyarakat dalam rangka memenuhi kebutuhan hidup dan mencapai kesejahteraan.</p>
+                </div>
+            </section>
+
+            <!-- B. Jenis-Jenis Sistem Ekonomi -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">B</span>
+                    Jenis-Jenis Sistem Ekonomi
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    Di dunia ini terdapat beberapa jenis sistem ekonomi yang diterapkan oleh berbagai negara.
+                </p>
+
+                <div class="space-y-4">
+                    <div class="bg-luxury-dark/50 p-4 rounded-xl border border-green-500/20">
+                        <p class="text-green-400 font-semibold mb-2">🏞️ Sistem Ekonomi Tradisional</p>
+                        <p class="text-gray-300 text-sm mb-2">Sistem ekonomi yang didasarkan pada adat istiadat, tradisi, dan kepercayaan turun-temurun. Produksi dilakukan untuk memenuhi kebutuhan sendiri.</p>
+                        <ul class="text-gray-400 text-xs space-y-1">
+                            <li>• <strong>Ciri:</strong> Gotong royong, barter, bergantung pada alam</li>
+                            <li>• <strong>Contoh:</strong> Masyarakat pedalaman, suku terasing</li>
+                        </ul>
+                    </div>
+                    <div class="bg-luxury-dark/50 p-4 rounded-xl border border-red-500/20">
+                        <p class="text-red-400 font-semibold mb-2">🏛️ Sistem Ekonomi Komando (Terpusat/Sosialis)</p>
+                        <p class="text-gray-300 text-sm mb-2">Sistem ekonomi di mana semua kegiatan ekonomi diatur dan dikuasai oleh negara/pemerintah. Hak milik perorangan tidak diakui.</p>
+                        <ul class="text-gray-400 text-xs space-y-1">
+                            <li>• <strong>Ciri:</strong> Negara menguasai seluruh sumber daya, tidak ada kebebasan berusaha</li>
+                            <li>• <strong>Tokoh:</strong> Karl Marx</li>
+                            <li>• <strong>Contoh:</strong> Tiongkok (dulu), Kuba, Korea Utara</li>
+                        </ul>
+                    </div>
+                    <div class="bg-luxury-dark/50 p-4 rounded-xl border border-blue-500/20">
+                        <p class="text-blue-400 font-semibold mb-2">🏢 Sistem Ekonomi Liberal (Pasar/Bebas)</p>
+                        <p class="text-gray-300 text-sm mb-2">Sistem ekonomi di mana kegiatan ekonomi sepenuhnya diserahkan kepada mekanisme pasar. Individu bebas bersaing dan memiliki hak milik.</p>
+                        <ul class="text-gray-400 text-xs space-y-1">
+                            <li>• <strong>Ciri:</strong> Persaingan bebas, peran pemerintah minimal, hak milik individu diakui</li>
+                            <li>• <strong>Tokoh:</strong> Adam Smith (Bapak Ekonomi Liberal)</li>
+                            <li>• <strong>Contoh:</strong> Amerika Serikat, Inggris, Jepang</li>
+                        </ul>
+                    </div>
+                    <div class="bg-luxury-dark/50 p-4 rounded-xl border border-yellow-500/20">
+                        <p class="text-yellow-400 font-semibold mb-2">⚖️ Sistem Ekonomi Campuran</p>
+                        <p class="text-gray-300 text-sm mb-2">Sistem ekonomi yang menggabungkan unsur sistem liberal dan komando. Pemerintah dan swasta sama-sama berperan dalam kegiatan ekonomi.</p>
+                        <ul class="text-gray-400 text-xs space-y-1">
+                            <li>• <strong>Ciri:</strong> Pemerintah mengatur sektor vital, swasta bebas di sektor lain</li>
+                            <li>• <strong>Contoh:</strong> Indonesia, Malaysia, Perancis</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- C. Sistem Ekonomi Indonesia -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">C</span>
+                    Sistem Ekonomi Indonesia
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    Indonesia menganut <strong class="text-white">Sistem Ekonomi Pancasila</strong> atau sering disebut <strong class="text-luxury-gold">Sistem Ekonomi Kerakyatan</strong>, yang berlandaskan pada Pancasila dan UUD 1945, khususnya <strong class="text-white">Pasal 33</strong>.
+                </p>
+
+                <div class="bg-luxury-gold/10 border-l-4 border-luxury-gold p-4 rounded-r-lg mb-4">
+                    <p class="text-luxury-gold font-bold text-sm uppercase tracking-wider mb-2">📌 Pasal 33 UUD 1945</p>
+                    <ul class="text-white space-y-1 font-medium text-sm">
+                        <li>• <strong>Ayat 1:</strong> Perekonomian disusun sebagai usaha bersama berdasar atas asas kekeluargaan</li>
+                        <li>• <strong>Ayat 2:</strong> Cabang-cabang produksi yang penting bagi negara dan menguasai hajat hidup orang banyak dikuasai oleh negara</li>
+                        <li>• <strong>Ayat 3:</strong> Bumi, air, dan kekayaan alam yang terkandung di dalamnya dikuasai oleh negara dan dipergunakan untuk sebesar-besar kemakmuran rakyat</li>
+                        <li>• <strong>Ayat 4:</strong> Perekonomian nasional diselenggarakan berdasar atas demokrasi ekonomi dengan prinsip kebersamaan, efisiensi berkeadilan, berkelanjutan, berwawasan lingkungan, kemandirian, serta menjaga keseimbangan kemajuan dan kesatuan ekonomi nasional</li>
+                    </ul>
+                </div>
+
+                <div class="bg-luxury-dark/50 p-4 rounded-xl border border-luxury-gold/10">
+                    <p class="text-luxury-gold font-semibold mb-2">🎯 Ciri-Ciri Sistem Ekonomi Indonesia</p>
+                    <ul class="text-gray-300 text-sm space-y-1">
+                        <li>• Perekonomian disusun sebagai usaha bersama berdasar asas kekeluargaan</li>
+                        <li>• Cabang produksi penting dikuasai negara (BUMN)</li>
+                        <li>• Pengakuan hak milik perorangan dengan fungsi sosial</li>
+                        <li>• Sumber daya alam untuk kemakmuran rakyat</li>
+                        <li>• Peran koperasi sebagai soko guru perekonomian</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- D. Perdagangan Internasional -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">D</span>
+                    Perdagangan Internasional
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    <strong class="text-white">Perdagangan internasional</strong> adalah kegiatan jual beli barang atau jasa yang terjadi antara dua negara atau lebih. Perdagangan ini terjadi karena setiap negara memiliki perbedaan sumber daya, teknologi, dan kebutuhan.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-4 mb-4">
+                    <div class="bg-luxury-dark/50 p-4 rounded-xl border border-green-500/20">
+                        <p class="text-green-400 font-semibold mb-2">📤 Ekspor</p>
+                        <p class="text-gray-300 text-sm mb-2">Kegiatan menjual barang dari dalam negeri ke luar negeri.</p>
+                        <ul class="text-gray-400 text-xs space-y-1">
+                            <li>• <strong>Tujuan:</strong> Meningkatkan devisa negara</li>
+                            <li>• <strong>Contoh ekspor Indonesia:</strong> kelapa sawit, batu bara, tekstil, kopi</li>
+                            <li>• <strong>Pelaku:</strong> Eksportir</li>
+                        </ul>
+                    </div>
+                    <div class="bg-luxury-dark/50 p-4 rounded-xl border border-blue-500/20">
+                        <p class="text-blue-400 font-semibold mb-2">📥 Impor</p>
+                        <p class="text-gray-300 text-sm mb-2">Kegiatan membeli barang dari luar negeri ke dalam negeri.</p>
+                        <ul class="text-gray-400 text-xs space-y-1">
+                            <li>• <strong>Tujuan:</strong> Memenuhi kebutuhan dalam negeri</li>
+                            <li>• <strong>Contoh impor Indonesia:</strong> mesin, gandum, bahan kimia, elektronik</li>
+                            <li>• <strong>Pelaku:</strong> Importir</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-luxury-gold/10 border-l-4 border-luxury-gold p-4 rounded-r-lg">
+                    <p class="text-luxury-gold font-bold text-sm uppercase tracking-wider mb-2">📌 Faktor Pendorong Perdagangan Internasional</p>
+                    <ul class="text-white space-y-1 font-medium text-sm">
+                        <li>• Perbedaan sumber daya alam antarnegara</li>
+                        <li>• Perbedaan tingkat teknologi dan kualitas SDM</li>
+                        <li>• Perbedaan selera dan budaya</li>
+                        <li>• Keinginan memperoleh keuntungan (laba)</li>
+                        <li>• Keinginan memperluas pasar</li>
+                        <li>• Terjadinya efisiensi produksi</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- E. Neraca Perdagangan -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">E</span>
+                    Neraca Perdagangan & Neraca Pembayaran
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    <strong class="text-white">Neraca perdagangan</strong> adalah catatan perbandingan antara nilai ekspor dan impor suatu negara dalam periode tertentu.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-4 mb-4">
+                    <div class="p-4 rounded-xl bg-luxury-dark/50 border border-green-500/20">
+                        <p class="text-green-400 font-semibold mb-2">✅ Surplus</p>
+                        <p class="text-gray-300 text-xs">Ekspor > Impor</p>
+                        <p class="text-gray-400 text-xs mt-1">Negara mendapat keuntungan</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-luxury-dark/50 border border-red-500/20">
+                        <p class="text-red-400 font-semibold mb-2">❌ Defisit</p>
+                        <p class="text-gray-300 text-xs">Ekspor < Impor</p>
+                        <p class="text-gray-400 text-xs mt-1">Negara mengalami kerugian</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-luxury-dark/50 border border-blue-500/20">
+                        <p class="text-blue-400 font-semibold mb-2">⚖️ Seimbang (Balance)</p>
+                        <p class="text-gray-300 text-xs">Ekspor = Impor</p>
+                        <p class="text-gray-400 text-xs mt-1">Nilai ekspor dan impor sama</p>
+                    </div>
+                </div>
+
+                <div class="bg-luxury-dark/50 p-4 rounded-xl border border-luxury-gold/10">
+                    <p class="text-luxury-gold font-semibold mb-2">💱 Neraca Pembayaran & Valuta Asing</p>
+                    <ul class="text-gray-300 text-sm space-y-1">
+                        <li>• <strong>Neraca Pembayaran:</strong> Catatan lengkap transaksi ekonomi antarnegara (barang, jasa, modal)</li>
+                        <li>• <strong>Valuta Asing (Valas):</strong> Mata uang asing yang dapat diperdagangkan (USD, EUR, JPY, SGD)</li>
+                        <li>• <strong>Kurs:</strong> Nilai tukar mata uang suatu negara terhadap mata uang negara lain</li>
+                        <li>• <strong>Devisa:</strong> Kekayaan negara berupa valuta asing dan aset internasional lainnya</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- F. Kerja Sama Ekonomi Internasional -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">F</span>
+                    Kerja Sama Ekonomi Internasional
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    Untuk meningkatkan kesejahteraan bersama, negara-negara di dunia membentuk organisasi kerja sama ekonomi internasional.
+                </p>
+
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm text-left text-gray-300 border border-luxury-gold/20 rounded-lg overflow-hidden">
+                        <thead class="text-xs text-luxury-gold uppercase bg-luxury-gold/10">
+                            <tr>
+                                <th class="px-4 py-3">Organisasi</th>
+                                <th class="px-4 py-3">Kepanjangan</th>
+                                <th class="px-4 py-3">Cakupan</th>
+                                <th class="px-4 py-3">Fungsi Utama</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-luxury-gold/10">
+                            <tr class="bg-luxury-dark/30">
+                                <td class="px-4 py-3 font-medium text-white">ASEAN</td>
+                                <td class="px-4 py-3">Association of Southeast Asian Nations</td>
+                                <td class="px-4 py-3">Regional (Asia Tenggara)</td>
+                                <td class="px-4 py-3">Kerja sama ekonomi, politik, sosial-budaya</td>
+                            </tr>
+                            <tr class="bg-luxury-card/30">
+                                <td class="px-4 py-3 font-medium text-white">APEC</td>
+                                <td class="px-4 py-3">Asia-Pacific Economic Cooperation</td>
+                                <td class="px-4 py-3">Regional (Lingkar Pasifik)</td>
+                                <td class="px-4 py-3">Kerja sama ekonomi Asia-Pasifik</td>
+                            </tr>
+                            <tr class="bg-luxury-dark/30">
+                                <td class="px-4 py-3 font-medium text-white">WTO</td>
+                                <td class="px-4 py-3">World Trade Organization</td>
+                                <td class="px-4 py-3">Global (Dunia)</td>
+                                <td class="px-4 py-3">Mengatur perdagangan internasional</td>
+                            </tr>
+                            <tr class="bg-luxury-card/30">
+                                <td class="px-4 py-3 font-medium text-white">IMF</td>
+                                <td class="px-4 py-3">International Monetary Fund</td>
+                                <td class="px-4 py-3">Global (Dunia)</td>
+                                <td class="px-4 py-3">Stabilitas moneter & keuangan global</td>
+                            </tr>
+                            <tr class="bg-luxury-dark/30">
+                                <td class="px-4 py-3 font-medium text-white">World Bank</td>
+                                <td class="px-4 py-3">Bank Dunia</td>
+                                <td class="px-4 py-3">Global (Dunia)</td>
+                                <td class="px-4 py-3">Pemberian pinjaman untuk pembangunan</td>
+                            </tr>
+                            <tr class="bg-luxury-card/30">
+                                <td class="px-4 py-3 font-medium text-white">EU</td>
+                                <td class="px-4 py-3">European Union</td>
+                                <td class="px-4 py-3">Regional (Eropa)</td>
+                                <td class="px-4 py-3">Integrasi ekonomi-politik Eropa</td>
+                            </tr>
+                            <tr class="bg-luxury-dark/30">
+                                <td class="px-4 py-3 font-medium text-white">NAFTA</td>
+                                <td class="px-4 py-3">North American Free Trade Area</td>
+                                <td class="px-4 py-3">Regional (Amerika Utara)</td>
+                                <td class="px-4 py-3">Kawasan perdagangan bebas Amerika Utara</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- G. Manfaat & Dampak -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">G</span>
+                    Manfaat & Dampak Perdagangan Internasional
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    Perdagangan internasional memberikan berbagai manfaat sekaligus tantangan bagi perekonomian suatu negara.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="p-4 rounded-xl bg-luxury-dark/50 border border-green-500/20">
+                        <h4 class="font-bold text-green-400 mb-2">✅ Manfaat</h4>
+                        <ul class="text-gray-300 text-sm space-y-1">
+                            <li>• Meningkatkan devisa negara</li>
+                            <li>• Memperluas lapangan kerja</li>
+                            <li>• Meningkatkan efisiensi produksi</li>
+                            <li>• Transfer teknologi dan ilmu pengetahuan</li>
+                            <li>• Mempererat hubungan antarnegara</li>
+                            <li>• Meningkatkan pendapatan nasional</li>
+                            <li>• Memenuhi kebutuhan dalam negeri</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 rounded-xl bg-luxury-dark/50 border border-red-500/20">
+                        <h4 class="font-bold text-red-400 mb-2">⚠️ Dampak Negatif</h4>
+                        <ul class="text-gray-300 text-sm space-y-1">
+                            <li>• Persaingan dengan produk impor</li>
+                            <li>• Ketergantungan pada negara lain</li>
+                            <li>• Tergerusnya produk lokal/UMKM</li>
+                            <li>• Eksploitasi SDA berlebihan</li>
+                            <li>• Masuknya budaya asing negatif</li>
+                            <li>• Defisit neraca perdagangan</li>
+                            <li>• Kesenjangan ekonomi global</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- H. Peran Indonesia -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">H</span>
+                    Peran Indonesia dalam Kerja Sama Ekonomi Internasional
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    Sebagai negara berkembang dengan ekonomi terbesar di Asia Tenggara, Indonesia aktif dalam berbagai kerja sama ekonomi internasional.
+                </p>
+
+                <div class="bg-luxury-dark/50 p-4 rounded-xl border border-luxury-gold/10 mb-4">
+                    <p class="text-luxury-gold font-semibold mb-2">🇮🇩 Peran Aktif Indonesia</p>
+                    <ul class="text-gray-300 text-sm space-y-1">
+                        <li>• <strong>Pendiri ASEAN</strong> dan penggerak integrasi ekonomi ASEAN (AEC)</li>
+                        <li>• <strong>Anggota G20</strong> — forum ekonomi negara-negara besar dunia</li>
+                        <li>• <strong>Anggota APEC</strong> — kerja sama ekonomi Lingkar Pasifik</li>
+                        <li>• <strong>Anggota WTO</strong> — sejak 1995</li>
+                        <li>• <strong>Anggota IMF & World Bank</strong></li>
+                        <li>• <strong>Anggota OPEC</strong> (sempat keluar dan masuk kembali)</li>
+                        <li>• <strong>Pengagas MEA</strong> (Masyarakat Ekonomi ASEAN) 2015</li>
+                    </ul>
+                </div>
+
+                <div class="bg-luxury-gold/10 border-l-4 border-luxury-gold p-4 rounded-r-lg">
+                    <p class="text-luxury-gold font-bold text-sm uppercase tracking-wider mb-2">📌 Komoditas Ekspor Unggulan Indonesia</p>
+                    <ul class="text-white space-y-1 font-medium text-sm">
+                        <li>• <strong>Migas:</strong> Minyak bumi, gas alam, batu bara</li>
+                        <li>• <strong>Non-Migas:</strong> Kelapa sawit (CPO), karet, tekstil, kopi, udang, elektronik</li>
+                        <li>• <strong>Jasa:</strong> Pariwisata, TKI, jasa konstruksi</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Kata Kunci & Quranic Verse -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 text-center">
+                <h3 class="font-serif text-xl font-bold text-luxury-gold mb-4">◆ Kata Kunci Pertemuan Ini</h3>
+                <div class="flex flex-wrap justify-center gap-2 mb-8">
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Sistem Ekonomi</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Ekonomi Pancasila</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Ekspor</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Impor</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Neraca Perdagangan</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Devisa</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Valuta Asing</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">ASEAN</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">APEC</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">WTO</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">IMF</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">World Bank</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">G20</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Kurs</span>
+                </div>
+                
+                <div class="border-t border-luxury-gold/20 pt-6">
+                    <p class="quran-verse text-luxury-goldLight mb-4">
+                        وَأَحَلَّ ٱللَّهُ ٱلْبَيْعَ وَحَرَّمَ ٱلرِّبَا
+                    </p>
+                    <p class="text-gray-300 italic mb-2">"...Allah telah menghalalkan jual beli dan mengharamkan riba."</p>
+                    <p class="text-luxury-gold font-serif font-bold">— QS. Al-Baqarah [2]: 275</p>
+                    <p class="text-gray-400 text-sm mt-3 italic">Ayat ini menjadi landasan spiritual pentingnya perdagangan yang halal dan adil, baik dalam skala nasional maupun internasional. Islam mendukung perdagangan yang saling menguntungkan dan melarang riba yang merugikan salah satu pihak.</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- UJI FORMATIF SECTION -->
+        <div id="uji-formatif" class="mt-16 pt-10 border-t-2 border-luxury-gold/30">
+            <div class="text-center mb-8">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-white mb-2">📝 Uji Formatif Pertemuan 14</h2>
+                <p class="text-luxury-gold font-medium">Perekonomian & Kerja Sama Internasional</p>
+                <p class="text-gray-400 text-sm mt-2 max-w-2xl mx-auto">
+                    📋 Bagian A: Pilihan Ganda (10 soal, skor 10/soal) &nbsp;|&nbsp; ✍️ Bagian B: Essay (5 soal, skor 20/soal)<br>
+                    <span class="text-luxury-goldLight">Materi: Sistem ekonomi, jenis-jenis sistem ekonomi, sistem ekonomi Indonesia, perdagangan internasional (ekspor-impor), neraca perdagangan, kerja sama ekonomi internasional, manfaat & dampak, serta peran Indonesia.</span>
+                </p>
+            </div>
+
+            <form id="quizForm" class="space-y-8">
+                <!-- Identitas -->
+                <div class="glass-card rounded-2xl p-6 md:p-8">
+                    <h3 class="font-serif text-xl font-bold text-luxury-gold mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-id-card"></i> Identitas Siswa
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Nama Lengkap <span class="text-red-400">*</span></label>
+                            <input type="text" id="nama" required class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors" placeholder="Masukkan nama lengkap">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">No. Absen / NIS <span class="text-red-400">*</span></label>
+                            <input type="text" id="nis" required class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors" placeholder="Masukkan NIS">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">📅 Tanggal Ujian</label>
+                            <input type="date" id="tanggal" class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Kelas</label>
+                            <select id="kelas" class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors">
+                                <option value="VIII-A">VIII-A</option>
+                                <option value="VIII-B">VIII-B</option>
+                                <option value="VIII-C">VIII-C</option>
+                                <option value="VIII-D">VIII-D</option>
+                            </select>
+                        </div>
+                        <div class="md:col-span-2">
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Semester</label>
+                            <select id="semester" class="w-full md:w-1/2 bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors">
+                                <option value="2 (Genap)">2 (Genap)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian A: Pilihan Ganda -->
+                <div class="glass-card rounded-2xl p-6 md:p-8">
+                    <h3 class="font-serif text-xl font-bold text-luxury-gold mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-list-check"></i> Bagian A: Pilihan Ganda
+                    </h3>
+                    <div class="space-y-6" id="pg-questions">
+                        
+                        <!-- Soal 1 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 1 (10 POIN):</span> Sistem ekonomi di mana semua kegiatan ekonomi diatur dan dikuasai oleh negara disebut sistem ekonomi...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q1" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">A. Liberal</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q1" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">B. Tradisional</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q1" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">C. Komando (Terpusat)</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q1" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">D. Campuran</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 2 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 2 (10 POIN):</span> Indonesia menganut sistem ekonomi...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q2" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">A. Liberal</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q2" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">B. Komando</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q2" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">C. Pancasila (Kerakyatan)</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q2" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">D. Tradisional</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 3 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 3 (10 POIN):</span> Kegiatan menjual barang dari dalam negeri ke luar negeri disebut...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q3" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">A. Impor</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q3" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">B. Ekspor</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q3" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">C. Retribusi</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q3" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">D. Subsidi</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 4 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 4 (10 POIN):</span> Kondisi di mana nilai ekspor lebih besar daripada nilai impor disebut neraca perdagangan...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q4" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">A. Defisit</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q4" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">B. Surplus</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q4" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">C. Balance</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q4" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">D. Inflasi</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 5 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 5 (10 POIN):</span> Organisasi yang mengatur perdagangan internasional secara global adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q5" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">A. WTO (World Trade Organization)</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q5" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">B. IMF</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q5" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">C. ASEAN</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q5" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">D. UN</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 6 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 6 (10 POIN):</span> Mata uang asing yang dapat diperdagangkan secara internasional disebut...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q6" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">A. Devisa</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q6" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">B. Valuta asing</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q6" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">C. Kurs</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q6" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">D. Inflasi</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 7 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 7 (10 POIN):</span> Tokoh yang dikenal sebagai Bapak Ekonomi Liberal adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q7" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">A. Karl Marx</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q7" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">B. Adam Smith</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q7" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">C. John Maynard Keynes</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q7" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">D. David Ricardo</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 8 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 8 (10 POIN):</span> APEC merupakan singkatan dari...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q8" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">A. Asia-Pacific Economic Cooperation</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q8" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">B. Asian Political Economic Community</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q8" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">C. Association of Pacific Economic Countries</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q8" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">D. Asian-Pacific Export Council</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 9 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 9 (10 POIN):</span> Berikut yang termasuk komoditas ekspor unggulan Indonesia adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q9" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">A. Mesin industri dan elektronik</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q9" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">B. Kelapa sawit, batu bara, dan tekstil</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q9" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">C. Gandum dan bahan kimia</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q9" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">D. Mobil mewah dan pesawat terbang</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 10 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 10 (10 POIN):</span> Berikut yang merupakan manfaat perdagangan internasional bagi suatu negara adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q10" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">A. Menambah ketergantungan pada negara lain</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q10" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">B. Mengurangi lapangan kerja</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q10" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">C. Meningkatkan devisa dan memperluas lapangan kerja</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q10" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">D. Menghambat pertumbuhan ekonomi</span></div></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian B: Essay -->
+                <div class="glass-card rounded-2xl p-6 md:p-8">
+                    <h3 class="font-serif text-xl font-bold text-luxury-gold mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-pen-to-square"></i> Bagian B: Essay
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Essay 1 (20 POIN):</span> Jelaskan pengertian sistem ekonomi! Sebutkan dan jelaskan 4 jenis sistem ekonomi yang ada di dunia beserta ciri-ciri dan contoh negaranya!</p>
+                            <textarea id="essay1" rows="4" class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors" placeholder="Tulis jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Essay 2 (20 POIN):</span> Jelaskan sistem ekonomi yang dianut oleh Indonesia! Sebutkan dasar hukumnya dalam UUD 1945 dan ciri-ciri utama sistem ekonomi Indonesia!</p>
+                            <textarea id="essay2" rows="4" class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors" placeholder="Tulis jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Essay 3 (20 POIN):</span> Jelaskan pengertian perdagangan internasional! Sebutkan 4 faktor pendorong terjadinya perdagangan internasional dan berikan masing-masing satu contoh!</p>
+                            <textarea id="essay3" rows="4" class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors" placeholder="Tulis jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Essay 4 (20 POIN):</span> Sebutkan dan jelaskan 4 organisasi kerja sama ekonomi internasional (ASEAN, APEC, WTO, IMF, World Bank)! Jelaskan fungsi utama masing-masing organisasi!</p>
+                            <textarea id="essay4" rows="4" class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors" placeholder="Tulis jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Essay 5 (20 POIN):</span> Jelaskan 4 manfaat perdagangan internasional bagi perekonomian suatu negara! Sebutkan juga 3 dampak negatif yang mungkin timbul dan bagaimana cara mengatasinya!</p>
+                            <textarea id="essay5" rows="4" class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors" placeholder="Tulis jawaban Anda di sini..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hasil & Actions -->
+                <div class="glass-card rounded-2xl p-6 md:p-8 border-luxury-gold/40 bg-luxury-gold/5">
+                    <h3 class="font-serif text-xl font-bold text-luxury-gold mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-chart-pie"></i> Hasil Uji Formatif
+                    </h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 text-center">
+                        <div class="p-4 rounded-xl bg-luxury-dark border border-luxury-gold/20">
+                            <p class="text-gray-400 text-sm mb-1">📋 Pilihan Ganda</p>
+                            <p class="text-3xl font-bold text-white" id="score-pg">0</p>
+                            <p class="text-luxury-gold text-xs">/ 100</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-luxury-dark border border-luxury-gold/20">
+                            <p class="text-gray-400 text-sm mb-1">✍️ Essay (Estimasi)</p>
+                            <p class="text-3xl font-bold text-white" id="score-essay">0</p>
+                            <p class="text-luxury-gold text-xs">/ 100</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-luxury-gold/10 border border-luxury-gold">
+                            <p class="text-luxury-gold text-sm mb-1 font-bold">Skor Akhir (Rata-rata)</p>
+                            <p class="text-4xl font-bold text-gold-gradient" id="score-total">0</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-500 text-center mb-6 italic">
+                        *Catatan: Skor Essay dihitung secara otomatis berdasarkan deteksi kata kunci sederhana sebagai estimasi awal. Penilaian detail dan akhir tetap dilakukan oleh Guru.
+                    </p>
+
+                    <div class="flex flex-col md:flex-row gap-4 justify-center">
+                        <button type="button" onclick="hitungSkor()" class="px-6 py-3 bg-gold-gradient text-luxury-dark font-bold rounded-lg shadow-lg shadow-luxury-gold/20 hover:shadow-luxury-gold/40 transition-all duration-300 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-paper-plane"></i> KIRIM JAWABAN & LIHAT HASIL
+                        </button>
+                        <button type="button" onclick="unduhPDF()" class="px-6 py-3 border border-luxury-gold text-luxury-gold font-medium rounded-lg hover:bg-luxury-gold hover:text-luxury-dark transition-all duration-300 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-file-pdf"></i> UNDUH PDF LENGKAP
+                        </button>
+                        <button type="button" onclick="unduhTXT()" class="px-6 py-3 border border-gray-600 text-gray-300 font-medium rounded-lg hover:border-luxury-gold hover:text-luxury-gold transition-all duration-300 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-file-lines"></i> UNDUH SKOR (TXT)
+                        </button>
+                        <button type="button" onclick="mulaiUlang()" class="px-6 py-3 border border-gray-600 text-gray-300 font-medium rounded-lg hover:border-red-400 hover:text-red-400 transition-all duration-300 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-rotate-right"></i> MULAI ULANG
+                        </button>
+                    </div>
+                    
+                    <div class="mt-6 text-center">
+                        <a href="mailto:ahmadafdal2323@gmail.com" id="email-link" class="inline-flex items-center gap-2 text-luxury-gold hover:text-luxury-goldLight transition-colors text-sm font-medium">
+                            <i class="fa-solid fa-envelope"></i> Kirim ke Email Guru (ahmadafdal2323@gmail.com)
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-luxury-dark border-t border-luxury-gold/10 py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <span class="font-serif text-lg font-bold text-white tracking-wide">IPS Kelas 8 MTsN 10 Agam</span>
+                <p class="text-gray-500 text-sm mt-1">© 2026 Drs. Ahmad Afdal — MTsN 10 Agam. Hak Cipta Dilindungi Undang-Undang</p>
+                <p class="text-gray-600 text-xs mt-1">Email: <a href="mailto:ahmadafdal2323@gmail.com" class="text-luxury-gold hover:underline">ahmadafdal2323@gmail.com</a></p>
+            </div>
+            <div class="flex gap-6">
+                <a href="13.html" class="text-gray-400 hover:text-luxury-gold transition-colors flex items-center gap-2 text-sm">
+                    <i class="fa-solid fa-chevron-left"></i> Pertemuan 13
+                </a>
+                <a href="index.html" class="text-gray-400 hover:text-luxury-gold transition-colors flex items-center gap-2 text-sm">
+                    <i class="fa-solid fa-book-open"></i> Daftar Pertemuan
+                </a>
+                <a href="15.html" class="text-gray-400 hover:text-luxury-gold transition-colors flex items-center gap-2 text-sm">
+                    Pertemuan 15 <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Logic -->
+    <script>
+        const correctAnswers = {
+            q1: 'C', q2: 'C', q3: 'B', q4: 'B', q5: 'A',
+            q6: 'B', q7: 'B', q8: 'A', q9: 'B', q10: 'C'
+        };
+
+        const essayKeywords = {
+            essay1: ['sistem ekonomi', 'tradisional', 'komando', 'liberal', 'campuran', 'pasar', 'terpusat', 'ciri', 'contoh', 'negara', 'karl marx', 'adam smith'],
+            essay2: ['ekonomi pancasila', 'kerakyatan', 'uud 1945', 'pasal 33', 'kekeluargaan', 'bumi air', 'koperasi', 'kemakmuran rakyat', 'ciri', 'indonesia'],
+            essay3: ['perdagangan internasional', 'ekspor', 'impor', 'sda', 'teknologi', 'selera', 'keuntungan', 'pasar', 'efisiensi', 'faktor'],
+            essay4: ['asean', 'apec', 'wto', 'imf', 'world bank', 'bank dunia', 'fungsi', 'organisasi', 'kerja sama', 'ekonomi', 'perdagangan'],
+            essay5: ['manfaat', 'devisa', 'lapangan kerja', 'teknologi', 'efisiensi', 'pendapatan', 'dampak negatif', 'persaingan', 'ketergantungan', 'umkm', 'atasinya']
+        };
+
+        function gradeEssay(text, keywords) {
+            if (!text) return 0;
+            let lowerText = text.toLowerCase();
+            let matched = 0;
+            keywords.forEach(kw => {
+                if (lowerText.includes(kw.toLowerCase())) matched++;
+            });
+            return Math.min(20, Math.round((matched / keywords.length) * 20));
+        }
+
+        function hitungSkor() {
+            const nama = document.getElementById('nama').value;
+            const nis = document.getElementById('nis').value;
+            if (!nama || !nis) { alert('Harap isi Nama Lengkap dan NIS terlebih dahulu!'); return; }
+
+            let pgScore = 0;
+            for (let i = 1; i <= 10; i++) {
+                const sel = document.querySelector(`input[name="q${i}"]:checked`);
+                if (sel && sel.value === correctAnswers[`q${i}`]) pgScore += 10;
+            }
+
+            let essayScore = 0;
+            for (let i = 1; i <= 5; i++) {
+                essayScore += gradeEssay(document.getElementById(`essay${i}`).value, essayKeywords[`essay${i}`]);
+            }
+
+            const totalScore = Math.round((pgScore + essayScore) / 2);
+
+            document.getElementById('score-pg').innerText = pgScore;
+            document.getElementById('score-essay').innerText = essayScore;
+            document.getElementById('score-total').innerText = totalScore;
+            document.getElementById('score-total').scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            const subject = `Hasil Uji Formatif Pertemuan 14 - Perekonomian & Kerja Sama Internasional - ${nama} (${nis})`;
+            const body = `Yth. Bapak Drs. Ahmad Afdal,\n\nBerikut hasil uji formatif saya:\nNama: ${nama}\nNIS: ${nis}\nKelas: ${document.getElementById('kelas').value}\nPertemuan: 14 (Perekonomian & Kerja Sama Internasional)\n\n- Skor PG: ${pgScore}/100\n- Skor Essay: ${essayScore}/100\n- Skor Akhir: ${totalScore}/100\n\nTerima kasih.`;
+            document.getElementById('email-link').href = `mailto:ahmadafdal2323@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            alert('Jawaban berhasil dikirim! Skor telah dihitung.');
+        }
+
+        function unduhPDF() {
+            const el = document.getElementById('quizForm');
+            const nama = document.getElementById('nama').value || 'Siswa';
+            html2pdf().set({ margin: 10, filename: `Uji_Pertemuan14_IPS_${nama.replace(/\s+/g,'_')}.pdf`, image: { type: 'jpeg', quality: 0.98 }, html2canvas: { scale: 2 }, jsPDF: { unit: 'mm', format: 'a4' } }).from(el).save();
+        }
+
+        function unduhTXT() {
+            const nama = document.getElementById('nama').value || 'Siswa';
+            let t = `HASIL UJI FORMATIF - PERTEMUAN 14: PEREKONOMIAN & KERJA SAMA INTERNASIONAL\n`;
+            t += `=====================================================================\n`;
+            t += `Guru: Drs. Ahmad Afdal | MTsN 10 Agam\n`;
+            t += `Nama: ${nama} | NIS: ${document.getElementById('nis').value}\n`;
+            t += `Kelas: ${document.getElementById('kelas').value} | Tanggal: ${document.getElementById('tanggal').value}\n`;
+            t += `=====================================================================\n`;
+            t += `PG: ${document.getElementById('score-pg').innerText}/100\nEssay: ${document.getElementById('score-essay').innerText}/100\nAkhir: ${document.getElementById('score-total').innerText}/100\n\n`;
+            for (let i = 1; i <= 5; i++) t += `Essay ${i}: ${document.getElementById(`essay${i}`).value || '-'}\n\n`;
+            const blob = new Blob([t], { type: 'text/plain' });
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = `Uji_Pertemuan14_${nama.replace(/\s+/g,'_')}.txt`;
+            a.click();
+        }
+
+        function mulaiUlang() {
+            if (confirm('Yakin ingin mengosongkan semua jawaban?')) {
+                document.getElementById('quizForm').reset();
+                document.getElementById('score-pg').innerText = '0';
+                document.getElementById('score-essay').innerText = '0';
+                document.getElementById('score-total').innerText = '0';
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+
+        document.getElementById('tanggal').valueAsDate = new Date();
+    </script>
+</body>
+</html>

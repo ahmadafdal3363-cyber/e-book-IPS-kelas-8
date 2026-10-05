@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 15: Pelestarian Lingkungan Hidup | IPS Kelas 8 MTsN 10 Agam</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        luxury: {
+                            dark: '#0B1120',
+                            card: '#151E32',
+                            gold: '#D4AF37',
+                            goldLight: '#F3E5AB',
+                            accent: '#C5A028'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                        arabic: ['"Amiri"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .text-gold-gradient {
+            background: linear-gradient(135deg, #D4AF37 0%, #F3E5AB 50%, #C5A028 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .glass-card {
+            background: rgba(21, 30, 50, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .hover-lift {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .hover-lift:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px -10px rgba(212, 175, 55, 0.15);
+            border-color: rgba(212, 175, 55, 0.5);
+        }
+        .quran-verse {
+            font-family: 'Amiri', serif;
+            font-size: 1.6rem;
+            line-height: 2.2;
+            text-align: right;
+            direction: rtl;
+        }
+        .custom-radio:checked + div {
+            background-color: rgba(212, 175, 55, 0.15);
+            border-color: #D4AF37;
+            color: #F3E5AB;
+        }
+        .custom-radio:checked + div .radio-dot {
+            background-color: #D4AF37;
+            border-color: #D4AF37;
+        }
+    </style>
+</head>
+<body class="bg-luxury-dark text-gray-200 font-sans antialiased selection:bg-luxury-gold selection:text-luxury-dark">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-card border-b border-luxury-gold/20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-leaf text-luxury-gold text-xl"></i>
+                    <span class="font-serif text-lg font-bold text-white tracking-wide">IPS Kelas 8</span>
+                </div>
+                <div class="flex gap-4">
+                    <a href="index.html" class="text-sm text-gray-300 hover:text-luxury-gold transition-colors flex items-center gap-2">
+                        <i class="fa-solid fa-arrow-left"></i> Daftar Pertemuan
+                    </a>
+                    <a href="14.html" class="text-sm text-gray-400 hover:text-luxury-gold transition-colors flex items-center gap-2">
+                        <i class="fa-solid fa-chevron-left"></i> Pertemuan 14
+                    </a>
+                    <a href="16.html" class="text-sm text-luxury-gold hover:text-luxury-goldLight transition-colors flex items-center gap-2 font-medium">
+                        Pertemuan 16 <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-24 pb-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+
+        <!-- Header Section -->
+        <div class="text-center space-y-4">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-luxury-gold/30 bg-luxury-gold/10 text-luxury-gold text-xs font-semibold tracking-widest uppercase">
+                <i class="fa-solid fa-seedling"></i> Pertemuan Lima Belas
+            </div>
+            <h1 class="font-serif text-4xl md:text-5xl font-bold text-white">Pelestarian Lingkungan Hidup</h1>
+            <p class="text-luxury-gold font-medium text-lg">Pembangunan Berkelanjutan dan Tantangan Ekologis</p>
+            <p class="text-gray-400 max-w-3xl mx-auto leading-relaxed">
+                Memahami konsep lingkungan hidup, komponen-komponennya (biotik, abiotik, sosial budaya), berbagai masalah lingkungan hidup di Indonesia dan dunia, penyebab kerusakan lingkungan, upaya pelestarian, konsep pembangunan berkelanjutan (sustainable development), serta peran generasi muda dalam menjaga kelestarian lingkungan untuk masa depan yang lebih baik.
+            </p>
+            <div class="flex items-center justify-center gap-3 pt-2">
+                <div class="w-10 h-10 rounded-full bg-luxury-gold/20 flex items-center justify-center text-luxury-gold font-bold font-serif">A</div>
+                <div class="text-left">
+                    <p class="text-white font-medium">Drs. Ahmad Afdal</p>
+                    <p class="text-luxury-gold text-sm">MTsN 10 Agam</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Materi Sections -->
+        <div class="space-y-8" id="materi-content">
+            
+            <!-- A. Pengertian Lingkungan Hidup -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">A</span>
+                    Pengertian Lingkungan Hidup
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    <strong class="text-white">Lingkungan hidup</strong> adalah kesatuan ruang dengan semua benda, daya, keadaan, dan makhluk hidup, termasuk manusia dan perilakunya, yang mempengaruhi kelangsungan perikehidupan dan kesejahteraan manusia serta makhluk hidup lain.
+                </p>
+                <p class="text-gray-300 leading-relaxed mb-6">
+                    Menurut <strong class="text-white">UU No. 32 Tahun 2009</strong> tentang Perlindungan dan Pengelolaan Lingkungan Hidup, lingkungan hidup adalah kesatuan ruang dengan semua benda, daya, keadaan, dan makhluk hidup, termasuk manusia dan perilakunya, yang mempengaruhi alam itu sendiri, kelangsungan perikehidupan, dan kesejahteraan manusia serta makhluk hidup lain.
+                </p>
+                <div class="bg-luxury-gold/10 border-l-4 border-luxury-gold p-4 rounded-r-lg">
+                    <p class="text-luxury-gold font-bold text-sm uppercase tracking-wider mb-1">📌 DEFINISI</p>
+                    <p class="text-white font-medium">Lingkungan Hidup adalah kesatuan sistem yang mencakup semua makhluk hidup (termasuk manusia) dan unsur-unsur fisik yang saling berinteraksi dan mempengaruhi kelangsungan hidup di muka bumi.</p>
+                </div>
+            </section>
+
+            <!-- B. Komponen Lingkungan Hidup -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">B</span>
+                    Komponen Lingkungan Hidup
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    Lingkungan hidup terdiri dari tiga komponen utama yang saling berinteraksi membentuk suatu ekosistem.
+                </p>
+
+                <div class="space-y-4">
+                    <div class="bg-luxury-dark/50 p-4 rounded-xl border border-green-500/20">
+                        <p class="text-green-400 font-semibold mb-2">🌿 Komponen Biotik (Makhluk Hidup)</p>
+                        <p class="text-gray-300 text-sm mb-2">Semua makhluk hidup yang ada di lingkungan, termasuk manusia, hewan, dan tumbuhan.</p>
+                        <ul class="text-gray-400 text-xs space-y-1">
+                            <li>• <strong>Produsen:</strong> Tumbuhan hijau (padi, jagung, pohon)</li>
+                            <li>• <strong>Konsumen:</strong> Manusia, hewan pemakan tumbuhan/hewan lain</li>
+                            <li>• <strong>Pengurai (Dekomposer):</strong> Bakteri, jamur</li>
+                        </ul>
+                    </div>
+                    <div class="bg-luxury-dark/50 p-4 rounded-xl border border-blue-500/20">
+                        <p class="text-blue-400 font-semibold mb-2">💧 Komponen Abiotik (Benda Tak Hidup)</p>
+                        <p class="text-gray-300 text-sm mb-2">Semua benda tidak hidup yang ada di lingkungan dan mempengaruhi kehidupan makhluk hidup.</p>
+                        <ul class="text-gray-400 text-xs space-y-1">
+                            <li>• <strong>Tanah, air, udara</strong></li>
+                            <li>• <strong>Cahaya matahari, suhu, kelembapan</strong></li>
+                            <li>• <strong>Mineral, batuan, topografi</strong></li>
+                        </ul>
+                    </div>
+                    <div class="bg-luxury-dark/50 p-4 rounded-xl border border-purple-500/20">
+                        <p class="text-purple-400 font-semibold mb-2">👥 Komponen Sosial Budaya</p>
+                        <p class="text-gray-300 text-sm mb-2">Segala yang diciptakan manusia berupa nilai, norma, gagasan, dan hasil budaya.</p>
+                        <ul class="text-gray-400 text-xs space-y-1">
+                            <li>• <strong>Nilai & norma sosial</strong></li>
+                            <li>• <strong>Teknologi, ekonomi, politik</strong></li>
+                            <li>• <strong>Agama, pendidikan, kesenian</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- C. Masalah Lingkungan Hidup -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">C</span>
+                    Masalah Lingkungan Hidup
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    Berbagai masalah lingkungan hidup muncul akibat aktivitas manusia yang tidak bijaksana dalam memanfaatkan sumber daya alam.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="p-4 rounded-xl bg-luxury-dark/50 border border-red-500/20">
+                        <h4 class="font-bold text-red-400 mb-2">⚠️ Masalah Lingkungan Global</h4>
+                        <ul class="text-gray-300 text-sm space-y-1">
+                            <li>• <strong>Pemanasan global</strong> (global warming)</li>
+                            <li>• <strong>Perubahan iklim</strong> (climate change)</li>
+                            <li>• <strong>Penipisan lapisan ozon</strong></li>
+                            <li>• <strong>Hujan asam</strong></li>
+                            <li>• <strong>Krisis air bersih</strong></li>
+                            <li>• <strong>Kepunahan spesies</strong></li>
+                        </ul>
+                    </div>
+                    <div class="p-4 rounded-xl bg-luxury-dark/50 border border-yellow-500/20">
+                        <h4 class="font-bold text-yellow-400 mb-2">⚠️ Masalah Lingkungan di Indonesia</h4>
+                        <ul class="text-gray-300 text-sm space-y-1">
+                            <li>• <strong>Penebangan hutan liar</strong> (illegal logging)</li>
+                            <li>• <strong>Kebakaran hutan & lahan</strong></li>
+                            <li>• <strong>Pencemaran sungai & laut</strong></li>
+                            <li>• <strong>Pencemaran udara</strong> (asap, kendaraan)</li>
+                            <li>• <strong>Sampah plastik</strong> di laut</li>
+                            <li>• <strong>Pertambangan ilegal</strong></li>
+                            <li>• <strong>Alih fungsi lahan</strong> (hutan → sawit)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- D. Penyebab Kerusakan Lingkungan -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">D</span>
+                    Penyebab Kerusakan Lingkungan
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    Kerusakan lingkungan disebabkan oleh faktor alam dan faktor manusia, di mana faktor manusia menjadi penyebab dominan.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="bg-luxury-dark/50 p-4 rounded-xl border border-orange-500/20">
+                        <p class="text-orange-400 font-semibold mb-2">🌋 Faktor Alam</p>
+                        <ul class="text-gray-300 text-sm space-y-1">
+                            <li>• Gempa bumi, gunung meletus</li>
+                            <li>• Tsunami, banjir besar</li>
+                            <li>• Kekeringan panjang</li>
+                            <li>• Angin topan, badai</li>
+                            <li>• Erosi alami</li>
+                        </ul>
+                    </div>
+                    <div class="bg-luxury-dark/50 p-4 rounded-xl border border-red-500/20">
+                        <p class="text-red-400 font-semibold mb-2">👤 Faktor Manusia (Dominan)</p>
+                        <ul class="text-gray-300 text-sm space-y-1">
+                            <li>• <strong>Eksploitasi SDA berlebihan</strong></li>
+                            <li>• <strong>Pembuangan limbah industri</strong></li>
+                            <li>• <strong>Pembakaran hutan</strong> untuk lahan</li>
+                            <li>• <strong>Penggunaan pestisida berlebihan</strong></li>
+                            <li>• <strong>Pembuangan sampah sembarangan</strong></li>
+                            <li>• <strong>Urbanisasi & industrialisasi</strong></li>
+                            <li>• <strong>Emisi gas rumah kaca</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- E. Upaya Pelestarian Lingkungan -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">E</span>
+                    Upaya Pelestarian Lingkungan Hidup
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    Berbagai upaya dilakukan untuk melestarikan lingkungan hidup, baik oleh pemerintah, masyarakat, maupun individu.
+                </p>
+
+                <div class="space-y-4">
+                    <div class="bg-luxury-dark/50 p-4 rounded-xl border border-green-500/20">
+                        <p class="text-green-400 font-semibold mb-2">🌳 Upaya Konservasi</p>
+                        <ul class="text-gray-300 text-sm space-y-1">
+                            <li>• <strong>Reboisasi:</strong> Penanaman kembali hutan yang gundul</li>
+                            <li>• <strong>Terassering:</strong> Pembuatan terasering di lahan miring</li>
+                            <li>• <strong>Contour farming:</strong> Pertanian mengikuti kontur</li>
+                            <li>• <strong>Rotasi tanaman:</strong> Pergantian jenis tanaman</li>
+                            <li>• <strong>Windbreak:</strong> Penanaman pohon sebagai penahan angin</li>
+                        </ul>
+                    </div>
+                    <div class="bg-luxury-dark/50 p-4 rounded-xl border border-blue-500/20">
+                        <p class="text-blue-400 font-semibold mb-2">🏞️ Kawasan Lindung</p>
+                        <ul class="text-gray-300 text-sm space-y-1">
+                            <li>• <strong>Taman Nasional:</strong> Pelestarian ekosistem (Gunung Leuser, Komodo)</li>
+                            <li>• <strong>Cagar Alam:</strong> Perlindungan tumbuhan & satwa langka</li>
+                            <li>• <strong>Suaka Margasatwa:</strong> Perlindungan hewan langka</li>
+                            <li>• <strong>Hutan Lindung:</strong> Perlindungan daerah resapan air</li>
+                            <li>• <strong>Taman Laut:</strong> Pelestarian ekosistem laut</li>
+                        </ul>
+                    </div>
+                    <div class="bg-luxury-dark/50 p-4 rounded-xl border border-yellow-500/20">
+                        <p class="text-yellow-400 font-semibold mb-2">♻️ Pengelolaan Limbah</p>
+                        <ul class="text-gray-300 text-sm space-y-1">
+                            <li>• <strong>3R:</strong> Reduce (kurangi), Reuse (gunakan kembali), Recycle (daur ulang)</li>
+                            <li>• <strong>IPAL:</strong> Instalasi Pengolahan Air Limbah</li>
+                            <li>• <strong>Bank Sampah:</strong> Pengelolaan sampah bernilai ekonomi</li>
+                            <li>• <strong>Biopori:</strong> Lubang resapan air & pengolah sampah organik</li>
+                            <li>• <strong>Komposting:</strong> Pengolahan sampah organik menjadi pupuk</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- F. Pembangunan Berkelanjutan -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">F</span>
+                    Pembangunan Berkelanjutan (Sustainable Development)
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    <strong class="text-white">Pembangunan berkelanjutan</strong> adalah pembangunan yang memenuhi kebutuhan generasi saat ini tanpa mengorbankan kemampuan generasi mendatang untuk memenuhi kebutuhan mereka sendiri.
+                </p>
+
+                <div class="bg-luxury-gold/10 border-l-4 border-luxury-gold p-4 rounded-r-lg mb-4">
+                    <p class="text-luxury-gold font-bold text-sm uppercase tracking-wider mb-2">📌 Tiga Pilar Pembangunan Berkelanjutan</p>
+                    <div class="grid md:grid-cols-3 gap-3 text-sm">
+                        <div class="p-2 rounded bg-luxury-dark/50">
+                            <p class="text-green-400 font-medium">🌿 Lingkungan</p>
+                            <p class="text-gray-400 text-xs">Pelestarian SDA & ekosistem</p>
+                        </div>
+                        <div class="p-2 rounded bg-luxury-dark/50">
+                            <p class="text-blue-400 font-medium">💰 Ekonomi</p>
+                            <p class="text-gray-400 text-xs">Pertumbuhan ekonomi inklusif</p>
+                        </div>
+                        <div class="p-2 rounded bg-luxury-dark/50">
+                            <p class="text-purple-400 font-medium">👥 Sosial</p>
+                            <p class="text-gray-400 text-xs">Keadilan & kesejahteraan sosial</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-luxury-dark/50 p-4 rounded-xl border border-luxury-gold/10">
+                    <p class="text-luxury-gold font-semibold mb-2">🎯 Tujuan Pembangunan Berkelanjutan (SDGs)</p>
+                    <p class="text-gray-300 text-sm mb-2">PBB menetapkan <strong class="text-white">17 SDGs (Sustainable Development Goals)</strong> untuk dicapai pada tahun 2030, di antaranya:</p>
+                    <ul class="text-gray-400 text-xs space-y-1">
+                        <li>• <strong>SDG 6:</strong> Air bersih dan sanitasi</li>
+                        <li>• <strong>SDG 7:</strong> Energi bersih dan terjangkau</li>
+                        <li>• <strong>SDG 13:</strong> Penanganan perubahan iklim</li>
+                        <li>• <strong>SDG 14:</strong> Ekosistem laut</li>
+                        <li>• <strong>SDG 15:</strong> Ekosistem daratan</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- G. Peran Generasi Muda -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">G</span>
+                    Peran Generasi Muda dalam Pelestarian Lingkungan
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    Generasi muda memiliki peran strategis dalam menjaga kelestarian lingkungan untuk masa depan.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="p-4 rounded-xl bg-luxury-dark/50 border border-green-500/20">
+                        <h4 class="font-bold text-green-400 mb-2">🌱 Aksi Nyata Sehari-hari</h4>
+                        <ul class="text-gray-300 text-sm space-y-1">
+                            <li>• Membawa botol minum sendiri (kurangi plastik)</li>
+                            <li>• Memilah sampah organik & anorganik</li>
+                            <li>• Menghemat listrik dan air</li>
+                            <li>• Menanam pohon di lingkungan rumah/sekolah</li>
+                            <li>• Menggunakan transportasi umum/sepeda</li>
+                            <li>• Mengurangi penggunaan kertas (paperless)</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 rounded-xl bg-luxury-dark/50 border border-blue-500/20">
+                        <h4 class="font-bold text-blue-400 mb-2">📢 Peran Aktif & Edukasi</h4>
+                        <ul class="text-gray-300 text-sm space-y-1">
+                            <li>• Mengikuti kegiatan pecinta alam</li>
+                            <li>• Kampanye lingkungan di media sosial</li>
+                            <li>• Mengikuti lomba daur ulang</li>
+                            <li>• Edukasi lingkungan ke masyarakat</li>
+                            <li>• Mendukung produk ramah lingkungan</li>
+                            <li>• Mengikuti program adiwiyata sekolah</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- H. Dampak Perubahan Iklim -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">H</span>
+                    Dampak Perubahan Iklim di Indonesia
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    Indonesia sebagai negara kepulauan tropis sangat rentan terhadap dampak perubahan iklim global.
+                </p>
+
+                <div class="bg-luxury-dark/50 p-4 rounded-xl border border-red-500/20 mb-4">
+                    <p class="text-red-400 font-semibold mb-2">🌡️ Dampak Utama</p>
+                    <ul class="text-gray-300 text-sm space-y-1">
+                        <li>• <strong>Kenaikan permukaan laut:</strong> Pulau-pulau kecil terancam tenggelam</li>
+                        <li>• <strong>Cuaca ekstrem:</strong> Banjir, kekeringan, badai semakin sering</li>
+                        <li>• <strong>Kegagalan panen:</strong> Pola musim tidak menentu</li>
+                        <li>• <strong>Kerusakan terumbu karang:</strong> Pemanasan laut</li>
+                        <li>• <strong>Kepunahan spesies:</strong> Habitat berubah terlalu cepat</li>
+                        <li>• <strong>Penyebaran penyakit:</strong> DBD, malaria meluas</li>
+                    </ul>
+                </div>
+
+                <div class="bg-luxury-gold/10 border-l-4 border-luxury-gold p-4 rounded-r-lg">
+                    <p class="text-luxury-gold font-bold text-sm uppercase tracking-wider mb-2">📌 Perjanjian Internasional Terkait Lingkungan</p>
+                    <ul class="text-white space-y-1 font-medium text-sm">
+                        <li>• <strong>Protokol Kyoto (1997):</strong> Pengurangan emisi gas rumah kaca</li>
+                        <li>• <strong>Paris Agreement (2015):</strong> Membatasi kenaikan suhu global di bawah 2°C</li>
+                        <li>• <strong>Konvensi Keanekaragaman Hayati:</strong> Pelestarian keanekaragaman hayati</li>
+                        <li>• <strong>Montreal Protocol (1987):</strong> Pengurangan zat perusak ozon</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Kata Kunci & Quranic Verse -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 text-center">
+                <h3 class="font-serif text-xl font-bold text-luxury-gold mb-4">◆ Kata Kunci Pertemuan Ini</h3>
+                <div class="flex flex-wrap justify-center gap-2 mb-8">
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Lingkungan Hidup</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Biotik</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Abiotik</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Ekosistem</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Pemanasan Global</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Reboisasi</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">3R</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Sustainable Development</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">SDGs</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Paris Agreement</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Taman Nasional</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Konservasi</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Daur Ulang</span>
+                </div>
+                
+                <div class="border-t border-luxury-gold/20 pt-6">
+                    <p class="quran-verse text-luxury-goldLight mb-4">
+                        ظَهَرَ ٱلْفَسَادُ فِى ٱلْبَرِّ وَٱلْبَحْرِ بِمَا كَسَبَتْ أَيْدِى ٱلنَّاسِ لِيُذِيقَهُم بَعْضَ ٱلَّذِى عَمِلُوا لَعَلَّهُمْ يَرْجِعُونَ
+                    </p>
+                    <p class="text-gray-300 italic mb-2">"Telah tampak kerusakan di darat dan di laut disebabkan karena perbuatan tangan manusia, agar Allah merasakan kepada mereka sebagian dari (akibat) perbuatan mereka, agar mereka kembali (ke jalan yang benar)."</p>
+                    <p class="text-luxury-gold font-serif font-bold">— QS. Ar-Rum [30]: 41</p>
+                    <p class="text-gray-400 text-sm mt-3 italic">Ayat ini menjadi peringatan keras bahwa kerusakan lingkungan adalah akibat ulah manusia sendiri, dan mengajak kita untuk kembali ke jalan yang benar dengan menjaga kelestarian alam sebagai amanah Allah.</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- UJI FORMATIF SECTION -->
+        <div id="uji-formatif" class="mt-16 pt-10 border-t-2 border-luxury-gold/30">
+            <div class="text-center mb-8">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-white mb-2">📝 Uji Formatif Pertemuan 15</h2>
+                <p class="text-luxury-gold font-medium">Pelestarian Lingkungan Hidup</p>
+                <p class="text-gray-400 text-sm mt-2 max-w-2xl mx-auto">
+                    📋 Bagian A: Pilihan Ganda (10 soal, skor 10/soal) &nbsp;|&nbsp; ✍️ Bagian B: Essay (5 soal, skor 20/soal)<br>
+                    <span class="text-luxury-goldLight">Materi: Pengertian lingkungan hidup, komponen (biotik, abiotik, sosial budaya), masalah lingkungan, penyebab kerusakan, upaya pelestarian, pembangunan berkelanjutan, peran generasi muda, dan dampak perubahan iklim.</span>
+                </p>
+            </div>
+
+            <form id="quizForm" class="space-y-8">
+                <!-- Identitas -->
+                <div class="glass-card rounded-2xl p-6 md:p-8">
+                    <h3 class="font-serif text-xl font-bold text-luxury-gold mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-id-card"></i> Identitas Siswa
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Nama Lengkap <span class="text-red-400">*</span></label>
+                            <input type="text" id="nama" required class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors" placeholder="Masukkan nama lengkap">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">No. Absen / NIS <span class="text-red-400">*</span></label>
+                            <input type="text" id="nis" required class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors" placeholder="Masukkan NIS">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">📅 Tanggal Ujian</label>
+                            <input type="date" id="tanggal" class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Kelas</label>
+                            <select id="kelas" class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors">
+                                <option value="VIII-A">VIII-A</option>
+                                <option value="VIII-B">VIII-B</option>
+                                <option value="VIII-C">VIII-C</option>
+                                <option value="VIII-D">VIII-D</option>
+                            </select>
+                        </div>
+                        <div class="md:col-span-2">
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Semester</label>
+                            <select id="semester" class="w-full md:w-1/2 bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors">
+                                <option value="2 (Genap)">2 (Genap)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian A: Pilihan Ganda -->
+                <div class="glass-card rounded-2xl p-6 md:p-8">
+                    <h3 class="font-serif text-xl font-bold text-luxury-gold mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-list-check"></i> Bagian A: Pilihan Ganda
+                    </h3>
+                    <div class="space-y-6" id="pg-questions">
+                        
+                        <!-- Soal 1 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 1 (10 POIN):</span> Kesatuan ruang dengan semua benda, daya, keadaan, dan makhluk hidup yang mempengaruhi kelangsungan hidup disebut...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q1" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">A. Ekosistem</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q1" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">B. Lingkungan hidup</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q1" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">C. Biosfer</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q1" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">D. Atmosfer</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 2 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 2 (10 POIN):</span> Berikut yang termasuk komponen abiotik dalam lingkungan hidup adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q2" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">A. Tumbuhan, hewan, manusia</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q2" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">B. Tanah, air, udara, cahaya matahari</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q2" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">C. Nilai, norma, budaya</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q2" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">D. Bakteri, jamur, alga</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 3 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 3 (10 POIN):</span> Upaya penanaman kembali hutan yang gundul disebut...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q3" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">A. Reboisasi</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q3" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">B. Urbanisasi</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q3" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">C. Industrialisasi</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q3" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">D. Modernisasi</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 4 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 4 (10 POIN):</span> Pembangunan yang memenuhi kebutuhan saat ini tanpa mengorbankan kemampuan generasi mendatang disebut...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q4" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">A. Pembangunan konvensional</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q4" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">B. Pembangunan berkelanjutan (sustainable development)</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q4" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">C. Pembangunan cepat</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q4" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">D. Pembangunan infrastruktur</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 5 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 5 (10 POIN):</span> Meningkatnya suhu rata-rata atmosfer, laut, dan daratan Bumi disebut...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q5" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">A. Pemanasan global (global warming)</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q5" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">B. Efek rumah kaca</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q5" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">C. Lubang ozon</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q5" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">D. Hujan asam</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 6 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 6 (10 POIN):</span> Prinsip 3R dalam pengelolaan sampah terdiri dari...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q6" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">A. Reduce, Reuse, Recycle</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q6" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">B. Reduce, Replant, Recycle</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q6" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">C. Reuse, Recycle, Replant</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q6" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">D. Reduce, Reuse, Replant</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 7 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 7 (10 POIN):</span> Kawasan yang dilindungi untuk melestarikan ekosistem asli disebut...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q7" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">A. Taman Nasional</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q7" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">B. Kawasan Industri</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q7" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">C. Kawasan Pemukiman</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q7" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">D. Kawasan Perdagangan</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 8 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 8 (10 POIN):</span> Perjanjian internasional yang bertujuan membatasi kenaikan suhu global di bawah 2°C adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q8" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">A. Protokol Kyoto</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q8" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">B. Paris Agreement</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q8" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">C. Montreal Protocol</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q8" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">D. Konvensi Keanekaragaman Hayati</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 9 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 9 (10 POIN):</span> Berikut yang merupakan contoh peran generasi muda dalam pelestarian lingkungan adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q9" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">A. Membuang sampah sembarangan</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q9" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">B. Menggunakan kendaraan pribadi setiap hari</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q9" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">C. Membawa botol minum sendiri dan memilah sampah</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q9" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">D. Menggunakan plastik sekali pakai</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 10 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 10 (10 POIN):</span> Salah satu dampak perubahan iklim di Indonesia adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q10" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">A. Menurunnya permukaan laut</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q10" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">B. Kenaikan permukaan laut yang mengancam pulau kecil</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q10" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">C. Semakin dinginnya suhu udara</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q10" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500"></div><span class="text-gray-300 group-hover:text-white">D. Bertambahnya luas hutan tropis</span></div></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian B: Essay -->
+                <div class="glass-card rounded-2xl p-6 md:p-8">
+                    <h3 class="font-serif text-xl font-bold text-luxury-gold mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-pen-to-square"></i> Bagian B: Essay
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Essay 1 (20 POIN):</span> Jelaskan pengertian lingkungan hidup! Sebutkan dan jelaskan 3 komponen lingkungan hidup beserta masing-masing contohnya!</p>
+                            <textarea id="essay1" rows="4" class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors" placeholder="Tulis jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Essay 2 (20 POIN):</span> Sebutkan dan jelaskan 4 masalah lingkungan hidup yang terjadi di Indonesia! Berikan masing-masing satu contoh nyata dan penyebabnya!</p>
+                            <textarea id="essay2" rows="4" class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors" placeholder="Tulis jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Essay 3 (20 POIN):</span> Jelaskan apa yang dimaksud dengan pembangunan berkelanjutan (sustainable development)! Sebutkan 3 pilar utama pembangunan berkelanjutan beserta penjelasannya!</p>
+                            <textarea id="essay3" rows="4" class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors" placeholder="Tulis jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Essay 4 (20 POIN):</span> Jelaskan prinsip 3R (Reduce, Reuse, Recycle) dalam pengelolaan sampah! Berikan masing-masing 2 contoh kegiatan yang dapat dilakukan dalam kehidupan sehari-hari!</p>
+                            <textarea id="essay4" rows="4" class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors" placeholder="Tulis jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Essay 5 (20 POIN):</span> Jelaskan 4 dampak perubahan iklim yang dirasakan di Indonesia! Sebutkan 5 peran generasi muda dalam menjaga kelestarian lingkungan untuk masa depan!</p>
+                            <textarea id="essay5" rows="4" class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors" placeholder="Tulis jawaban Anda di sini..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hasil & Actions -->
+                <div class="glass-card rounded-2xl p-6 md:p-8 border-luxury-gold/40 bg-luxury-gold/5">
+                    <h3 class="font-serif text-xl font-bold text-luxury-gold mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-chart-pie"></i> Hasil Uji Formatif
+                    </h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 text-center">
+                        <div class="p-4 rounded-xl bg-luxury-dark border border-luxury-gold/20">
+                            <p class="text-gray-400 text-sm mb-1">📋 Pilihan Ganda</p>
+                            <p class="text-3xl font-bold text-white" id="score-pg">0</p>
+                            <p class="text-luxury-gold text-xs">/ 100</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-luxury-dark border border-luxury-gold/20">
+                            <p class="text-gray-400 text-sm mb-1">✍️ Essay (Estimasi)</p>
+                            <p class="text-3xl font-bold text-white" id="score-essay">0</p>
+                            <p class="text-luxury-gold text-xs">/ 100</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-luxury-gold/10 border border-luxury-gold">
+                            <p class="text-luxury-gold text-sm mb-1 font-bold">Skor Akhir (Rata-rata)</p>
+                            <p class="text-4xl font-bold text-gold-gradient" id="score-total">0</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-500 text-center mb-6 italic">
+                        *Catatan: Skor Essay dihitung secara otomatis berdasarkan deteksi kata kunci sederhana sebagai estimasi awal. Penilaian detail dan akhir tetap dilakukan oleh Guru.
+                    </p>
+
+                    <div class="flex flex-col md:flex-row gap-4 justify-center">
+                        <button type="button" onclick="hitungSkor()" class="px-6 py-3 bg-gold-gradient text-luxury-dark font-bold rounded-lg shadow-lg shadow-luxury-gold/20 hover:shadow-luxury-gold/40 transition-all duration-300 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-paper-plane"></i> KIRIM JAWABAN & LIHAT HASIL
+                        </button>
+                        <button type="button" onclick="unduhPDF()" class="px-6 py-3 border border-luxury-gold text-luxury-gold font-medium rounded-lg hover:bg-luxury-gold hover:text-luxury-dark transition-all duration-300 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-file-pdf"></i> UNDUH PDF LENGKAP
+                        </button>
+                        <button type="button" onclick="unduhTXT()" class="px-6 py-3 border border-gray-600 text-gray-300 font-medium rounded-lg hover:border-luxury-gold hover:text-luxury-gold transition-all duration-300 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-file-lines"></i> UNDUH SKOR (TXT)
+                        </button>
+                        <button type="button" onclick="mulaiUlang()" class="px-6 py-3 border border-gray-600 text-gray-300 font-medium rounded-lg hover:border-red-400 hover:text-red-400 transition-all duration-300 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-rotate-right"></i> MULAI ULANG
+                        </button>
+                    </div>
+                    
+                    <div class="mt-6 text-center">
+                        <a href="mailto:ahmadafdal2323@gmail.com" id="email-link" class="inline-flex items-center gap-2 text-luxury-gold hover:text-luxury-goldLight transition-colors text-sm font-medium">
+                            <i class="fa-solid fa-envelope"></i> Kirim ke Email Guru (ahmadafdal2323@gmail.com)
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-luxury-dark border-t border-luxury-gold/10 py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <span class="font-serif text-lg font-bold text-white tracking-wide">IPS Kelas 8 MTsN 10 Agam</span>
+                <p class="text-gray-500 text-sm mt-1">© 2026 Drs. Ahmad Afdal — MTsN 10 Agam. Hak Cipta Dilindungi Undang-Undang</p>
+                <p class="text-gray-600 text-xs mt-1">Email: <a href="mailto:ahmadafdal2323@gmail.com" class="text-luxury-gold hover:underline">ahmadafdal2323@gmail.com</a></p>
+            </div>
+            <div class="flex gap-6">
+                <a href="14.html" class="text-gray-400 hover:text-luxury-gold transition-colors flex items-center gap-2 text-sm">
+                    <i class="fa-solid fa-chevron-left"></i> Pertemuan 14
+                </a>
+                <a href="index.html" class="text-gray-400 hover:text-luxury-gold transition-colors flex items-center gap-2 text-sm">
+                    <i class="fa-solid fa-book-open"></i> Daftar Pertemuan
+                </a>
+                <a href="16.html" class="text-gray-400 hover:text-luxury-gold transition-colors flex items-center gap-2 text-sm">
+                    Pertemuan 16 <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Logic -->
+    <script>
+        const correctAnswers = {
+            q1: 'B', q2: 'B', q3: 'A', q4: 'B', q5: 'A',
+            q6: 'A', q7: 'A', q8: 'B', q9: 'C', q10: 'B'
+        };
+
+        const essayKeywords = {
+            essay1: ['lingkungan hidup', 'biotik', 'abiotik', 'sosial budaya', 'makhluk hidup', 'tanah', 'air', 'udara', 'cahaya matahari', 'tumbuhan', 'hewan', 'manusia', 'nilai', 'norma'],
+            essay2: ['masalah', 'lingkungan', 'penebangan hutan', 'pencemaran', 'sampah', 'banjir', 'kekeringan', 'kebakaran hutan', 'illegal logging', 'polusi', 'penyebab', 'contoh'],
+            essay3: ['pembangunan berkelanjutan', 'sustainable development', 'lingkungan', 'ekonomi', 'sosial', 'generasi mendatang', 'kebutuhan', '3 pilar', 'sdgs'],
+            essay4: ['3r', 'reduce', 'reuse', 'recycle', 'kurangi', 'gunakan kembali', 'daur ulang', 'sampah', 'plastik', 'botol', 'kertas', 'contoh'],
+            essay5: ['perubahan iklim', 'dampak', 'kenaikan permukaan laut', 'cuaca ekstrem', 'banjir', 'kekeringan', 'generasi muda', 'peran', 'menanam pohon', 'hemat energi', 'daur ulang', 'kampanye']
+        };
+
+        function gradeEssay(text, keywords) {
+            if (!text) return 0;
+            let lowerText = text.toLowerCase();
+            let matched = 0;
+            keywords.forEach(kw => {
+                if (lowerText.includes(kw.toLowerCase())) matched++;
+            });
+            return Math.min(20, Math.round((matched / keywords.length) * 20));
+        }
+
+        function hitungSkor() {
+            const nama = document.getElementById('nama').value;
+            const nis = document.getElementById('nis').value;
+            if (!nama || !nis) { alert('Harap isi Nama Lengkap dan NIS terlebih dahulu!'); return; }
+
+            let pgScore = 0;
+            for (let i = 1; i <= 10; i++) {
+                const sel = document.querySelector(`input[name="q${i}"]:checked`);
+                if (sel && sel.value === correctAnswers[`q${i}`]) pgScore += 10;
+            }
+
+            let essayScore = 0;
+            for (let i = 1; i <= 5; i++) {
+                essayScore += gradeEssay(document.getElementById(`essay${i}`).value, essayKeywords[`essay${i}`]);
+            }
+
+            const totalScore = Math.round((pgScore + essayScore) / 2);
+
+            document.getElementById('score-pg').innerText = pgScore;
+            document.getElementById('score-essay').innerText = essayScore;
+            document.getElementById('score-total').innerText = totalScore;
+            document.getElementById('score-total').scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            const subject = `Hasil Uji Formatif Pertemuan 15 - Pelestarian Lingkungan Hidup - ${nama} (${nis})`;
+            const body = `Yth. Bapak Drs. Ahmad Afdal,\n\nBerikut hasil uji formatif saya:\nNama: ${nama}\nNIS: ${nis}\nKelas: ${document.getElementById('kelas').value}\nPertemuan: 15 (Pelestarian Lingkungan Hidup)\n\n- Skor PG: ${pgScore}/100\n- Skor Essay: ${essayScore}/100\n- Skor Akhir: ${totalScore}/100\n\nTerima kasih.`;
+            document.getElementById('email-link').href = `mailto:ahmadafdal2323@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            alert('Jawaban berhasil dikirim! Skor telah dihitung.');
+        }
+
+        function unduhPDF() {
+            const el = document.getElementById('quizForm');
+            const nama = document.getElementById('nama').value || 'Siswa';
+            html2pdf().set({ margin: 10, filename: `Uji_Pertemuan15_IPS_${nama.replace(/\s+/g,'_')}.pdf`, image: { type: 'jpeg', quality: 0.98 }, html2canvas: { scale: 2 }, jsPDF: { unit: 'mm', format: 'a4' } }).from(el).save();
+        }
+
+        function unduhTXT() {
+            const nama = document.getElementById('nama').value || 'Siswa';
+            let t = `HASIL UJI FORMATIF - PERTEMUAN 15: PELESTARIAN LINGKUNGAN HIDUP\n`;
+            t += `=====================================================================\n`;
+            t += `Guru: Drs. Ahmad Afdal | MTsN 10 Agam\n`;
+            t += `Nama: ${nama} | NIS: ${document.getElementById('nis').value}\n`;
+            t += `Kelas: ${document.getElementById('kelas').value} | Tanggal: ${document.getElementById('tanggal').value}\n`;
+            t += `=====================================================================\n`;
+            t += `PG: ${document.getElementById('score-pg').innerText}/100\nEssay: ${document.getElementById('score-essay').innerText}/100\nAkhir: ${document.getElementById('score-total').innerText}/100\n\n`;
+            for (let i = 1; i <= 5; i++) t += `Essay ${i}: ${document.getElementById(`essay${i}`).value || '-'}\n\n`;
+            const blob = new Blob([t], { type: 'text/plain' });
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = `Uji_Pertemuan15_${nama.replace(/\s+/g,'_')}.txt`;
+            a.click();
+        }
+
+        function mulaiUlang() {
+            if (confirm('Yakin ingin mengosongkan semua jawaban?')) {
+                document.getElementById('quizForm').reset();
+                document.getElementById('score-pg').innerText = '0';
+                document.getElementById('score-essay').innerText = '0';
+                document.getElementById('score-total').innerText = '0';
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+
+        document.getElementById('tanggal').valueAsDate = new Date();
+    </script>
+</body>
+</html>

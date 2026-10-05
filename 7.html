@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 7: Pasar dan Harga Keseimbangan | IPS Kelas 8 MTsN 10 Agam</title>
+    
+    <!-- Google Fonts: Playfair Display (Luxury), Inter (Modern), Amiri (Arabic) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- html2pdf.js untuk fitur Unduh PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        luxury: {
+                            dark: '#0B1120',
+                            card: '#151E32',
+                            gold: '#D4AF37',
+                            goldLight: '#F3E5AB',
+                            accent: '#C5A028'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                        arabic: ['"Amiri"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .text-gold-gradient {
+            background: linear-gradient(135deg, #D4AF37 0%, #F3E5AB 50%, #C5A028 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .glass-card {
+            background: rgba(21, 30, 50, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .hover-lift {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .hover-lift:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px -10px rgba(212, 175, 55, 0.15);
+            border-color: rgba(212, 175, 55, 0.5);
+        }
+        .quran-verse {
+            font-family: 'Amiri', serif;
+            font-size: 1.6rem;
+            line-height: 2.2;
+            text-align: right;
+            direction: rtl;
+        }
+        .custom-radio:checked + div {
+            background-color: rgba(212, 175, 55, 0.15);
+            border-color: #D4AF37;
+            color: #F3E5AB;
+        }
+        .custom-radio:checked + div .radio-dot {
+            background-color: #D4AF37;
+            border-color: #D4AF37;
+        }
+    </style>
+</head>
+<body class="bg-luxury-dark text-gray-200 font-sans antialiased selection:bg-luxury-gold selection:text-luxury-dark">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-card border-b border-luxury-gold/20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-store text-luxury-gold text-xl"></i>
+                    <span class="font-serif text-lg font-bold text-white tracking-wide">IPS Kelas 8</span>
+                </div>
+                <div class="flex gap-4">
+                    <a href="index.html" class="text-sm text-gray-300 hover:text-luxury-gold transition-colors flex items-center gap-2">
+                        <i class="fa-solid fa-arrow-left"></i> Daftar Pertemuan
+                    </a>
+                    <a href="6.html" class="text-sm text-gray-400 hover:text-luxury-gold transition-colors flex items-center gap-2">
+                        <i class="fa-solid fa-chevron-left"></i> Pertemuan 6
+                    </a>
+                    <a href="8.html" class="text-sm text-luxury-gold hover:text-luxury-goldLight transition-colors flex items-center gap-2 font-medium">
+                        UTS <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-24 pb-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+
+        <!-- Header Section -->
+        <div class="text-center space-y-4">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-luxury-gold/30 bg-luxury-gold/10 text-luxury-gold text-xs font-semibold tracking-widest uppercase">
+                <i class="fa-solid fa-scale-balanced"></i> Pertemuan Tujuh
+            </div>
+            <h1 class="font-serif text-4xl md:text-5xl font-bold text-white">Pasar dan Harga Keseimbangan</h1>
+            <p class="text-luxury-gold font-medium text-lg">Permintaan, Penawaran, dan Mekanisme Pasar</p>
+            <p class="text-gray-400 max-w-3xl mx-auto leading-relaxed">
+                Memahami konsep permintaan dan penawaran sebagai dua kekuatan utama dalam pasar, proses terbentuknya harga keseimbangan (equilibrium), mekanisme pasar, jenis-jenis pasar, serta peran pasar dalam perekonomian modern termasuk pasar digital.
+            </p>
+            <div class="flex items-center justify-center gap-3 pt-2">
+                <div class="w-10 h-10 rounded-full bg-luxury-gold/20 flex items-center justify-center text-luxury-gold font-bold font-serif">A</div>
+                <div class="text-left">
+                    <p class="text-white font-medium">Drs. Ahmad Afdal</p>
+                    <p class="text-luxury-gold text-sm">MTsN 10 Agam</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Materi Sections -->
+        <div class="space-y-8" id="materi-content">
+            
+            <!-- A. Pengertian Pasar -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">A</span>
+                    Pengertian Pasar
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    <strong class="text-white">Pasar</strong> adalah tempat bertemunya penjual dan pembeli untuk melakukan transaksi jual beli barang atau jasa. Dalam pengertian modern, pasar tidak selalu berbentuk tempat fisik, melainkan juga mencakup seluruh mekanisme yang mempertemukan permintaan dan penawaran.
+                </p>
+                <p class="text-gray-300 leading-relaxed mb-6">
+                    Menurut <strong class="text-white">William J. Stanton</strong>, pasar adalah orang-orang yang memiliki keinginan untuk memuaskan kebutuhan, memiliki kemampuan untuk membeli, dan bersedia membelanjakan uangnya untuk memenuhi kebutuhan tersebut.
+                </p>
+                <div class="bg-luxury-gold/10 border-l-4 border-luxury-gold p-4 rounded-r-lg">
+                    <p class="text-luxury-gold font-bold text-sm uppercase tracking-wider mb-1">📌 DEFINISI</p>
+                    <p class="text-white font-medium">Pasar adalah mekanisme atau tempat bertemunya permintaan (pembeli) dan penawaran (penjual) untuk menentukan harga dan jumlah barang/jasa yang diperdagangkan.</p>
+                </div>
+            </section>
+
+            <!-- B. Permintaan -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">B</span>
+                    Permintaan (Demand)
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    <strong class="text-white">Permintaan</strong> adalah jumlah barang atau jasa yang ingin dan mampu dibeli oleh konsumen pada berbagai tingkat harga dalam periode tertentu. Permintaan dibedakan menjadi dua:
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-4 mb-4">
+                    <div class="bg-luxury-dark/50 p-4 rounded-xl border border-luxury-gold/10">
+                        <p class="text-luxury-gold font-semibold mb-2">📊 Permintaan Absolut</p>
+                        <p class="text-gray-300 text-sm">Seluruh keinginan konsumen terhadap barang/jasa, tanpa memperhatikan daya beli.</p>
+                    </div>
+                    <div class="bg-luxury-dark/50 p-4 rounded-xl border border-luxury-gold/10">
+                        <p class="text-luxury-gold font-semibold mb-2">💰 Permintaan Efektif</p>
+                        <p class="text-gray-300 text-sm">Keinginan konsumen yang disertai dengan kemampuan daya beli (yang benar-benar direalisasikan).</p>
+                    </div>
+                </div>
+
+                <div class="bg-luxury-gold/10 border-l-4 border-luxury-gold p-4 rounded-r-lg mb-4">
+                    <p class="text-luxury-gold font-bold text-sm uppercase tracking-wider mb-2">📌 Hukum Permintaan</p>
+                    <p class="text-white font-medium text-sm">"Jika harga barang naik, maka jumlah barang yang diminta akan turun. Sebaliknya, jika harga barang turun, maka jumlah barang yang diminta akan naik" (ceteris paribus).</p>
+                </div>
+
+                <div class="bg-luxury-dark/50 p-4 rounded-xl border border-luxury-gold/10">
+                    <p class="text-luxury-gold font-semibold mb-3">🎯 Faktor yang Mempengaruhi Permintaan</p>
+                    <div class="grid md:grid-cols-2 gap-3 text-sm">
+                        <ul class="text-gray-300 space-y-1">
+                            <li>• <strong>Harga barang itu sendiri</strong></li>
+                            <li>• <strong>Pendapatan konsumen</strong></li>
+                            <li>• <strong>Selera masyarakat</strong></li>
+                            <li>• <strong>Harga barang lain (substitusi/komplemen)</strong></li>
+                        </ul>
+                        <ul class="text-gray-300 space-y-1">
+                            <li>• <strong>Prediksi harga di masa depan</strong></li>
+                            <li>• <strong>Jumlah penduduk</strong></li>
+                            <li>• <strong>Kebiasaan/adat istiadat</strong></li>
+                            <li>• <strong>Promosi dan iklan</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- C. Penawaran -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">C</span>
+                    Penawaran (Supply)
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    <strong class="text-white">Penawaran</strong> adalah jumlah barang atau jasa yang ingin dan mampu dijual oleh produsen pada berbagai tingkat harga dalam periode tertentu.
+                </p>
+
+                <div class="bg-luxury-gold/10 border-l-4 border-luxury-gold p-4 rounded-r-lg mb-4">
+                    <p class="text-luxury-gold font-bold text-sm uppercase tracking-wider mb-2">📌 Hukum Penawaran</p>
+                    <p class="text-white font-medium text-sm">"Jika harga barang naik, maka jumlah barang yang ditawarkan akan naik. Sebaliknya, jika harga barang turun, maka jumlah barang yang ditawarkan akan turun" (ceteris paribus).</p>
+                </div>
+
+                <div class="bg-luxury-dark/50 p-4 rounded-xl border border-luxury-gold/10">
+                    <p class="text-luxury-gold font-semibold mb-3">🎯 Faktor yang Mempengaruhi Penawaran</p>
+                    <div class="grid md:grid-cols-2 gap-3 text-sm">
+                        <ul class="text-gray-300 space-y-1">
+                            <li>• <strong>Harga barang itu sendiri</strong></li>
+                            <li>• <strong>Biaya produksi (input)</strong></li>
+                            <li>• <strong>Teknologi produksi</strong></li>
+                            <li>• <strong>Pajak dan subsidi</strong></li>
+                        </ul>
+                        <ul class="text-gray-300 space-y-1">
+                            <li>• <strong>Prediksi harga di masa depan</strong></li>
+                            <li>• <strong>Jumlah produsen</strong></li>
+                            <li>• <strong>Tujuan perusahaan</strong></li>
+                            <li>• <strong>Kebijakan pemerintah</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- D. Harga Keseimbangan -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">D</span>
+                    Harga Keseimbangan (Equilibrium)
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    <strong class="text-white">Harga keseimbangan</strong> (equilibrium price) adalah harga yang terbentuk pada titik pertemuan antara jumlah barang yang diminta dan jumlah barang yang ditawarkan. Pada harga ini, tidak ada kelebihan permintaan (shortage) maupun kelebihan penawaran (surplus).
+                </p>
+
+                <div class="bg-luxury-gold/10 border-l-4 border-luxury-gold p-4 rounded-r-lg mb-4">
+                    <p class="text-luxury-gold font-bold text-sm uppercase tracking-wider mb-2">📌 Kondisi Pasar</p>
+                    <ul class="text-white space-y-1 font-medium text-sm">
+                        <li>• <strong>Equilibrium:</strong> Qd = Qs (jumlah diminta = jumlah ditawarkan)</li>
+                        <li>• <strong>Surplus:</strong> Qs > Qd (kelebihan penawaran, harga cenderung turun)</li>
+                        <li>• <strong>Shortage:</strong> Qd > Qs (kelebihan permintaan, harga cenderung naik)</li>
+                    </ul>
+                </div>
+
+                <div class="bg-luxury-dark/50 p-4 rounded-xl border border-luxury-gold/10">
+                    <p class="text-luxury-gold font-semibold mb-3">📊 Contoh Tabel Permintaan & Penawaran</p>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm text-left text-gray-300 border border-luxury-gold/20 rounded-lg overflow-hidden">
+                            <thead class="text-xs text-luxury-gold uppercase bg-luxury-gold/10">
+                                <tr>
+                                    <th class="px-4 py-3">Harga (Rp)</th>
+                                    <th class="px-4 py-3">Qd (unit)</th>
+                                    <th class="px-4 py-3">Qs (unit)</th>
+                                    <th class="px-4 py-3">Kondisi</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-luxury-gold/10">
+                                <tr class="bg-luxury-dark/30">
+                                    <td class="px-4 py-3 font-medium text-white">1.000</td>
+                                    <td class="px-4 py-3">100</td>
+                                    <td class="px-4 py-3">20</td>
+                                    <td class="px-4 py-3 text-red-400">Shortage</td>
+                                </tr>
+                                <tr class="bg-luxury-card/30">
+                                    <td class="px-4 py-3 font-medium text-white">2.000</td>
+                                    <td class="px-4 py-3">80</td>
+                                    <td class="px-4 py-3">40</td>
+                                    <td class="px-4 py-3 text-red-400">Shortage</td>
+                                </tr>
+                                <tr class="bg-luxury-gold/10">
+                                    <td class="px-4 py-3 font-medium text-luxury-gold">3.000</td>
+                                    <td class="px-4 py-3 text-luxury-gold">60</td>
+                                    <td class="px-4 py-3 text-luxury-gold">60</td>
+                                    <td class="px-4 py-3 text-green-400 font-bold">Equilibrium ✓</td>
+                                </tr>
+                                <tr class="bg-luxury-card/30">
+                                    <td class="px-4 py-3 font-medium text-white">4.000</td>
+                                    <td class="px-4 py-3">40</td>
+                                    <td class="px-4 py-3">80</td>
+                                    <td class="px-4 py-3 text-yellow-400">Surplus</td>
+                                </tr>
+                                <tr class="bg-luxury-dark/30">
+                                    <td class="px-4 py-3 font-medium text-white">5.000</td>
+                                    <td class="px-4 py-3">20</td>
+                                    <td class="px-4 py-3">100</td>
+                                    <td class="px-4 py-3 text-yellow-400">Surplus</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="text-gray-400 text-xs mt-3 italic">Pada harga Rp3.000, jumlah yang diminta sama dengan jumlah yang ditawarkan (60 unit). Ini adalah harga keseimbangan.</p>
+                </div>
+            </section>
+
+            <!-- E. Mekanisme Pasar -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">E</span>
+                    Mekanisme Pasar
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    <strong class="text-white">Mekanisme pasar</strong> adalah proses penyesuaian harga dan jumlah barang yang diperdagangkan hingga mencapai keseimbangan. Mekanisme ini bekerja secara otomatis melalui interaksi antara permintaan dan penawaran.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="p-4 rounded-xl bg-luxury-dark/50 border border-red-500/20">
+                        <p class="text-red-400 font-semibold mb-2">📈 Saat Shortage (Qd > Qs)</p>
+                        <ul class="text-gray-300 text-sm space-y-1">
+                            <li>1. Konsumen berebut barang</li>
+                            <li>2. Penjual menaikkan harga</li>
+                            <li>3. Permintaan turun, penawaran naik</li>
+                            <li>4. Harga naik menuju equilibrium</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 rounded-xl bg-luxury-dark/50 border border-yellow-500/20">
+                        <p class="text-yellow-400 font-semibold mb-2">📉 Saat Surplus (Qs > Qd)</p>
+                        <ul class="text-gray-300 text-sm space-y-1">
+                            <li>1. Barang menumpuk di pasar</li>
+                            <li>2. Penjual menurunkan harga</li>
+                            <li>3. Permintaan naik, penawaran turun</li>
+                            <li>4. Harga turun menuju equilibrium</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- F. Jenis-jenis Pasar -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">F</span>
+                    Jenis-jenis Pasar
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    Berdasarkan struktur dan tingkat persaingannya, pasar dapat dibedakan menjadi beberapa jenis.
+                </p>
+
+                <div class="space-y-4">
+                    <div class="bg-luxury-dark/50 p-4 rounded-xl border border-green-500/20">
+                        <p class="text-green-400 font-semibold mb-2">🏪 Pasar Persaingan Sempurna</p>
+                        <p class="text-gray-300 text-sm mb-2">Pasar dengan banyak penjual dan pembeli, barang homogen, bebas keluar-masuk pasar, dan informasi sempurna.</p>
+                        <p class="text-gray-400 text-xs italic">Contoh: Pasar hasil pertanian (beras, sayur) di pedesaan.</p>
+                    </div>
+                    <div class="bg-luxury-dark/50 p-4 rounded-xl border border-blue-500/20">
+                        <p class="text-blue-400 font-semibold mb-2">🏬 Pasar Persaingan Tidak Sempurna</p>
+                        <p class="text-gray-300 text-sm mb-2">Pasar yang dikuasai oleh satu atau beberapa penjual. Dibagi menjadi:</p>
+                        <ul class="text-gray-300 text-xs space-y-1 ml-4">
+                            <li>• <strong>Monopoli:</strong> Hanya ada satu penjual (contoh: PLN, PT KAI)</li>
+                            <li>• <strong>Oligopoli:</strong> Beberapa penjual dominan (contoh: industri otomotif, semen)</li>
+                            <li>• <strong>Monopolistik:</strong> Banyak penjual dengan produk terdiferensiasi (contoh: restoran, salon)</li>
+                            <li>• <strong>Monopsoni:</strong> Hanya ada satu pembeli (contoh: pabrik susu di daerah peternak)</li>
+                            <li>• <strong>Oligopsoni:</strong> Beberapa pembeli dominan</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="overflow-x-auto mt-4">
+                    <table class="w-full text-sm text-left text-gray-300 border border-luxury-gold/20 rounded-lg overflow-hidden">
+                        <thead class="text-xs text-luxury-gold uppercase bg-luxury-gold/10">
+                            <tr>
+                                <th class="px-4 py-3">Jenis Pasar</th>
+                                <th class="px-4 py-3">Jumlah Penjual</th>
+                                <th class="px-4 py-3">Jumlah Pembeli</th>
+                                <th class="px-4 py-3">Karakteristik</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-luxury-gold/10">
+                            <tr class="bg-luxury-dark/30">
+                                <td class="px-4 py-3 font-medium text-white">Persaingan Sempurna</td>
+                                <td class="px-4 py-3">Banyak</td>
+                                <td class="px-4 py-3">Banyak</td>
+                                <td class="px-4 py-3">Barang homogen</td>
+                            </tr>
+                            <tr class="bg-luxury-card/30">
+                                <td class="px-4 py-3 font-medium text-white">Monopoli</td>
+                                <td class="px-4 py-3">Satu</td>
+                                <td class="px-4 py-3">Banyak</td>
+                                <td class="px-4 py-3">Tidak ada barang pengganti</td>
+                            </tr>
+                            <tr class="bg-luxury-dark/30">
+                                <td class="px-4 py-3 font-medium text-white">Oligopoli</td>
+                                <td class="px-4 py-3">Beberapa</td>
+                                <td class="px-4 py-3">Banyak</td>
+                                <td class="px-4 py-3">Barang homogen/terdiferensiasi</td>
+                            </tr>
+                            <tr class="bg-luxury-card/30">
+                                <td class="px-4 py-3 font-medium text-white">Monopolistik</td>
+                                <td class="px-4 py-3">Banyak</td>
+                                <td class="px-4 py-3">Banyak</td>
+                                <td class="px-4 py-3">Produk terdiferensiasi</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- G. Fungsi Pasar -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">G</span>
+                    Fungsi Pasar dalam Perekonomian
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    Pasar memiliki peran penting dalam perekonomian suatu negara. Berikut adalah fungsi-fungsi utama pasar.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="p-4 rounded-xl bg-luxury-dark/50 border border-luxury-gold/10">
+                        <p class="text-green-400 font-semibold mb-2">💰 Fungsi Distribusi</p>
+                        <p class="text-gray-300 text-xs">Memperlancar distribusi barang dari produsen ke konsumen.</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-luxury-dark/50 border border-luxury-gold/10">
+                        <p class="text-blue-400 font-semibold mb-2">📊 Fungsi Pembentukan Harga</p>
+                        <p class="text-gray-300 text-xs">Menentukan harga barang melalui mekanisme permintaan dan penawaran.</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-luxury-dark/50 border border-luxury-gold/10">
+                        <p class="text-purple-400 font-semibold mb-2">🔄 Fungsi Promosi</p>
+                        <p class="text-gray-300 text-xs">Tempat memperkenalkan produk baru kepada konsumen.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- H. Pasar di Era Digital -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 hover-lift">
+                <h2 class="font-serif text-2xl font-bold text-luxury-gold mb-4 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-luxury-gold text-luxury-dark flex items-center justify-center text-sm font-bold">H</span>
+                    Pasar di Era Digital
+                </h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    Perkembangan teknologi telah mengubah wajah pasar secara signifikan. Munculnya <strong class="text-white">e-commerce</strong> dan <strong class="text-white">marketplace digital</strong> membuka peluang baru bagi pelaku ekonomi.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-4 mb-4">
+                    <div class="bg-luxury-dark/50 p-4 rounded-xl border border-luxury-gold/10">
+                        <p class="text-luxury-gold font-semibold mb-2">💻 Contoh Pasar Digital</p>
+                        <ul class="text-gray-300 text-sm space-y-1">
+                            <li>• <strong>Marketplace:</strong> Tokopedia, Shopee, Lazada</li>
+                            <li>• <strong>Social Commerce:</strong> TikTok Shop, Instagram Shop</li>
+                            <li>• <strong>C2C:</strong> OLX, Facebook Marketplace</li>
+                            <li>• <strong>B2B:</strong> Alibaba, Ralali</li>
+                        </ul>
+                    </div>
+                    <div class="bg-luxury-dark/50 p-4 rounded-xl border border-luxury-gold/10">
+                        <p class="text-luxury-gold font-semibold mb-2">⚡ Keuntungan Pasar Digital</p>
+                        <ul class="text-gray-300 text-sm space-y-1">
+                            <li>• Jangkauan pasar lebih luas (global)</li>
+                            <li>• Transaksi 24 jam, tanpa batas waktu</li>
+                            <li>• Biaya operasional lebih rendah</li>
+                            <li>• Informasi harga transparan</li>
+                            <li>• Mudah membandingkan produk</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-luxury-gold/10 border-l-4 border-luxury-gold p-4 rounded-r-lg">
+                    <p class="text-luxury-gold font-bold text-sm uppercase tracking-wider mb-2">📌 Tantangan Pasar Digital</p>
+                    <ul class="text-white space-y-1 font-medium text-sm">
+                        <li>• Keamanan transaksi dan data pribadi</li>
+                        <li>• Penipuan online (fraud)</li>
+                        <li>• Persaingan dengan produk impor</li>
+                        <li>• Perlindungan konsumen yang lemah</li>
+                        <li>• Kesenjangan digital antar daerah</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Kata Kunci & Quranic Verse -->
+            <section class="glass-card rounded-2xl p-6 md:p-8 text-center">
+                <h3 class="font-serif text-xl font-bold text-luxury-gold mb-4">◆ Kata Kunci Pertemuan Ini</h3>
+                <div class="flex flex-wrap justify-center gap-2 mb-8">
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Pasar</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Permintaan</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Penawaran</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Harga Keseimbangan</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Equilibrium</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Surplus</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Shortage</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Monopoli</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Oligopoli</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Monopolistik</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">E-Commerce</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Hukum Permintaan</span>
+                    <span class="px-3 py-1 rounded-full bg-luxury-gold/10 text-luxury-gold text-xs border border-luxury-gold/20">Hukum Penawaran</span>
+                </div>
+                
+                <div class="border-t border-luxury-gold/20 pt-6">
+                    <p class="quran-verse text-luxury-goldLight mb-4">
+                        يَا أَيُّهَا ٱلَّذِينَ ءَامَنُوا لَا تَأْكُلُوٓا أَمْوَٰلَكُم بَيْنَكُم بِٱلْبَاطِلِ إِلَّآ أَن تَكُونَ تِجَٰرَةً عَن تَرَاضٍ مِّنكُمْ
+                    </p>
+                    <p class="text-gray-300 italic mb-2">"Wahai orang-orang yang beriman! Janganlah kamu saling memakan harta sesamamu dengan jalan yang batil, kecuali dengan jalan perniagaan yang berlaku dengan suka sama suka di antara kamu."</p>
+                    <p class="text-luxury-gold font-serif font-bold">— QS. An-Nisa [4]: 29</p>
+                    <p class="text-gray-400 text-sm mt-3 italic">Ayat ini menjadi landasan spiritual pentingnya mekanisme pasar yang adil, transparan, dan berdasarkan kerelaan kedua belah pihak (mutual consent).</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- UJI FORMATIF SECTION -->
+        <div id="uji-formatif" class="mt-16 pt-10 border-t-2 border-luxury-gold/30">
+            <div class="text-center mb-8">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-white mb-2">📝 Uji Formatif Pertemuan 7</h2>
+                <p class="text-luxury-gold font-medium">Pasar dan Harga Keseimbangan</p>
+                <p class="text-gray-400 text-sm mt-2 max-w-2xl mx-auto">
+                    📋 Bagian A: Pilihan Ganda (10 soal, skor 10/soal) &nbsp;|&nbsp; ✍️ Bagian B: Essay (5 soal, skor 20/soal)<br>
+                    <span class="text-luxury-goldLight">Materi: Pengertian pasar, permintaan & hukum permintaan, penawaran & hukum penawaran, harga keseimbangan, mekanisme pasar, jenis-jenis pasar, fungsi pasar, serta pasar di era digital.</span>
+                </p>
+            </div>
+
+            <form id="quizForm" class="space-y-8">
+                <!-- Identitas -->
+                <div class="glass-card rounded-2xl p-6 md:p-8">
+                    <h3 class="font-serif text-xl font-bold text-luxury-gold mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-id-card"></i> Identitas Siswa
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Nama Lengkap <span class="text-red-400">*</span></label>
+                            <input type="text" id="nama" required class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors" placeholder="Masukkan nama lengkap">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">No. Absen / NIS <span class="text-red-400">*</span></label>
+                            <input type="text" id="nis" required class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors" placeholder="Masukkan NIS">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">📅 Tanggal Ujian</label>
+                            <input type="date" id="tanggal" class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Kelas</label>
+                            <select id="kelas" class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors">
+                                <option value="VIII-A">VIII-A</option>
+                                <option value="VIII-B">VIII-B</option>
+                                <option value="VIII-C">VIII-C</option>
+                                <option value="VIII-D">VIII-D</option>
+                            </select>
+                        </div>
+                        <div class="md:col-span-2">
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Semester</label>
+                            <select id="semester" class="w-full md:w-1/2 bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors">
+                                <option value="1 (Ganjil)">1 (Ganjil)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian A: Pilihan Ganda -->
+                <div class="glass-card rounded-2xl p-6 md:p-8">
+                    <h3 class="font-serif text-xl font-bold text-luxury-gold mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-list-check"></i> Bagian A: Pilihan Ganda
+                    </h3>
+                    <div class="space-y-6" id="pg-questions">
+                        <!-- Soal 1 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 1 (10 POIN):</span> Tempat bertemunya penjual dan pembeli untuk melakukan transaksi jual beli disebut...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q1" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">A. Toko</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q1" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">B. Pasar</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q1" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">C. Mall</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q1" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">D. Koperasi</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 2 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 2 (10 POIN):</span> Hukum permintaan menyatakan bahwa jika harga barang naik, maka...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q2" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">A. Jumlah barang yang diminta turun</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q2" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">B. Jumlah barang yang diminta naik</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q2" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">C. Jumlah barang yang ditawarkan turun</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q2" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">D. Harga barang akan turun</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 3 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 3 (10 POIN):</span> Jika harga suatu barang naik, maka jumlah barang yang ditawarkan oleh produsen akan...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q3" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">A. Turun</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q3" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">B. Tetap</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q3" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">C. Naik</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q3" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">D. Hilang</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 4 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 4 (10 POIN):</span> Harga yang terbentuk pada titik pertemuan antara permintaan dan penawaran disebut...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q4" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">A. Harga pasar</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q4" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">B. Harga keseimbangan</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q4" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">C. Harga maksimum</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q4" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">D. Harga minimum</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 5 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 5 (10 POIN):</span> Berikut yang termasuk faktor internal (dari dalam diri konsumen) yang mempengaruhi permintaan adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q5" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">A. Pendapatan konsumen</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q5" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">B. Kebijakan pemerintah</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q5" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">C. Biaya produksi</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q5" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">D. Teknologi</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 6 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 6 (10 POIN):</span> Pasar dengan banyak penjual dan pembeli, barang homogen, dan bebas keluar-masuk pasar disebut pasar...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q6" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">A. Persaingan sempurna</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q6" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">B. Monopoli</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q6" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">C. Oligopoli</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q6" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">D. Monopolistik</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 7 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 7 (10 POIN):</span> Pasar yang hanya dikuasai oleh satu penjual disebut pasar...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q7" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">A. Oligopoli</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q7" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">B. Monopoli</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q7" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">C. Monopolistik</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q7" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">D. Persaingan sempurna</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 8 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 8 (10 POIN):</span> Pasar yang dikuasai oleh beberapa penjual besar (contoh: industri otomotif, semen) disebut pasar...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q8" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">A. Monopoli</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q8" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">B. Monopolistik</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q8" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">C. Persaingan sempurna</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q8" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">D. Oligopoli</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 9 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 9 (10 POIN):</span> Jika jumlah barang yang ditawarkan lebih besar daripada jumlah yang diminta, maka terjadi...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q9" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">A. Shortage (kekurangan)</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q9" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">B. Equilibrium</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q9" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">C. Inflasi</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q9" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">D. Surplus (kelebihan penawaran)</span></div></label>
+                            </div>
+                        </div>
+
+                        <!-- Soal 10 -->
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Soal 10 (10 POIN):</span> Berikut yang termasuk contoh pasar digital (e-commerce) di Indonesia adalah...</p>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q10" value="A" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">A. Pasar tradisional</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q10" value="B" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">B. Minimarket</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q10" value="C" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">C. Tokopedia dan Shopee</span></div></label>
+                                <label class="flex items-center gap-3 cursor-pointer group"><input type="radio" name="q10" value="D" class="custom-radio hidden"><div class="flex-1 p-3 rounded-lg border border-gray-700 group-hover:border-luxury-gold/50 transition-all flex items-center gap-3"><div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 group-hover:border-luxury-gold transition-colors"></div><span class="text-gray-300 group-hover:text-white">D. Koperasi</span></div></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian B: Essay -->
+                <div class="glass-card rounded-2xl p-6 md:p-8">
+                    <h3 class="font-serif text-xl font-bold text-luxury-gold mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-pen-to-square"></i> Bagian B: Essay
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Essay 1 (20 POIN):</span> Jelaskan pengertian pasar! Sebutkan dan jelaskan hukum permintaan beserta faktor-faktor yang mempengaruhinya!</p>
+                            <textarea id="essay1" rows="4" class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors" placeholder="Tulis jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Essay 2 (20 POIN):</span> Jelaskan pengertian penawaran! Sebutkan dan jelaskan hukum penawaran beserta faktor-faktor yang mempengaruhinya!</p>
+                            <textarea id="essay2" rows="4" class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors" placeholder="Tulis jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Essay 3 (20 POIN):</span> Apa yang dimaksud dengan harga keseimbangan (equilibrium)? Jelaskan bagaimana proses terbentuknya harga keseimbangan dan apa yang terjadi jika terjadi surplus atau shortage!</p>
+                            <textarea id="essay3" rows="4" class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors" placeholder="Tulis jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Essay 4 (20 POIN):</span> Sebutkan dan jelaskan 4 jenis pasar berdasarkan struktur persaingannya! Berikan masing-masing satu contoh!</p>
+                            <textarea id="essay4" rows="4" class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors" placeholder="Tulis jawaban Anda di sini..."></textarea>
+                        </div>
+                        <div class="p-4 rounded-xl bg-luxury-dark/40 border border-luxury-gold/10">
+                            <p class="font-medium text-white mb-3"><span class="text-luxury-gold">Essay 5 (20 POIN):</span> Jelaskan fungsi pasar dalam perekonomian! Sebutkan 3 fungsi utama pasar dan berikan contoh peran pasar di era digital (e-commerce)!</p>
+                            <textarea id="essay5" rows="4" class="w-full bg-luxury-dark border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors" placeholder="Tulis jawaban Anda di sini..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hasil & Actions -->
+                <div class="glass-card rounded-2xl p-6 md:p-8 border-luxury-gold/40 bg-luxury-gold/5">
+                    <h3 class="font-serif text-xl font-bold text-luxury-gold mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-chart-pie"></i> Hasil Uji Formatif
+                    </h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 text-center">
+                        <div class="p-4 rounded-xl bg-luxury-dark border border-luxury-gold/20">
+                            <p class="text-gray-400 text-sm mb-1">📋 Pilihan Ganda</p>
+                            <p class="text-3xl font-bold text-white" id="score-pg">0</p>
+                            <p class="text-luxury-gold text-xs">/ 100</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-luxury-dark border border-luxury-gold/20">
+                            <p class="text-gray-400 text-sm mb-1">✍️ Essay (Estimasi)</p>
+                            <p class="text-3xl font-bold text-white" id="score-essay">0</p>
+                            <p class="text-luxury-gold text-xs">/ 100</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-luxury-gold/10 border border-luxury-gold">
+                            <p class="text-luxury-gold text-sm mb-1 font-bold">Skor Akhir (Rata-rata)</p>
+                            <p class="text-4xl font-bold text-gold-gradient" id="score-total">0</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-500 text-center mb-6 italic">
+                        *Catatan: Skor Essay dihitung secara otomatis berdasarkan deteksi kata kunci sederhana sebagai estimasi awal. Penilaian detail dan akhir tetap dilakukan oleh Guru.
+                    </p>
+
+                    <div class="flex flex-col md:flex-row gap-4 justify-center">
+                        <button type="button" onclick="hitungSkor()" class="px-6 py-3 bg-gold-gradient text-luxury-dark font-bold rounded-lg shadow-lg shadow-luxury-gold/20 hover:shadow-luxury-gold/40 transition-all duration-300 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-paper-plane"></i> KIRIM JAWABAN & LIHAT HASIL
+                        </button>
+                        <button type="button" onclick="unduhPDF()" class="px-6 py-3 border border-luxury-gold text-luxury-gold font-medium rounded-lg hover:bg-luxury-gold hover:text-luxury-dark transition-all duration-300 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-file-pdf"></i> UNDUH PDF LENGKAP
+                        </button>
+                        <button type="button" onclick="unduhTXT()" class="px-6 py-3 border border-gray-600 text-gray-300 font-medium rounded-lg hover:border-luxury-gold hover:text-luxury-gold transition-all duration-300 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-file-lines"></i> UNDUH SKOR (TXT)
+                        </button>
+                        <button type="button" onclick="mulaiUlang()" class="px-6 py-3 border border-gray-600 text-gray-300 font-medium rounded-lg hover:border-red-400 hover:text-red-400 transition-all duration-300 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-rotate-right"></i> MULAI ULANG
+                        </button>
+                    </div>
+                    
+                    <div class="mt-6 text-center">
+                        <a href="mailto:ahmadafdal2323@gmail.com" id="email-link" class="inline-flex items-center gap-2 text-luxury-gold hover:text-luxury-goldLight transition-colors text-sm font-medium">
+                            <i class="fa-solid fa-envelope"></i> Kirim ke Email Guru (ahmadafdal2323@gmail.com)
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-luxury-dark border-t border-luxury-gold/10 py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <span class="font-serif text-lg font-bold text-white tracking-wide">IPS Kelas 8 MTsN 10 Agam</span>
+                <p class="text-gray-500 text-sm mt-1">© 2026 Drs. Ahmad Afdal — MTsN 10 Agam. Hak Cipta Dilindungi Undang-Undang</p>
+                <p class="text-gray-600 text-xs mt-1">Email: <a href="mailto:ahmadafdal2323@gmail.com" class="text-luxury-gold hover:underline">ahmadafdal2323@gmail.com</a></p>
+            </div>
+            <div class="flex gap-6">
+                <a href="6.html" class="text-gray-400 hover:text-luxury-gold transition-colors flex items-center gap-2 text-sm">
+                    <i class="fa-solid fa-chevron-left"></i> Pertemuan 6
+                </a>
+                <a href="index.html" class="text-gray-400 hover:text-luxury-gold transition-colors flex items-center gap-2 text-sm">
+                    <i class="fa-solid fa-book-open"></i> Daftar Pertemuan
+                </a>
+                <a href="8.html" class="text-gray-400 hover:text-luxury-gold transition-colors flex items-center gap-2 text-sm">
+                    UTS <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Kunci Jawaban Pilihan Ganda
+        const correctAnswers = {
+            q1: 'B', q2: 'A', q3: 'C', q4: 'B', q5: 'A',
+            q6: 'A', q7: 'B', q8: 'D', q9: 'D', q10: 'C'
+        };
+
+        // Kata Kunci untuk Estimasi Skor Essay (Maksimal 20 poin per soal)
+        const essayKeywords = {
+            essay1: ['pasar', 'permintaan', 'hukum permintaan', 'harga', 'naik', 'turun', 'jumlah', 'pendapatan', 'selera', 'faktor'],
+            essay2: ['penawaran', 'hukum penawaran', 'produsen', 'harga', 'naik', 'turun', 'biaya produksi', 'teknologi', 'pajak', 'faktor'],
+            essay3: ['harga keseimbangan', 'equilibrium', 'qd', 'qs', 'permintaan', 'penawaran', 'surplus', 'shortage', 'mekanisme', 'harga'],
+            essay4: ['persaingan sempurna', 'monopoli', 'oligopoli', 'monopolistik', 'penjual', 'pembeli', 'homogen', 'terdiferensiasi', 'contoh'],
+            essay5: ['fungsi pasar', 'distribusi', 'pembentukan harga', 'promosi', 'e-commerce', 'tokopedia', 'shopee', 'digital', 'online', 'transaksi']
+        };
+
+        function gradeEssay(text, keywords) {
+            if (!text) return 0;
+            let score = 0;
+            let lowerText = text.toLowerCase();
+            let matched = 0;
+            keywords.forEach(kw => {
+                if (lowerText.includes(kw.toLowerCase())) {
+                    matched++;
+                }
+            });
+            score = Math.min(20, Math.round((matched / keywords.length) * 20));
+            return score;
+        }
+
+        function hitungSkor() {
+            const nama = document.getElementById('nama').value;
+            const nis = document.getElementById('nis').value;
+            if (!nama || !nis) {
+                alert('Harap isi Nama Lengkap dan NIS terlebih dahulu!');
+                return;
+            }
+
+            let pgScore = 0;
+            for (let i = 1; i <= 10; i++) {
+                const selected = document.querySelector(`input[name="q${i}"]:checked`);
+                if (selected && selected.value === correctAnswers[`q${i}`]) {
+                    pgScore += 10;
+                }
+            }
+
+            let essayScore = 0;
+            for (let i = 1; i <= 5; i++) {
+                const text = document.getElementById(`essay${i}`).value;
+                essayScore += gradeEssay(text, essayKeywords[`essay${i}`]);
+            }
+
+            const totalScore = Math.round((pgScore + essayScore) / 2);
+
+            document.getElementById('score-pg').innerText = pgScore;
+            document.getElementById('score-essay').innerText = essayScore;
+            document.getElementById('score-total').innerText = totalScore;
+
+            document.getElementById('score-total').scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            const subject = `Hasil Uji Formatif Pertemuan 7 - Pasar dan Harga Keseimbangan - ${nama} (${nis})`;
+            const body = `Yth. Bapak Drs. Ahmad Afdal,\n\nBerikut adalah hasil uji formatif saya:\nNama: ${nama}\nNIS: ${nis}\nKelas: ${document.getElementById('kelas').value}\nMata Pelajaran: IPS Kelas 8\nPertemuan: 7 (Pasar dan Harga Keseimbangan)\n\n- Skor Pilihan Ganda: ${pgScore}/100\n- Skor Essay (Estimasi): ${essayScore}/100\n- Skor Akhir: ${totalScore}/100\n\nMohon bimbingannya.\nTerima kasih.`;
+            document.getElementById('email-link').href = `mailto:ahmadafdal2323@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            
+            alert('Jawaban berhasil dikirim! Skor telah dihitung. Silakan unduh PDF atau TXT untuk dokumentasi.');
+        }
+
+        function unduhPDF() {
+            const element = document.getElementById('quizForm');
+            const nama = document.getElementById('nama').value || 'Siswa';
+            const opt = {
+                margin: 10,
+                filename: `Hasil_Uji_Pertemuan7_IPS_${nama.replace(/\s+/g, '_')}.pdf`,
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2, useCORS: true },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            };
+            html2pdf().set(opt).from(element).save();
+        }
+
+        function unduhTXT() {
+            const nama = document.getElementById('nama').value || 'Siswa';
+            const nis = document.getElementById('nis').value || '-';
+            const pg = document.getElementById('score-pg').innerText;
+            const essay = document.getElementById('score-essay').innerText;
+            const total = document.getElementById('score-total').innerText;
+            
+            let text = `HASIL UJI FORMATIF - PERTEMUAN 7: PASAR DAN HARGA KESEIMBANGAN\n`;
+            text += `=====================================================================\n`;
+            text += `Mata Pelajaran: IPS Kelas 8 MTsN 10 Agam\n`;
+            text += `Guru: Drs. Ahmad Afdal\n`;
+            text += `=====================================================================\n`;
+            text += `Nama: ${nama}\nNIS: ${nis}\nKelas: ${document.getElementById('kelas').value}\n`;
+            text += `Tanggal: ${document.getElementById('tanggal').value || '-'}\n`;
+            text += `=====================================================================\n`;
+            text += `Skor Pilihan Ganda: ${pg} / 100\n`;
+            text += `Skor Essay (Estimasi): ${essay} / 100\n`;
+            text += `Skor Akhir (Rata-rata): ${total} / 100\n\n`;
+            text += `JAWABAN ESSAY:\n`;
+            text += `---------------------------------------------------------------------\n`;
+            text += `1. ${document.getElementById('essay1').value || 'Tidak dijawab'}\n\n`;
+            text += `2. ${document.getElementById('essay2').value || 'Tidak dijawab'}\n\n`;
+            text += `3. ${document.getElementById('essay3').value || 'Tidak dijawab'}\n\n`;
+            text += `4. ${document.getElementById('essay4').value || 'Tidak dijawab'}\n\n`;
+            text += `5. ${document.getElementById('essay5').value || 'Tidak dijawab'}\n`;
+
+            const blob = new Blob([text], { type: 'text/plain' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `Hasil_Uji_Pertemuan7_${nama.replace(/\s+/g, '_')}.txt`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);
+        }
+
+        function mulaiUlang() {
+            if (confirm('Apakah Anda yakin ingin mengosongkan semua jawaban dan memulai ulang?')) {
+                document.getElementById('quizForm').reset();
+                document.getElementById('score-pg').innerText = '0';
+                document.getElementById('score-essay').innerText = '0';
+                document.getElementById('score-total').innerText = '0';
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+
+        document.getElementById('tanggal').valueAsDate = new Date();
+    </script>
+</body>
+</html>

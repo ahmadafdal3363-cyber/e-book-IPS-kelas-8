@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPS Kelas 8 MTsN 10 Agam - Drs. Ahmad Afdal</title>
+    
+    <!-- Google Fonts: Playfair Display (Luxury Serif) & Inter (Modern Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Konfigurasi Tema Luxury -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        luxury: {
+                            dark: '#0B1120',      // Deep Navy
+                            card: '#151E32',      // Lighter Navy for cards
+                            gold: '#D4AF37',      // Classic Gold
+                            goldLight: '#F3E5AB', // Pale Gold
+                            accent: '#C5A028'     // Darker Gold for hover
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'gold-gradient': 'linear-gradient(135deg, #D4AF37 0%, #F3E5AB 50%, #C5A028 100%)',
+                        'dark-gradient': 'linear-gradient(to bottom, #0B1120, #151E32)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Efek Luxury Tambahan */
+        .text-gold-gradient {
+            background: linear-gradient(135deg, #D4AF37 0%, #F3E5AB 50%, #C5A028 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .glass-card {
+            background: rgba(21, 30, 50, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .hover-lift {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px -10px rgba(212, 175, 55, 0.15);
+            border-color: rgba(212, 175, 55, 0.5);
+        }
+        /* Placeholder styling untuk gambar */
+        .img-placeholder {
+            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #94a3b8;
+            font-size: 0.875rem;
+            text-align: center;
+            border: 2px dashed #475569;
+        }
+    </style>
+</head>
+<body class="bg-luxury-dark text-gray-200 font-sans antialiased selection:bg-luxury-gold selection:text-luxury-dark">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass-card border-b border-luxury-gold/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <i class="fa-solid fa-book-open text-luxury-gold text-2xl"></i>
+                    <span class="font-serif text-xl font-bold text-white tracking-wide">IPS Kelas 8</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#beranda" class="text-gray-300 hover:text-luxury-gold transition-colors duration-300 text-sm font-medium uppercase tracking-wider">Beranda</a>
+                    <a href="#tentang-buku" class="text-gray-300 hover:text-luxury-gold transition-colors duration-300 text-sm font-medium uppercase tracking-wider">Tentang Buku</a>
+                    <a href="#daftar-pertemuan" class="text-gray-300 hover:text-luxury-gold transition-colors duration-300 text-sm font-medium uppercase tracking-wider">Daftar Pertemuan</a>
+                    <a href="#penulis" class="text-gray-300 hover:text-luxury-gold transition-colors duration-300 text-sm font-medium uppercase tracking-wider">Penulis</a>
+                </div>
+                <a href="mailto:ahmadafdal2323@gmail.com" class="hidden md:inline-flex items-center px-6 py-2 border border-luxury-gold text-luxury-gold rounded-full hover:bg-luxury-gold hover:text-luxury-dark transition-all duration-300 font-medium text-sm">
+                    Hubungi Penulis
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute top-0 left-1/2 w-full -translate-x-1/2 h-full z-0 pointer-events-none">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-luxury-gold/10 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-20 right-10 w-96 h-96 bg-blue-900/20 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Text Content -->
+                <div class="text-center lg:text-left space-y-6">
+                    <div class="inline-block px-4 py-1 rounded-full border border-luxury-gold/30 bg-luxury-gold/10 text-luxury-gold text-xs font-semibold tracking-widest uppercase mb-2">
+                        Edisi Terbaru 2026
+                    </div>
+                    <h1 class="font-serif text-5xl lg:text-7xl font-bold leading-tight">
+                        IPS Kelas 8 <br>
+                        <span class="text-gold-gradient">MTsN 10 Agam</span>
+                    </h1>
+                    <p class="text-lg text-gray-400 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Panduan pembelajaran Ilmu Pengetahuan Sosial yang komprehensif, modern, dan terstruktur. Dirancang khusus untuk mendukung keberhasilan akademik siswa dengan pendekatan kontekstual dan mendalam.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+                        <a href="#daftar-pertemuan" class="px-8 py-4 bg-gold-gradient text-luxury-dark font-bold rounded-lg shadow-lg shadow-luxury-gold/20 hover:shadow-luxury-gold/40 transition-all duration-300 transform hover:-translate-y-1">
+                            Mulai Belajar <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="#tentang-buku" class="px-8 py-4 border border-gray-600 text-white font-medium rounded-lg hover:border-luxury-gold hover:text-luxury-gold transition-all duration-300">
+                            Pelajari Lebih Lanjut
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Book Cover Image -->
+                <div class="relative flex justify-center lg:justify-end">
+                    <div class="relative w-72 h-96 lg:w-96 lg:h-[500px] rounded-r-2xl rounded-l-sm shadow-2xl shadow-black/50 transform rotate-y-12 hover:rotate-0 transition-transform duration-500 group">
+                        <!-- 
+                            ========================================================================
+                            PANDUAN MENGGANTI COVER BUKU:
+                            1. Siapkan file gambar cover buku Anda.
+                            2. Ubah nama file tersebut menjadi tepat: "cover-buku.png"
+                            3. Simpan file tersebut di folder yang sama dengan file HTML ini.
+                            4. Jika gambar tidak muncul, pastikan ekstensi file benar (.png, .jpg, atau .jpeg).
+                            ========================================================================
+                        -->
+                        <img 
+                            src="cover-buku.png" 
+                            alt="Cover Buku IPS Kelas 8 MTsN 10 Agam" 
+                            class="w-full h-full object-cover rounded-r-2xl rounded-l-sm border-l-4 border-luxury-gold/30"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                        >
+                        <!-- Fallback Placeholder jika gambar belum ada -->
+                        <div class="img-placeholder w-full h-full rounded-r-2xl rounded-l-sm absolute top-0 left-0" style="display: none;">
+                            <div>
+                                <i class="fa-solid fa-image text-4xl mb-2 text-luxury-gold"></i><br>
+                                <span class="text-luxury-gold font-semibold">cover-buku.png</span><br>
+                                <span class="text-xs text-gray-400">(Letakkan file di folder yang sama)</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Decorative spine effect -->
+                        <div class="absolute left-0 top-0 bottom-0 w-4 bg-gradient-to-r from-black/40 to-transparent rounded-l-sm pointer-events-none"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Buku -->
+    <section id="tentang-buku" class="py-20 bg-luxury-card border-y border-luxury-gold/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-3xl lg:text-4xl font-bold text-white mb-4">Struktur Pembelajaran</h2>
+                <div class="w-24 h-1 bg-gold-gradient mx-auto rounded-full"></div>
+                <p class="mt-4 text-gray-400 max-w-2xl mx-auto">
+                    Buku ini disusun dalam 17 sesi pembelajaran terstruktur, mencakup materi geografi, sosiologi, ekonomi, dan sejarah sesuai kurikulum terbaru, dilengkapi dengan evaluasi tengah dan akhir semester.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-card p-8 rounded-2xl text-center hover-lift">
+                    <div class="w-16 h-16 bg-luxury-gold/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fa-solid fa-compass text-2xl text-luxury-gold"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-3">Kontekstual & Relevan</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Materi disesuaikan dengan lingkungan dan kearifan lokal, khususnya untuk konteks MTsN 10 Agam dan wilayah sekitarnya.</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl text-center hover-lift">
+                    <div class="w-16 h-16 bg-luxury-gold/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fa-solid fa-layer-group text-2xl text-luxury-gold"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-3">17 Pertemuan Terstruktur</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Alur belajar yang sistematis dari pertemuan 1 hingga 17, termasuk UTS dan UAS, untuk memaksimalkan pemahaman siswa.</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl text-center hover-lift">
+                    <div class="w-16 h-16 bg-luxury-gold/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fa-solid fa-graduation-cap text-2xl text-luxury-gold"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-3">Berorientasi Ujian</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Dilengkapi dengan panduan khusus dan latihan soal untuk menghadapi Ujian Tengah Semester dan Ujian Akhir Semester.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daftar Pertemuan -->
+    <section id="daftar-pertemuan" class="py-20 bg-luxury-dark relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-3xl lg:text-4xl font-bold text-white mb-4">Daftar Pertemuan</h2>
+                <div class="w-24 h-1 bg-gold-gradient mx-auto rounded-full"></div>
+                <p class="mt-4 text-gray-400">Klik pada setiap modul untuk membuka materi pembelajaran di tab baru.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Script Generate Pertemuan 1-17 -->
+                <!-- Pertemuan 1 -->
+                <a href="1.html" target="_blank" class="group glass-card p-6 rounded-xl hover-lift flex items-start gap-4">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-luxury-gold/10 flex items-center justify-center text-luxury-gold font-bold font-serif text-xl group-hover:bg-luxury-gold group-hover:text-luxury-dark transition-colors">01</div>
+                    <div>
+                        <h3 class="font-serif text-lg font-bold text-white group-hover:text-luxury-gold transition-colors">Interaksi Keruangan ASEAN</h3>
+                        <p class="text-sm text-gray-400 mt-1">Letak dan Kondisi Geografis Negara-Negara ASEAN</p>
+                    </div>
+                </a>
+
+                <!-- Pertemuan 2 -->
+                <a href="2.html" target="_blank" class="group glass-card p-6 rounded-xl hover-lift flex items-start gap-4">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-luxury-gold/10 flex items-center justify-center text-luxury-gold font-bold font-serif text-xl group-hover:bg-luxury-gold group-hover:text-luxury-dark transition-colors">02</div>
+                    <div>
+                        <h3 class="font-serif text-lg font-bold text-white group-hover:text-luxury-gold transition-colors">Karakteristik Alam & Penduduk</h3>
+                        <p class="text-sm text-gray-400 mt-1">Kondisi Sosial dan Demografi Kawasan ASEAN</p>
+                    </div>
+                </a>
+
+                <!-- Pertemuan 3 -->
+                <a href="3.html" target="_blank" class="group glass-card p-6 rounded-xl hover-lift flex items-start gap-4">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-luxury-gold/10 flex items-center justify-center text-luxury-gold font-bold font-serif text-xl group-hover:bg-luxury-gold group-hover:text-luxury-dark transition-colors">03</div>
+                    <div>
+                        <h3 class="font-serif text-lg font-bold text-white group-hover:text-luxury-gold transition-colors">Kerja Sama Antarnegara ASEAN</h3>
+                        <p class="text-sm text-gray-400 mt-1">Bentuk dan Dampak Kerja Sama di Berbagai Bidang</p>
+                    </div>
+                </a>
+
+                <!-- Pertemuan 4 -->
+                <a href="4.html" target="_blank" class="group glass-card p-6 rounded-xl hover-lift flex items-start gap-4">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-luxury-gold/10 flex items-center justify-center text-luxury-gold font-bold font-serif text-xl group-hover:bg-luxury-gold group-hover:text-luxury-dark transition-colors">04</div>
+                    <div>
+                        <h3 class="font-serif text-lg font-bold text-white group-hover:text-luxury-gold transition-colors">Interaksi & Keselarasan Sosial</h3>
+                        <p class="text-sm text-gray-400 mt-1">Pengaruh Interaksi Sosial terhadap Kehidupan Masyarakat</p>
+                    </div>
+                </a>
+
+                <!-- Pertemuan 5 -->
+                <a href="5.html" target="_blank" class="group glass-card p-6 rounded-xl hover-lift flex items-start gap-4">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-luxury-gold/10 flex items-center justify-center text-luxury-gold font-bold font-serif text-xl group-hover:bg-luxury-gold group-hover:text-luxury-dark transition-colors">05</div>
+                    <div>
+                        <h3 class="font-serif text-lg font-bold text-white group-hover:text-luxury-gold transition-colors">Penyimpangan Sosial</h3>
+                        <p class="text-sm text-gray-400 mt-1">Bentuk, Penyebab, dan Upaya Penanganannya</p>
+                    </div>
+                </a>
+
+                <!-- Pertemuan 6 -->
+                <a href="6.html" target="_blank" class="group glass-card p-6 rounded-xl hover-lift flex items-start gap-4">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-luxury-gold/10 flex items-center justify-center text-luxury-gold font-bold font-serif text-xl group-hover:bg-luxury-gold group-hover:text-luxury-dark transition-colors">06</div>
+                    <div>
+                        <h3 class="font-serif text-lg font-bold text-white group-hover:text-luxury-gold transition-colors">Kegiatan Ekonomi</h3>
+                        <p class="text-sm text-gray-400 mt-1">Produksi, Distribusi, dan Konsumsi dalam Masyarakat</p>
+                    </div>
+                </a>
+
+                <!-- Pertemuan 7 -->
+                <a href="7.html" target="_blank" class="group glass-card p-6 rounded-xl hover-lift flex items-start gap-4">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-luxury-gold/10 flex items-center justify-center text-luxury-gold font-bold font-serif text-xl group-hover:bg-luxury-gold group-hover:text-luxury-dark transition-colors">07</div>
+                    <div>
+                        <h3 class="font-serif text-lg font-bold text-white group-hover:text-luxury-gold transition-colors">Pasar dan Harga Keseimbangan</h3>
+                        <p class="text-sm text-gray-400 mt-1">Permintaan, Penawaran, dan Mekanisme Pasar</p>
+                    </div>
+                </a>
+
+                <!-- Pertemuan 8: UTS -->
+                <a href="8.html" target="_blank" class="group glass-card p-6 rounded-xl hover-lift flex items-start gap-4 border-luxury-gold/50 bg-luxury-gold/5">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-luxury-gold flex items-center justify-center text-luxury-dark font-bold font-serif text-xl">
+                        <i class="fa-solid fa-file-pen"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-serif text-lg font-bold text-luxury-gold">Ujian Tengah Semester (UTS)</h3>
+                        <p class="text-sm text-gray-300 mt-1">Evaluasi Komprehensif Pertemuan 1 - 7</p>
+                    </div>
+                </a>
+
+                <!-- Pertemuan 9 -->
+                <a href="9.html" target="_blank" class="group glass-card p-6 rounded-xl hover-lift flex items-start gap-4">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-luxury-gold/10 flex items-center justify-center text-luxury-gold font-bold font-serif text-xl group-hover:bg-luxury-gold group-hover:text-luxury-dark transition-colors">09</div>
+                    <div>
+                        <h3 class="font-serif text-lg font-bold text-white group-hover:text-luxury-gold transition-colors">Masa Penjajahan di Indonesia</h3>
+                        <p class="text-sm text-gray-400 mt-1">Perubahan Masyarakat pada Masa Kolonial</p>
+                    </div>
+                </a>
+
+                <!-- Pertemuan 10 -->
+                <a href="10.html" target="_blank" class="group glass-card p-6 rounded-xl hover-lift flex items-start gap-4">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-luxury-gold/10 flex items-center justify-center text-luxury-gold font-bold font-serif text-xl group-hover:bg-luxury-gold group-hover:text-luxury-dark transition-colors">10</div>
+                    <div>
+                        <h3 class="font-serif text-lg font-bold text-white group-hover:text-luxury-gold transition-colors">Semangat Kebangsaan</h3>
+                        <p class="text-sm text-gray-400 mt-1">Tumbuh dan Berkembangnya Nasionalisme Indonesia</p>
+                    </div>
+                </a>
+
+                <!-- Pertemuan 11 -->
+                <a href="11.html" target="_blank" class="group glass-card p-6 rounded-xl hover-lift flex items-start gap-4">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-luxury-gold/10 flex items-center justify-center text-luxury-gold font-bold font-serif text-xl group-hover:bg-luxury-gold group-hover:text-luxury-dark transition-colors">11</div>
+                    <div>
+                        <h3 class="font-serif text-lg font-bold text-white group-hover:text-luxury-gold transition-colors">Perjuangan Mempertahankan Kemerdekaan</h3>
+                        <p class="text-sm text-gray-400 mt-1">Kronologi dan Peran Tokoh Nasional</p>
+                    </div>
+                </a>
+
+                <!-- Pertemuan 12 -->
+                <a href="12.html" target="_blank" class="group glass-card p-6 rounded-xl hover-lift flex items-start gap-4">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-luxury-gold/10 flex items-center justify-center text-luxury-gold font-bold font-serif text-xl group-hover:bg-luxury-gold group-hover:text-luxury-dark transition-colors">12</div>
+                    <div>
+                        <h3 class="font-serif text-lg font-bold text-white group-hover:text-luxury-gold transition-colors">Keberagaman & Integrasi Nasional</h3>
+                        <p class="text-sm text-gray-400 mt-1">Masyarakat Indonesia yang Bhinneka Tunggal Ika</p>
+                    </div>
+                </a>
+
+                <!-- Pertemuan 13 -->
+                <a href="13.html" target="_blank" class="group glass-card p-6 rounded-xl hover-lift flex items-start gap-4">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-luxury-gold/10 flex items-center justify-center text-luxury-gold font-bold font-serif text-xl group-hover:bg-luxury-gold group-hover:text-luxury-dark transition-colors">13</div>
+                    <div>
+                        <h3 class="font-serif text-lg font-bold text-white group-hover:text-luxury-gold transition-colors">Dinamika Penduduk Indonesia</h3>
+                        <p class="text-sm text-gray-400 mt-1">Kuantitas, Kualitas, dan Sumber Daya Manusia</p>
+                    </div>
+                </a>
+
+                <!-- Pertemuan 14 -->
+                <a href="14.html" target="_blank" class="group glass-card p-6 rounded-xl hover-lift flex items-start gap-4">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-luxury-gold/10 flex items-center justify-center text-luxury-gold font-bold font-serif text-xl group-hover:bg-luxury-gold group-hover:text-luxury-dark transition-colors">14</div>
+                    <div>
+                        <h3 class="font-serif text-lg font-bold text-white group-hover:text-luxury-gold transition-colors">Perekonomian & Kerja Sama Internasional</h3>
+                        <p class="text-sm text-gray-400 mt-1">Sistem Ekonomi dan Perdagangan Global</p>
+                    </div>
+                </a>
+
+                <!-- Pertemuan 15 -->
+                <a href="15.html" target="_blank" class="group glass-card p-6 rounded-xl hover-lift flex items-start gap-4">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-luxury-gold/10 flex items-center justify-center text-luxury-gold font-bold font-serif text-xl group-hover:bg-luxury-gold group-hover:text-luxury-dark transition-colors">15</div>
+                    <div>
+                        <h3 class="font-serif text-lg font-bold text-white group-hover:text-luxury-gold transition-colors">Pelestarian Lingkungan Hidup</h3>
+                        <p class="text-sm text-gray-400 mt-1">Pembangunan Berkelanjutan dan Tantangan Ekologis</p>
+                    </div>
+                </a>
+
+                <!-- Pertemuan 16 -->
+                <a href="16.html" target="_blank" class="group glass-card p-6 rounded-xl hover-lift flex items-start gap-4">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-luxury-gold/10 flex items-center justify-center text-luxury-gold font-bold font-serif text-xl group-hover:bg-luxury-gold group-hover:text-luxury-dark transition-colors">16</div>
+                    <div>
+                        <h3 class="font-serif text-lg font-bold text-white group-hover:text-luxury-gold transition-colors">Review & Pendalaman Materi</h3>
+                        <p class="text-sm text-gray-400 mt-1">Persiapan Komprehensif Menyongsong UAS</p>
+                    </div>
+                </a>
+
+                <!-- Pertemuan 17: UAS -->
+                <a href="17.html" target="_blank" class="group glass-card p-6 rounded-xl hover-lift flex items-start gap-4 border-luxury-gold/50 bg-luxury-gold/5 md:col-span-2 lg:col-span-1">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-luxury-gold flex items-center justify-center text-luxury-dark font-bold font-serif text-xl">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-serif text-lg font-bold text-luxury-gold">Ujian Akhir Semester (UAS)</h3>
+                        <p class="text-sm text-gray-300 mt-1">Evaluasi Akhir Komprehensif Seluruh Materi</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Penulis Section -->
+    <section id="penulis" class="py-20 bg-luxury-card border-t border-luxury-gold/10">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass-card rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-10 border border-luxury-gold/20">
+                
+                <!-- Photo Penulis -->
+                <div class="flex-shrink-0">
+                    <div class="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-luxury-gold/30 shadow-2xl shadow-luxury-gold/10">
+                        <!-- 
+                            ========================================================================
+                            PANDUAN MENGGANTI PHOTO PENULIS:
+                            1. Siapkan file foto penulis yang profesional.
+                            2. Ubah nama file tersebut menjadi tepat: "photo-penulis.png"
+                            3. Simpan file tersebut di folder yang sama dengan file HTML ini.
+                            4. Jika foto tidak muncul, pastikan ekstensi file benar (.png, .jpg, atau .jpeg).
+                            ========================================================================
+                        -->
+                        <img 
+                            src="photo-penulis.png" 
+                            alt="Drs. Ahmad Afdal" 
+                            class="w-full h-full object-cover"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                        >
+                        <!-- Fallback Placeholder -->
+                        <div class="img-placeholder w-full h-full rounded-full absolute top-0 left-0 border-4 border-luxury-gold/30" style="display: none;">
+                            <div>
+                                <i class="fa-solid fa-user text-3xl mb-2 text-luxury-gold"></i><br>
+                                <span class="text-luxury-gold font-semibold text-xs">photo-penulis.png</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Info Penulis -->
+                <div class="text-center md:text-left flex-1">
+                    <h2 class="font-serif text-3xl md:text-4xl font-bold text-white mb-2">Drs. Ahmad Afdal</h2>
+                    <p class="text-luxury-gold font-medium text-lg mb-4">Penulis & Pendidik</p>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Berdedikasi dalam dunia pendidikan Ilmu Pengetahuan Sosial di MTsN 10 Agam. Buku ini merupakan hasil sintesis pengalaman mengajar dan komitmen untuk menyajikan materi IPS yang tidak hanya mudah dipahami, tetapi juga relevan dengan perkembangan zaman dan kebutuhan siswa di era modern.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                        <a href="mailto:ahmadafdal2323@gmail.com" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-luxury-gold text-luxury-dark font-bold rounded-lg hover:bg-luxury-accent transition-colors duration-300">
+                            <i class="fa-solid fa-envelope"></i> ahmadafdal2323@gmail.com
+                        </a>
+                        <a href="#" class="inline-flex items-center justify-center gap-2 px-6 py-3 border border-gray-600 text-white font-medium rounded-lg hover:border-luxury-gold hover:text-luxury-gold transition-colors duration-300">
+                            <i class="fa-solid fa-school"></i> MTsN 10 Agam
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-luxury-dark border-t border-luxury-gold/10 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <span class="font-serif text-xl font-bold text-white tracking-wide">IPS Kelas 8 MTsN 10 Agam</span>
+                <p class="text-gray-500 text-sm mt-1">© 2026 Drs. Ahmad Afdal. Hak Cipta Dilindungi.</p>
+            </div>
+            <div class="flex gap-6">
+                <a href="mailto:ahmadafdal2323@gmail.com" class="text-gray-400 hover:text-luxury-gold transition-colors">
+                    <i class="fa-solid fa-envelope text-xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-luxury-gold transition-colors">
+                    <i class="fa-brands fa-instagram text-xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-luxury-gold transition-colors">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script Sederhana untuk Smooth Scroll & Interaksi -->
+    <script>
+        // Menambahkan efek navbar saat di-scroll
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg');
+                nav.classList.replace('bg-opacity-0', 'bg-opacity-90');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</body>
+</html>
